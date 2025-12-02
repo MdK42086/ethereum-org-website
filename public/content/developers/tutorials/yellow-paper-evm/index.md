@@ -34,7 +34,7 @@ This section gives the basics of the EVM and how it compares with other computat
 
 A [stack machine](https://en.wikipedia.org/wiki/Stack_machine) is a computer that stores intermediate data not in registers, but in a [**stack**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). This is the preferred architecture for virtual machines because it is easy to implement meaning that bugs, and security vulnerabilities, are a lot less likely. The memory in the stack is divided into 256-bit words. This was chosen because it is convenient for Ethereum's core cryptographic operations such as Keccak-256 hashing and elliptic curve computations. The maximum size of the stack is 1024 items (1024 x 256 bits). When opcodes are executed they are usually getting their parameters from the stack. There are opcodes specifically for reorganizing elements in the stack such as `POP` (removes item from top of stack), `DUP_N` (duplicated N'th item in stack), etc.
 
-The EVM also has a volatile space called **memory** which is used to store data during execution. This memory is organized into 32-byte words. All memory locations are initialized to zero. If you execute this [Yul](https://docs.soliditylang.org/en/latest/yul.html) code to add a word to memory, it will fill 32 bytes of memory by padding the empty space in the word with zeros, i.e. it creates one word - with zeros in locations 0-29, 0x60 to 30, and 0xA7 to 31.
+The EVM also has a volatile space called **memory** which is used to store data during execution. This memory is organized into 32-byte words. All memory locations are initialized to zero. If you execute this [Yul](https://docs.soliditylang.org/en/latest/yul.html) code to add a word to memory, it will fill 32 bytes of memory by padding the empty space in the word with zeros, i.e., it creates one word - with zeros in locations 0-29, 0x60 to 30, and 0xA7 to 31.
 
 ```yul
 mstore(0, 0x60A7)
@@ -173,7 +173,7 @@ We have an exceptional halt if any of these conditions is true:
 
   The function _W(w,μ)_ is defined later in equation 150. _W(w,μ)_ is true if one of these conditions is true:
 
-  - **_w ∈ {CREATE, CREATE2, SSTORE, SELFDESTRUCT}_**
+  - **_w ∈ \{CREATE, CREATE2, SSTORE, SELFDESTRUCT}_**
     These opcodes change the state, either by creating a new contract, storing a value, or destroying the current contract.
 
   - **_LOG0≤w ∧ w≤LOG4_**
@@ -240,7 +240,7 @@ The address whose balance we need to find is _μ<sub>s</sub>[0] mod 2<sup>160</s
 
 If _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, it means that there is information about this address. In that case, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ is the balance for that address. If _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, it means that this address is uninitialized and the balance is zero. You can see the list of account information fields in section 4.1 on p. 4.
 
-The second equation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ {μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, is related to the difference in cost between access to warm storage (storage that has recently been accessed and is likely to be cached) and cold storage (storage that hasn't been accessed and is likely to be in slower storage that is more expensive to retrieve). _A<sub>a</sub>_ is the list of addresses previously accessed by the transaction, which should therefore be cheaper to access, as defined in section 6.1 on p. 8. You can read more about this subject in [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+The second equation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, is related to the difference in cost between access to warm storage (storage that has recently been accessed and is likely to be cached) and cold storage (storage that hasn't been accessed and is likely to be in slower storage that is more expensive to retrieve). _A<sub>a</sub>_ is the list of addresses previously accessed by the transaction, which should therefore be cheaper to access, as defined in section 6.1 on p. 8. You can read more about this subject in [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
 
 | Value | Mnemonic | δ   | α   | Description                             |
 | ----: | -------- | --- | --- | --------------------------------------- |

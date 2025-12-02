@@ -34,7 +34,7 @@ Crowdin'e giriş yaptıktan sonra bir proje açıklaması ile kullanılabilir t�
 
 Web site içeriği, çok sayıda belge ve içerik gruplarına bölünmüştür. Her belgenin ilerleme durumunu sağ taraftan kontrol edebilirsiniz; çevirinin ilerleme durumu %100'ün altındaysa lütfen katkıda bulunun!
 
-Dilinizi listede göremiyor musunuz? [Bir konu açın](https://github.com/ethereum/ethereum-org-website/issues/new/choose) veya [Discord'da](/discord/) sorun
+Dilinizi listede göremiyor musunuz? [Bir konu açın](https://github.com/ethereum/ethereum-org-website/issues/new/choose) veya [Discord'da](https://discord.gg/ethereum-org) sorun
 
 ![Crowdin'de çevrilmiş ve çevrilmemiş dosyalar](./crowdin-files.png)
 
@@ -70,20 +70,23 @@ Burada yorumları, çeviri belleği girdilerini ve sözlük girdilerini bulabili
 
 Üstteki düğmeleri kullanarak mevcut çevirileri arayabileceğiniz Çeviri Belleğine veya anahtar terimlerin açıklamalarını ve standart çevirilerini içeren Sözlüğe de geçiş yapabilirsiniz.
 
-Dahasını mı öğrenmek istiyorsunuz? [Crowdin çevrimiçi düzenleyiciyi kullanımıyla ilgili dokümanlara](https://support.crowdin.com/online-editor/) göz atmaktan çekinmeyin
+Daha fazlasını mı öğrenmek istiyorsunuz? [Crowdin çevrimiçi düzenleyiciyi kullanımıyla ilgili dokümanlara](https://support.crowdin.com/online-editor/) göz atmaktan çekinmeyin
 
 ### Gözden geçirme süreci {#review-process}
 
 Çeviriyi tamamladığınızda (yani, içerik grubundaki tüm dosyalar 100% olarak göründüğünde) profesyonel çeviri hizmeti aldığımız kurum içeriği gözden geçirecektir (ve potansiyel olarak düzeltecektir). Gözden geçirme tamamlandıktan sonra (yani gözden geçirmenin ilerleme durumu %100 olduğunda) çevirileri web sitesine ekleriz.
 
-<InfoBanner shouldCenter emoji=":warning:">
+<Alert variant="update">
+<AlertEmoji text=":warning:"/>
+<AlertContent>
   Lütfen projeyi makine çevirisi kullanarak çevirmeyin. Tüm çeviriler web sitesine eklenmeden önce gözden geçirilecektir. Önerdiğiniz çevirilerin makine çevirisi olduğu tespit edilirse, çeviriler reddedilir ve makine çevirisini kullanarak katkıda bulunanlar sıklıkla projeden çıkarılır.
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 ### İletişime geçin {#get-in-touch}
 
-Sormak istediğiniz bir şey mi var? Ekibimizle ve diğer çevirmenlerle iş birliği yapmak mı istiyorsunuz? Lütfen [ethereum.org Discord sunucumuzun](/discord/) #translations kanalına yazın
+Sormak istediğiniz bir şey mi var? Ekibimizle ve diğer çevirmenlerle iş birliği yapmak mı istiyorsunuz? Lütfen [ethereum.org Discord sunucumuzun](https://discord.gg/ethereum-org) #translations kanalına yazın
 
-Ayrıca bize translations@ethereum.org adresinden de ulaşabilirsiniz
+Bize translations@ethereum.org adresinden de ulaşabilirsiniz
 
 Ethereum.org Çeviri Programına katıldığınız için teşekkür ederiz!

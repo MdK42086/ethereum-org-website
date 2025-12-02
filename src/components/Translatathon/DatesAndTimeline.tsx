@@ -1,6 +1,7 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react"
+import { Button, ButtonLink } from "@/components/ui/buttons/Button"
+import { Flex } from "@/components/ui/flex"
 
-import { ButtonLink } from "@/components/Buttons"
+import { cn } from "@/lib/utils/cn"
 
 import { CROWDIN_PROJECT_URL } from "@/lib/constants"
 
@@ -9,6 +10,7 @@ import {
   APPLICATION_START_DATE,
   APPLICATION_URL,
 } from "./constants"
+import PaperformModal from "./PaperformModal"
 
 export const dates = [
   {
@@ -20,30 +22,30 @@ export const dates = [
     link: APPLICATION_URL,
     linkText: "Apply",
   },
-  {
-    title: "Workshops",
-    description:
-      "Join our Discord to participate in onboarding calls and workshops and learn all about the Translatathon",
-    startDate: new Date("2024-08-05T12:00:00Z"),
-    endDate: new Date("2024-08-08T12:00:00Z"),
-    link: "/discord/",
-    linkText: "Prepare",
-  },
+  // {
+  //   title: "Workshops",
+  //   description:
+  //     "Join our Discord to participate in onboarding calls and workshops and learn all about the Translatathon",
+  //   startDate: new Date("2025-08-15T12:00:00"),
+  //   endDate: new Date("2025-08-22T12:00:00"),
+  //   link: "https://discord.gg/ethereum-org/",
+  //   linkText: "Join our Discord",
+  // },
   {
     title: "Translatathon",
     description:
-      "The translation period - translate as much or as little as you want",
-    startDate: new Date("2024-08-09T12:00:00Z"),
-    endDate: new Date("2024-08-18T12:00:00Z"),
+      "Collect points for any translations you add during the translation period",
+    startDate: new Date("2025-08-25T00:00:00"),
+    endDate: new Date("2025-08-31T23:59:59"),
     link: CROWDIN_PROJECT_URL,
     linkText: "Translate",
   },
   {
     title: "Evaluation period",
     description:
-      "Each translation will be evaluated by professional reviewers to verify translations were not done with AI tools and meet the minimum quality threshold",
-    startDate: new Date("2024-08-19T12:00:00Z"),
-    endDate: new Date("2024-08-28T12:00:00Z"),
+      "Each translation will be evaluated by professional reviewers to make sure no AI tools were used and they meet the minimum quality threshold",
+    startDate: new Date("2025-09-01T00:00:00"),
+    endDate: new Date("2025-09-22T23:59:59"),
     link: null,
     linkText: null,
   },
@@ -51,7 +53,7 @@ export const dates = [
     title: "Results announcement",
     description:
       "We will announce the results and winners on the ethereum.org community Call",
-    startDate: new Date("2024-08-29T12:00:00Z"),
+    startDate: new Date("2025-09-25T00:00:00"),
     endDate: null,
     link: null,
     linkText: null,
@@ -62,7 +64,7 @@ export const DatesAndTimeline = () => {
   const todaysDate = new Date()
 
   return (
-    <Flex direction="column" p={4} mb={16}>
+    <Flex className="mb-16 flex flex-col p-4">
       {dates.map((date, index) => {
         const isLive =
           todaysDate >= date.startDate &&
@@ -70,59 +72,72 @@ export const DatesAndTimeline = () => {
         return (
           <Flex
             key={index}
-            borderLeft={"1px solid"}
-            borderColor={
-              index === dates.length - 1 ? "transparent" : "primary.base"
-            }
-            px={4}
-            pb={index === dates.length - 1 ? 0 : 16}
-            gap={4}
+            className={cn(
+              "flex gap-4 border-l px-4",
+              index === dates.length - 1
+                ? "border-transparent pb-0"
+                : "border-primary pb-16"
+            )}
           >
             <Flex>
-              <Box
-                w={8}
-                h={8}
-                bg={isLive ? "primary.base" : "primary.lowContrast"}
-                borderRadius="full"
-                ml={-8}
+              <div
+                className={cn(
+                  "-ml-8 h-8 w-8 rounded-full",
+                  isLive ? "bg-primary" : "bg-primary-low-contrast"
+                )}
               />
             </Flex>
-            <Flex direction="column" gap={6}>
+            <Flex className="flex flex-col gap-6">
               <Flex
-                h={8}
-                bg={isLive ? "primary.base" : "primary.lowContrast"}
-                borderRadius="full"
-                px={4}
-                alignItems="center"
-                color={isLive ? "background.base" : "body.base"}
+                className={cn(
+                  "flex min-h-8 w-fit items-center rounded-full px-4 py-2 text-center",
+                  isLive && "text-body-inverse",
+                  isLive ? "bg-primary" : "bg-primary-low-contrast"
+                )}
               >
-                <Text>
+                <p>
                   {date.startDate.toDateString()}{" "}
                   {date.endDate ? `- ${date.endDate.toDateString()}` : ""}
-                </Text>
+                </p>
               </Flex>
-              <Flex direction="column">
-                <Heading as="h3" fontSize="2xl">
-                  {date.title}
-                </Heading>
-                <Text>{date.description}</Text>
+              <Flex className="flex flex-col">
+                <h3 className="text-2xl">{date.title}</h3>
+                <p>{date.description}</p>
               </Flex>
               {date.link && (
                 <Flex>
-                  <ButtonLink
-                    href={date.link}
-                    mt={2}
-                    variant="outline"
-                    isDisabled={date.link === APPLICATION_URL && !isLive} // Application only
-                  >
-                    {date.linkText}
-                  </ButtonLink>
+                  {date.link === APPLICATION_URL ? (
+                    <PaperformModal
+                      trigger={
+                        <Button
+                          className={cn(
+                            "mt-2",
+                            !isLive ? "pointer-events-none text-disabled" : ""
+                          )}
+                          variant="outline"
+                          disabled={!isLive}
+                        >
+                          {date.linkText}
+                        </Button>
+                      }
+                      title="Apply to Translate"
+                    />
+                  ) : (
+                    <ButtonLink
+                      href={date.link}
+                      className="mt-2"
+                      variant="outline"
+                    >
+                      {date.linkText}
+                    </ButtonLink>
+                  )}
                 </Flex>
               )}
             </Flex>
           </Flex>
         )
       })}
+      <p className="mt-8 italic">Note: All dates are in UTC</p>
     </Flex>
   )
 }

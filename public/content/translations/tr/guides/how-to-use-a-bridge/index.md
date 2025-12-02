@@ -10,7 +10,7 @@ Ethereum üzerinde çok trafik varsa, pahalılaşabilir. Bunun çözümlerinden 
 
 **Ön koşullar:**
 
-- Kripto cüzdanına sahip olma, bu öğreticiyi takip edebilirsiniz: [Nasıl yapılır: Bir Ethereum hesabını "kaydetme"](/guides/how-to-register-an-ethereum-account/)
+- bir kripto cüzdana sahip olmak, bu öğreticiyi takip edebilirsiniz: [Nasıl yapılır: Bir Ethereum hesabını "kaydetme"](/guides/how-to-create-an-ethereum-account/)
 - cüzdanınıza fon ekleme
 
 ## 1. Hangi katman 2 ağını kullanmak istediğinizi belirleyin
@@ -52,18 +52,21 @@ Süreç 10 dakikadan fazla sürmemelidir.
 Ağın RPC detaylarını bulmak için [chainlist.org](http://chainlist.org) sitesini kullanabilirsiniz. Ağ eklendiğinde ve işlem sonlandığında, token'ları cüzdanınızda görmelisiniz.
 <br />
 
-<InfoBanner shouldSpaceBetween emoji=":eyes:">
+<Alert variant="update">
+<AlertEmoji text=":eyes:"/>
+<AlertContent className="justify-between flex-row items-center">
   <div>Daha fazlasını mı öğrenmek istiyorsunuz?</div>
   <ButtonLink href="/guides/">
     Diğer rehberlerimizi inceleyin
   </ButtonLink>
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 ## Sıkça sorulan sorular
 
 ### Peki bir borsada fonlarım varsa?
 
-Bir borsa üzerinden bazı katman 2'lere doğrudan çekim yapabilirsiniz. Daha fazla bilgi için [Katman 2 sayfamızın](/layer-2/) “Katman 2'ye aktar” kısmını inceleyebilirsiniz.
+Bir borsa üzerinden bazı katman 2'lere doğrudan para çekebilirsiniz. Daha fazla bilgi için [Katman 2 sayfamızın](/layer-2/) “Katman 2'ye aktar” kısmını inceleyebilirsiniz.
 
 ### Token'larımı L2'ye köprüledikten sonra Ethereum ana ağına geri dönebilir miyim?
 

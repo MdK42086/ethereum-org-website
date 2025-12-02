@@ -20,7 +20,7 @@ lang: ru
   Изучение основ Ethereum
 </DocLink>
 
-Несмотря на отсутствие официальной поддержки, многие группы, сообщества и проекты в экосистеме Ethereum рады помочь, и на этой странице вы можете найти много полезной информации и ресурсов. Остались вопросы? Присоединяйтесь к [ethereum.org на платформе Discord](/discord/), и мы постараемся помочь.
+Несмотря на отсутствие официальной поддержки, многие группы, сообщества и проекты в экосистеме Ethereum рады помочь, и на этой странице вы можете найти много полезной информации и ресурсов. Остались вопросы? Присоединяйтесь к [ethereum.org на платформе Discord](https://discord.gg/ethereum-org), и мы постараемся помочь.
 
 ## Часто задаваемые вопросы {#faq}
 
@@ -57,7 +57,6 @@ lang: ru
 - [Университет Alchemy](https://university.alchemy.com/#starter_code)
 - [CryptoDevs на платформе Discord](https://discord.com/invite/5W5tVb3)
 - [Ethereum StackExchange](https://ethereum.stackexchange.com/)
-- [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Университет Web3](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 
@@ -91,6 +90,7 @@ lang: ru
 - [Nethermind](https://discord.gg/YJx3pm8z5C)
 - [Besu](https://discord.gg/p8djYngzKN)
 - [Erigon](https://github.com/ledgerwatch/erigon/issues)
+- [Reth](https://github.com/paradigmxyz/reth/discussions)
 
 ### Клиенты консенсуса {#consensus-clients}
 

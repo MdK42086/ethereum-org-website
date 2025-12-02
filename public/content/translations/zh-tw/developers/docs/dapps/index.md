@@ -72,7 +72,7 @@ lang: zh-tw
 
 - [首頁](https://thirdweb.com/)
 - [文件](https://portal.thirdweb.com/)
-- [Github](https://github.com/thirdweb-dev/)
+- [GitHub](https://github.com/thirdweb-dev/)
 
 **Crossmint _- 企業級 Web3 開發平台，可用於部署智慧型合約，支援信用卡和跨鏈支付，並使用應用程式介面來建立、分發、銷售、儲存和編輯非同質化代幣。_**
 
@@ -82,15 +82,15 @@ lang: zh-tw
 
 ## 衍生閱讀 {#further-reading}
 
-- [探索去中心化應用程式](/dapps)
+- [探索去中心化應用程式](/apps)
 - [Web 3.0 應用程式的架構](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [-2021 版去中心化應用程式指南](https://limechain.tech/blog/what-are-dapps-the-2021-guide/) - _LimeChain_
 - [去中心化應用程式為何?](https://www.gemini.com/cryptopedia/decentralized-applications-defi-dapps) - _Gemini_
 - [熱門去中心化應用程式](https://www.alchemy.com/dapps) - _Alchemy_
 
-_認識社區或社團資源能幫助大家學習更多? 歡迎自由編輯或添加於本頁!!_
+_知道對你有幫助的社群資源嗎？ 請編輯此頁面並新增資源！_
 
 ## 相關主題 {#related-topics}
 
-- [Ethereum 技術堆棧簡介](/developers/docs/ethereum-stack/)
+- [以太坊堆疊簡介](/developers/docs/ethereum-stack/)
 - [開發架構](/developers/docs/frameworks/)

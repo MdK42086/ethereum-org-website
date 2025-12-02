@@ -87,7 +87,7 @@ Ahhoz, hogy a hálózaton végre legyen hajtva egy tranzakció, a felhasználók
 
 ### Blokkméret {#block-size}
 
-Minden blokk 15 millió gáz célmérettel rendelkezik, de a blokk mérete a hálózati kereslet függvényében, egészen a 30 millió gáz határig (amely a célméret kétszerese) változik. A protokoll úgy éri el az egyensúlyi, átlagos 15 milliós blokkméretet, hogy a _tâtonnement_, vagyis a közelítés módszerét alkalmazza. Tehát, ha a blokkméret meghaladja a célértéket, akkor a protokoll megnöveli az alapdíjat a következő blokknál. Ugyanígy csökkenti az alapdíjat, ha a blokkméret kisebb, mint a célérték. Az alapdíj mértéke arányosan változik annak függvényében, hogy a jelenlegi blokkméret hogyan viszonyul a célmérethez. [Bővebben a blokkokról](/developers/docs/blocks/).
+Minden blokk 30 millió gáz célmérettel rendelkezik, de a blokk mérete a hálózati kereslet függvényében, egészen a 60 millió gáz határig (amely a célméret kétszerese) változik. A protokoll úgy éri el az egyensúlyi, átlagos 30 milliós blokkméretet, hogy a _tâtonnement_, vagyis a közelítés módszerét alkalmazza. Tehát, ha a blokkméret meghaladja a célértéket, akkor a protokoll megnöveli az alapdíjat a következő blokknál. Ugyanígy csökkenti az alapdíjat, ha a blokkméret kisebb, mint a célérték. Az alapdíj mértéke arányosan változik annak függvényében, hogy a jelenlegi blokkméret hogyan viszonyul a célmérethez. [Bővebben a blokkokról](/developers/docs/blocks/).
 
 ### A gázdíjak kiszámítása a gyakorlatban {#calculating-fees-in-practice}
 
@@ -117,11 +117,12 @@ Az Ethereum [skálázhatósági fejlesztései](/roadmap/) meg fogják oldani a g
 
 A második blokkláncréteggel (L2) kialakított skálázás a fő kezdeményezés arra, hogy nagy mértékben javuljanak a gázköltségek, a felhasználói élmény és a skálázhatóság. [Bővebben az L2 skálázásról](/developers/docs/scaling/#layer-2-scaling).
 
-## A gázdíjak felügyelete {#moitoring-gas-fees}
+## A gázdíjak felügyelete {#monitoring-gas-fees}
 
 Ha Ön szeretné felügyelni a gázdíjakat azért, hogy kevesebbet kelljen fizetnie az ETH-tranzakciókért, akkor számos eszköz áll rendelkezésre:
 
 - [Etherscan](https://etherscan.io/gastracker) _ Tranzakció gázdíjának becslése_
+- [ETH Gas Tracker](https://www.ethgastracker.com/) _Figyeli és kövesti az Ethereum és az L2 gázárakat a tranzakciós díjak csökkentése és a pénzmegtakarítás érdekében_
 - [Blocknative ETH gázbecslés](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Gázbecslő Chrome-kiterjesztés, amely támogatja az eredeti (0. típusú) és az EIP-1559 (2. típusú) tranzakciókat._
 - [Cryptoneur gázdíjkalkulátor](https://www.cryptoneur.xyz/gas-fees-calculator) _Számolja ki a gázdíjat a saját pénznemében a különféle tranzakciókra az Ethereum főhálózatán, az Arbitrumon és a Polygonon._
 
@@ -133,7 +134,6 @@ Ha Ön szeretné felügyelni a gázdíjakat azért, hogy kevesebbet kelljen fize
 
 - [Az Ethereum gázdíjról részletesen](https://defiprime.com/gas)
 - [Csökkentse az okosszerződésének gázfogyasztását](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
-- [A proof-of-stake és a proof-of-work összehasonlítása](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [Gázoptimalizáló stratégiák fejlesztők számára](https://www.alchemy.com/overviews/solidity-gas-optimization)
 - [EIP-1559-dokumentumok](https://eips.ethereum.org/EIPS/eip-1559).
 - [Tim Beiko EIP-1559 forrásai](https://hackmd.io/@timbeiko/1559-resources).

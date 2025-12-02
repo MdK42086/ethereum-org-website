@@ -10,7 +10,7 @@ lang: it
 
 Stai cercando il supporto ufficiale di Ethereum? La prima cosa che dovresti sapere è che Ethereum è decentralizzato. Questo significa che nessuna organizzazione centrale, entità o persona possiede Ethereum, e per questo non esistono canali di supporto ufficiali.
 
-Comprendere la natura decentralizzata di Ethereum è fondamentale perché chiunque affermi di essere il supporto ufficiale di Ethereum probabilmente sta cercando di truffarti! La migliore protezione contro i truffatori sta nell'educare sé stessi prendendo sul serio la sicurezza.
+Comprendere la natura decentralizzata di Ethereum è fondamentale perché **chiunque sostenga di essere il supporto ufficiale per Ethereum sta probabilmente provando a truffarti!** La migliore protezione contro i truffatori è informarsi e prendere sul serio la sicurezza.
 
 <DocLink href="/security/">
   Sicurezza di Ethereum e prevenzione delle truffe
@@ -20,7 +20,7 @@ Comprendere la natura decentralizzata di Ethereum è fondamentale perché chiunq
   Impara i fondamenti di Ethereum
 </DocLink>
 
-Nonostante la mancanza di supporto ufficiale, molti gruppi, community e progetti nell'intero ecosistema di Ethereum sono lieti di aiutare e puoi trovare molte informazioni e risorse utili su questa pagina. Hai altre domande? Unisciti al [Discord di ethereum.org](/discord/) e faremo il possibile per aiutarti.
+Nonostante la mancanza di supporto ufficiale, molti gruppi, community e progetti nell'intero ecosistema di Ethereum sono lieti di aiutare e puoi trovare molte informazioni e risorse utili su questa pagina. Hai altre domande? Unisciti al [Discord di ethereum.org](https://discord.gg/ethereum-org) e faremo il possibile per aiutarti.
 
 ## Domande frequenti {#faq}
 
@@ -57,7 +57,6 @@ La costruzione può essere difficile. Ecco alcuni spazi focalizzati sullo svilup
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [CryptoDevs discord](https://discord.com/invite/5W5tVb3)
 - [StackExchange Ethereum](https://ethereum.stackexchange.com/)
-- [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 
@@ -91,6 +90,7 @@ La maggior parte dei team che costruiscono client di Ethereum hanno anche spazi 
 - [Nethermind](https://discord.gg/YJx3pm8z5C)
 - [Besu](https://discord.gg/p8djYngzKN)
 - [Erigon](https://github.com/ledgerwatch/erigon/issues)
+- [Reth](https://github.com/paradigmxyz/reth/discussions)
 
 ### Client di consenso {#consensus-clients}
 
@@ -99,5 +99,6 @@ La maggior parte dei team che costruiscono client di Ethereum hanno anche spazi 
 - [Lighthouse](https://discord.gg/cyAszAh)
 - [Teku](https://discord.gg/7hPv2T6)
 - [Lodestar](https://discord.gg/aMxzVcr)
+- [Grandine](https://discord.gg/H9XCdUSyZd)
 
 Puoi anche [imparare ad eseguire un nodo qui](/developers/docs/nodes-and-clients/run-a-node/).

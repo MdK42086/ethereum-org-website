@@ -4,9 +4,14 @@ description: Os algoritmos usados para mineração Ethereum
 lang: pt-br
 ---
 
-<InfoBanner emoji=":wave:">
+<Alert variant="update">
+<AlertEmoji text=":wave:"/>
+<AlertContent>
+<AlertDescription>
 A prova de trabalho não está mais subjacente ao mecanismo de consenso do Ethereum, o que significa que a mineração foi desativada. Em vez disso, o Ethereum é garantido por validadores que apostam em ETH. Você pode começar a fazer o staking do seu ETH hoje. Leia mais sobre <a href='/roadmap/merge/'>A Fusão</a> (The MErge), <a href='/developers/docs/consensus-mechanisms/pos/'>prova de participação</a> e <a href='/staking/'>participação (stake)</a>. Esta página é apenas de interesse histórico.
-</InfoBanner>
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 A mineração Ethereum usou um algoritmo conhecido como Ethash. A ideia fundamental do algoritmo é que um minerador tente encontrar uma entrada de nonce usando a computação de força bruta, para que o hash resultante seja menor que um limite determinado pela dificuldade calculada. Esse nível de dificuldade pode ser ajustado dinamicamente, permitindo que a produção de blocos ocorra em intervalos regulares.
 
@@ -28,7 +33,7 @@ Mais sobre [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/m
 
 ## Ethash {#ethash}
 
-Ethash foi o algoritmo de mineração, que na verdade foi usado na rede principal Ethereum real, sob a agora obsoleta arquitetura de prova de trabalho. Ethash foi efetivamente um novo nome dado a uma versão específica do Dagger-Hashimoto depois que o algoritmo foi significativamente atualizado, enquanto ainda herdava os princípios fundamentais de seu antecessor. A rede principal do Ethereum só usava Ethash. Dagger Hashimoto era uma versão de pesquisa e desenvolvimento do algoritmo de mineração que foi substituído antes do início da mineração na rede principal do Ethereum.
+Ethash foi o algoritmo de mineração, que na verdade foi usado na rede principal Ethereum real, sob a agora obsoleta arquitetura de prova de trabalho. Ethash foi efetivamente um novo nome dado a uma versão específica do Dagger-Hashimoto depois que o algoritmo foi significativamente atualizado, enquanto ainda herdava os princípios fundamentais de seu antecessor. A Rede principal do Ethereum só utilizou o Ethash. Dagger Hashimoto era uma versão de pesquisa e desenvolvimento do algoritmo de mineração que foi substituído antes do início da mineração na Rede principal do Ethereum.
 
 [Mais sobre Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

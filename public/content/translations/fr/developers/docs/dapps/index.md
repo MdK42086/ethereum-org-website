@@ -74,9 +74,15 @@ Un contrat intelligent est un code présent sur la blockchain Ethereum qui fonct
 - [Documentation](https://portal.thirdweb.com/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
+**Crossmint - _ Plateforme de développement web3 de niveau entreprise pour déployer des contrats intelligents, permettre les paiements par carte de crédit et inter-chaîne, et utiliser des API pour créer, distribuer, vendre, stocker et modifier des NFT_**
+
+- [crossmint.com](https://www.crossmint.com)
+- [Documentation](https://docs.crossmint.com)
+- [Discord](https://discord.com/invite/crossmint)
+
 ## Complément d'information {#further-reading}
 
-- [Explorez des applications décentralisées](/dapps)
+- [Explorez des applications décentralisées](/apps)
 - [L'Architecture d'une application Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [Le guide 2021 pour les applications décentralisées](https://limechain.tech/blog/what-are-dapps-the-2021-guide/) - _LimeChain_
 - [Qu'est-ce que les applications décentralisées ?](https://www.gemini.com/cryptopedia/decentralized-applications-defi-dapps) - _Gemini_

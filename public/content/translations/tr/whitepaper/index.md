@@ -295,7 +295,7 @@ def register(name, value):
         self.storage[name] = value
 ```
 
-Sözleşme çok basit; hepsi, Ethereum ağı içinde eklenebilen, ancak değiştirilemeyen veya çıkarılamayan bir veri tabanıdır. Herkes bir değeri olan bir isim kaydedebilir ve bu kayıt sonsuza kadar kalır. Daha karmaşık bir isim kayıt sözleşmesi, diğer sözleşmelerin onu sorgulamasına izin veren bir "işlev maddesine" ve ayrıca bir adın "sahibinin" (yani ilk kaydediciye) verileri değiştirmesine veya mülkiyeti devretmesine izin veren bir mekanizmaya sahip olacaktır. Üstüne itibar ve güven ağı işlevselliği bile eklenebilir.
+Sözleşme çok basittir; Ethereum ağındaki, ekleme yapılabilen ancak değiştirilemeyen veya kaldırılamayan bir veritabanıdır. Herkes bir değeri olan bir isim kaydedebilir ve bu kayıt sonsuza kadar kalır. Daha karmaşık bir isim kayıt sözleşmesi, diğer sözleşmelerin onu sorgulamasına izin veren bir "işlev maddesine" ve ayrıca bir adın "sahibinin" (yani ilk kaydediciye) verileri değiştirmesine veya mülkiyeti devretmesine izin veren bir mekanizmaya sahip olacaktır. Üstüne itibar ve güven ağı işlevselliği bile eklenebilir.
 
 ### Merkeziyetsiz Dosya Depolama {#decentralized-file-storage}
 
@@ -355,7 +355,7 @@ Ethereum, yalnızca yedi seviye aşağı inen basitleştirilmiş bir GHOST sür�
 
 - Bir blok bir ebeveyn belirtmeli ve 0 veya daha fazla amca belirtmelidir
 - B bloğuna dahil olan bir amca aşağıdaki özelliklere sahip olmalıdır:
-  - 2 <= k <= 7 olmak üzere B'nin k nesli atasının doğrudan çocuğu olmalıdır.
+  - `2 <= k <= 7` olmak üzere B'nin k nesli atasının doğrudan çocuğu olmalıdır.
   - B'nin atası olamaz
   - Bir amca, geçerli bir blok başlığı olmalıdır ancak önceden doğrulanmış veya hatta geçerli bir blok olması gerekmez
   - Bir amca, önceki bloklarda yer alan tüm amcalardan ve aynı blokta yer alan diğer tüm amcalardan farklı olmalıdır (çift olmayan dahil etme)
@@ -383,7 +383,7 @@ Ancak gerçekte, bu varsayımlardan birkaç önemli sapma vardır:
 3. Madenciliğin güç dağılımı, radikal bir şekilde eşitsizlikle sonuçlanabilir.
 4. Fayda işlevleri ağa zarar vermeyi içeren spekülatörler, siyasi düşmanlar ve çılgınlar var ve maliyetleri diğer doğrulama düğümleri tarafından ödenen maliyetten çok daha düşük olan sözleşmeler kurabiliyorlar.
 
-(1) madenciye daha az işlem yapma eğilimi sağlar ve (2) `NC` değerini artırır; dolayısıyla, bu iki etki en azından kısmen birbirini iptal eder. <sup>[Nasıl?](https://github.com/ethereum/wiki/issues/447#issuecomment-316972260)</sup> (3) ve (4) en önemli meselelerdir; bunları çözmek için değişken bir üst sınır getirmemiz yeterlidir: Hiçbir blok `BLK_LIMIT_FACTOR` ile ortalama uzun vadeli üstel taşıma değerinin çarpımından daha fazla işleme sahip olamaz. Özellikle:
+(1) madenciye daha az işlem yapma eğilimi sağlar ve (2) `NC` değerini artırır; dolayısıyla, bu iki etki en azından kısmen birbirini iptal eder. <sup>[Nasıl?](https://web.archive.org/web/20250427212319/https://github.com/ethereum/wiki/issues/447#issuecomment-316972260#issuecomment-316972260)</sup> (3) ve (4) en önemli meselelerdir; bunları çözmek için değişken bir üst sınır getirmemiz yeterlidir: Hiçbir blok `BLK_LIMIT_FACTOR` ile ortalama uzun vadeli üstel taşıma değerinin çarpımından daha fazla işleme sahip olamaz. Özellikle:
 
 ```js
 blk.oplimit = floor((blk.parent.oplimit \* (EMAFACTOR - 1) +
@@ -508,10 +508,10 @@ Ethereum protokolü tarafından uygulanan keyfi bir durum geçiş fonksiyonu kav
 16. [HAYALET](https://eprint.iacr.org/2013/881.pdf)
 17. [StorJ ve Otonom Temsilciler, Jeff Garzik](http://garzikrants.blogspot.ca/2013/01/storj-and-bitcoin-autonomous-agents.html)
 18. [Mike Hearn'in Turing Festivalinde Akıllı Mülk hakkındaki görüşleri](https://www.youtube.com/watch?v=MVyv4t0OKe4)
-19. [Ethereum RLP](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-RLP)
-20. [Ethereum Merkle Patricia ağaçları](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree)
+19. [Ethereum RLP](https://web.archive.org/web/20250427212320/https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-RLP)
+20. [Ethereum Merkle Patricia ağaçları](https://web.archive.org/web/20250427212320/https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree)
 21. [Peter Todd'un Merkle toplam ağaçları hakkında düşünceleri](https://web.archive.org/web/20140623061815/http://sourceforge.net/p/bitcoin/mailman/message/31709140/)
 
-_Yönergenin tarihçesini görmek için [bu wiki sayfasına](https://github.com/ethereum/wiki/blob/old-before-deleting-all-files-go-to-wiki-wiki-instead/old-whitepaper-for-historical-reference.md) göz atın._
+_Yönergenin tarihçesini görmek için [bu wiki sayfasına](https://web.archive.org/web/20250427212319/https://github.com/ethereum/wiki/blob/old-before-deleting-all-files-go-to-wiki-wiki-instead/old-whitepaper-for-historical-reference.md) göz atın._
 
 _Birçok topluluk odaklı, açık kaynaklı yazılım projesi gibi Ethereum'un da ilk başlangıcından bu yana gelişerek büyümeye devam ediyor. Ethereum'daki en son gelişmeleri ve protokolde nasıl değişikliklerin yapıldığını öğrenmek için [bu kılavuzu](/learn/) öneririz._

@@ -4,9 +4,14 @@ description: Ethereum'da madenciliğin nasıl çalıştığına dair bir açıkl
 lang: tr
 ---
 
-<InfoBanner emoji=":wave:">
+<Alert variant="update">
+<AlertEmoji text=":wave:"/>
+<AlertContent>
+<AlertDescription>
 İş ispatı artık Ethereum'un mutabakat mekanizmasının bir parçası değil, yani madencilik kapatıldı. Bunun yerine Ethereum, ETH hisseleyen doğrulayıcılar tarafından güvence altına alınır. ETH'nizi hisselemeye bugün başlayabilirsiniz. <a href='/roadmap/merge/'>Birleşim</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>hisse ispatı </a> ve <a href='/staking/'>hisseleme</a> hakkında daha fazla bilgi edinin. Bu sayfa sadece tarihsel ilgi içindir.
-</InfoBanner>
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 ## Ön Koşullar {#prerequisites}
 
@@ -60,7 +65,7 @@ Her işlem bir kez madencilik sürecinden geçer (yeni bir bloka dahil edilir ve
 
 İş ispatında blok madenciliği olasılıksaldır, bu da bazen ağ gecikmesi nedeniyle aynı anda iki geçerli blokun ağda yayımlandığı anlamına gelir. Bu durumda protokol, önerilen dahil edilmemiş geçerli bloku kısmen ödüllendirerek madencilere karşı adaleti sağlarken en uzun (yani en "geçerli") zinciri belirlemek zorundaydı. Bu, daha fazla gecikmeyle karşı karşıya kalabilecek daha küçük madencilerin yine de [ommer](/glossary/#ommer) blok ödülleri aracılığıyla getiri sağlayabildikleri için ağın daha fazla merkezsizleştirilmesini teşvik etti.
 
-"Ommer" terimi, bir ebeveyn bloğunun kardeşi için tercih edilen cinsiyetten bağımsız bir terimdir, ancak buna bazen "amca" da denir. Her yuva için bir teklif verici seçildiği için **Ethereum'un hisse ispatına geçişinden beri ommer bloklarına madencilik yapılmamaktadır**. Bu değişimi kazılmış ommer bloklarının [tarihsel tablosunda](https://ycharts.com/indicators/ethereum_uncle_rate) görebilirsiniz.
+"Ommer" terimi, bir ebeveyn bloğunun kardeşi için tercih edilen, cinsiyetten bağımsız bir terimdir ancak buna bazen "amca" da denir. Her yuva için bir teklif verici seçildiği için **Ethereum'un hisse ispatına geçişinden beri ommer bloklarına madencilik yapılmamaktadır**. Bu değişimi kazılmış ommer bloklarının [tarihsel tablosunda](https://ycharts.com/indicators/ethereum_uncle_rate) görebilirsiniz.
 
 ## Görsel bir demo {#a-visual-demo}
 
@@ -70,9 +75,9 @@ Austin'in madenciliği ve iş ispatı blok zincirini, size açıklamasını izle
 
 ## Madencilik algoritması {#mining-algorithm}
 
-Ethereum Ana Ağı şimdiye kadar yalnızca bir madencilik algoritması kullandı - ["Ethash"](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash/). Ethhash, ['Dagger-Hashimoto'](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/) olarak bilinen orijinal bir ArGe algoritmasının varisiydi.
+Ethereum Ana Ağı şimdiye kadar yalnızca bir madencilik algoritması kullandı - ["Ethash"](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash/). Ethash, ["Dagger-Hashimoto"](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/) olarak bilinen orijinal bir Ar-Ge algoritmasının halefiydi.
 
-[Madencilik algoritması ile ilgili daha fazlası](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/).
+[Madencilik algoritmaları ile ilgili daha fazla bilgi](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/).
 
 ## İlgili Konular {#related-topics}
 

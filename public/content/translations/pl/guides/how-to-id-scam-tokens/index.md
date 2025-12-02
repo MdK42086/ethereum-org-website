@@ -6,7 +6,7 @@ lang: pl
 
 # Jak zidentyfikować fałszywe tokeny {#identify-scam-tokens}
 
-One of the most common uses for Ethereum is for a group to create a tradable token, in a sense their own currency. Te tokeny zwykle używają standardu [ERC-20](/developers/docs/standards/tokens/erc-20/). Jednak wszędzie tam, gdzie istnieją uzasadnione przypadki użycia, które przynoszą wartość, są też przestępcy, którzy próbują ukraść tę wartość dla siebie.
+Jednym z najczęstszych zastosowań Ethereum jest tworzenie przez grupę wymienialnych tokenów, w pewnym sensie własnej waluty. Te tokeny zwykle używają standardu [ERC-20](/developers/docs/standards/tokens/erc-20/). Jednak wszędzie tam, gdzie istnieją uzasadnione przypadki użycia, które przynoszą wartość, są też przestępcy, którzy próbują ukraść tę wartość dla siebie.
 
 Istnieją dwa sposoby, którymi będą próbowali Cię oszukać:
 
@@ -19,7 +19,7 @@ Aby pokazać, czym są fałszywe tokeny i jak je zidentyfikować, popatrzmy na p
 title="Co to jest ARB?"
 contentPreview=''>
 
-Arbitrum to organizacja, która tworzy i zarządza <a href="/developers/docs/scaling/optimistic-rollups/">optymistycznymi pakietami zbiorczymi</a>. Początkowo, Arbitrum było zorganizowane jako firma nastawiona na zysk, ale następnie podjęła kroki w celu decentralizacji. W ramach tego procesu wydali oni wymienialny <a href="/dao/#token-based-membership">token zarządzania</a>.
+Arbitrum to organizacja, która tworzy i zarządza [optymistycznymi pakietami zbiorczymi](/developers/docs/scaling/optimistic-rollups/). Początkowo, Arbitrum było zorganizowane jako firma nastawiona na zysk, ale następnie podjęła kroki w celu decentralizacji. W ramach tego procesu wydali oni wymienialny [token zarządzania](/dao/#token-based-membership).
 
 </ExpandableCard>
 
@@ -41,7 +41,7 @@ Głównym celem Ethereum jest decentralizacja. Oznacza to, że nie ma centralneg
 title="Czym są inteligentne kontrakty?"
 contentPreview=''>
 
-<a href="/developers/docs/smart-contracts/">Inteligentne kontrakty</a> to programy, które działają na blockchainie Ethereum. Dla przykładu każdy token ERC-20 jest implementowany jako inteligentny kontrakt.
+[Inteligentne kontrakty](/developers/docs/smart-contracts/) to programy, które działają na blockchainie Ethereum. Dla przykładu każdy token ERC-20 jest implementowany jako inteligentny kontrakt.
 
 </ExpandableCard>
 

@@ -15,15 +15,17 @@ lang: el
 - Μάθετε σχετικά και δοκιμάστε το Ethereum στο [ethereum.org/developers/](/developers/).
 - Παρακολουθήστε ένα [ETHGlobal](http://ethglobal.co/) hackathon κοντά σας!
 - Δείτε τα [έργα που σχετίζονται με τον τομέα που γνωρίζετε καλύτερα ή τη γλώσσα προγραμματισμού της επιλογής σας](/developers/docs/programming-languages/).
-- Παρακολουθήστε ή συμμετάσχετε σε μια συνάντηση [Core Dev](https://www.youtube.com/@EthereumProtocol).
+- Παρακολουθήστε ή συμμετάσχετε σε μια συνάντηση με θέμα [Επίπεδο Συναίνεσης και Εκτέλεσης](https://www.youtube.com/@EthereumProtocol/streams)
 - [Λίστα επιθυμιών του Προγράμματος Υποστήριξης Οικοσυστήματος](https://esp.ethereum.foundation/wishlist/) - περιοχές εργαλείων, τεκμηρίωσης και υποδομής όπου το Πρόγραμμα Υποστήριξης Οικοσυστημάτων Ethereum αναζητά ενεργά αιτήσεις χορήγησης.
 - [Web3Bridge](https://www.web3bridge.com/) - ένταξη στη φιλοδοξία της κοινότητας web3 και την πρωτοβουλία τους να εντοπίσουν, να εκπαιδεύσουν και να υποστηρίξουν εκατοντάδες προγραμματιστές και μέλη της κοινότητας σε όλη την Αφρική.
+- Εγγραφείτε στο [Eth R&D Discord](https://discord.com/invite/VmG7Uxc)
 - Εγγραφείτε στο [Ethereum Cat Herders Discord](https://discord.com/invite/Nz6rtfJ8Cu)
 
 ## Ερευνητές & Ακαδημαϊκοί <Emoji text=":mag:" size={1} /> {#researchers-and-academics}
 
 Έχετε εμπειρία στα μαθηματικά, την κρυπτογραφία ή τα οικονομικά; Ίσως, ενδιαφέρεστε για κάποιες από τις εργασίες αιχμής που γίνονται στο οικοσύστημα του Ethereum:
 
+- Εγγραφείτε στο [Eth R&D Discord](https://discord.com/invite/VmG7Uxc)
 - Συντάξτε ή ελέγξτε μια πρόταση βελτίωσης του Ethereum
   - Συντάξτε μία EIP
     1. Υποβάλλετε την ιδέα σας στο [Ethereum Magicians](https://ethereum-magicians.org)
@@ -112,7 +114,6 @@ lang: el
 - [Στρατός Web3](https://web3army.xyz/)
 - [Θέσεις εργγασίας Crypto Valley](https://cryptovalley.jobs/)
 - [Θέσεις εργασίας Ethereum](https://startup.jobs/ethereum-jobs)
-- [CryptoJobster](https://cryptojobster.com/tag/ethereum/)
 
 ## Συμμετέχετε σε ένα DAO {#decentralized-autonomous-organizations-daos}
 
@@ -123,7 +124,6 @@ lang: el
 - [dOrg](https://dOrg.tech) [@dOrg_tech](https://twitter.com/dOrg_tech) - _Ελεύθεροι επαγγελματίες προγραμματισμού Web3 που λειτουργούν ως ένας DAO_
 - [HausDAO](https://daohaus.club) [@nowdaoit](https://twitter.com/nowdaoit) - _Κοινοτική διακυβέρνηση DAOhaus_
 - [LexDAO](https://lexdao.org) [@lex_DAO](https://twitter.com/lex_DAO) - _Legal engineering_
-- [Machi X](https://machix.com) [@MachiXOfficial](https://twitter.com/MachiXOfficial) - _Κοινότητα Τέχνης_
 - [MetaCartel Ventures](https://metacartel.xyz) [@VENTURE_DAO](https://twitter.com/VENTURE_DAO) - _Χρηματοδότηση έργων κρυπτονομισμάτων σε αρχικό στάδιο_
 - [MetaGame](https://metagame.wtf) [@MetaFam](https://twitter.com/MetaFam) - _Μηχανική παιχνιδιού MMORPG για Πραγματική Ζωή_
 - [MetaFactory](https://metafactory.ai) [@TheMetaFactory](https://twitter.com/TheMetaFactory) - _Digiphysical Apparel Brands_

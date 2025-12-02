@@ -1,5 +1,6 @@
 ---
 title: Gas e commissioni
+metaTitle: "Gas e commissioni Ethereum: panoramica tecnica"
 description:
 lang: it
 ---
@@ -87,7 +88,7 @@ Per eseguire una transazione sulla rete, gli utenti possono specificare un limit
 
 ### Dimensione del blocco {#block-size}
 
-Ogni blocco ha una dimensione prevista di 15 milioni di gas, ma la dimensione dei blocchi aumenta o diminuisce in base alla domanda della rete, fino al limite massimo di 30 milioni di gas per blocco (2 volte la dimensione prevista del blocco). Il protocollo raggiunge una dimensione del blocco equilibrata di 15 milioni in media tramite il processo di _tâtonnement_. Significa che se la dimensione del blocco supera quella prevista, il protocollo aumenta la commissione base per il blocco successivo. Analogamente, il protocollo riduce la commissione base se la dimensione del blocco è inferiore a quella prevista. L'importo della commissione base si adatta proporzionalmente alla distanza della dimensione del blocco corrente rispetto a quella prevista. [Maggiori informazioni sui blocchi](/developers/docs/blocks/).
+Ogni blocco ha una dimensione prevista di 30 milioni di gas, ma la dimensione dei blocchi aumenta o diminuisce in base alla domanda della rete, fino al limite massimo di 60 milioni di gas per blocco (2 volte la dimensione prevista del blocco). Il protocollo raggiunge una dimensione del blocco equilibrata di 30 milioni in media tramite il processo di _tâtonnement_. Significa che se la dimensione del blocco supera quella prevista, il protocollo aumenta la commissione base per il blocco successivo. Analogamente, il protocollo riduce la commissione base se la dimensione del blocco è inferiore a quella prevista. L'importo della commissione base si adatta proporzionalmente alla distanza della dimensione del blocco corrente rispetto a quella prevista. [Maggiori informazioni sui blocchi](/developers/docs/blocks/).
 
 ### Calcolo delle commissioni del gas in pratica {#calculating-fees-in-practice}
 
@@ -117,11 +118,12 @@ Gli [aggiornamenti di scalabilità](/roadmap/) di Ethereum dovrebbero infine ris
 
 Il ridimensionamento del Livello 2 è un'iniziativa fondamentale per migliorare notevolmente i costi del gas, l'esperienza utente e il ridimensionamento. [Maggiori informazioni sul ridimensionamento del Livello 2](/developers/docs/scaling/#layer-2-scaling).
 
-## Monitoraggio delle commissioni del gas {#moitoring-gas-fees}
+## Monitoraggio delle commissioni del gas {#monitoring-gas-fees}
 
 Se desideri monitorare i prezzi del gas, così da poter inviare i tuoi ETH a un costo inferiore, puoi usare molti strumenti differenti, come:
 
 - [Etherscan](https://etherscan.io/gastracker): _Strumento di stima del prezzo del gas delle transazioni_
+- [ETH Gas Tracker](https://www.ethgastracker.com/): _Monitora e traccia i prezzi di Ethereum e del L2 per ridurre le commissioni sulle transazioni e risparmiare denaro_
 - [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm): _Estensione di stima del gas di Chrome che supporta sia transazioni ereditarie di Tipo 0 che transazioni EIP-1559 di Tipo 2._
 - [Cryptoneur Gas Fees Calculator](https://www.cryptoneur.xyz/gas-fees-calculator) _Calcola le commissioni del gas nella tua valuta locale per diversi tipi di transazione sulla rete principale, su Arbitrum e su Polygon._
 
@@ -133,7 +135,6 @@ Se desideri monitorare i prezzi del gas, così da poter inviare i tuoi ETH a un 
 
 - [Spiegazione del Gas di Ethereum](https://defiprime.com/gas)
 - [Ridurre il consumo di gas dei tuoi Contratti Intelligenti](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
-- [Proof of Stake contro Proof of Work](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [Strategie di ottimizzazione del carburante per sviluppatori](https://www.alchemy.com/overviews/solidity-gas-optimization)
 - [Documenti di EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
 - [Risorse dell'EIP-1559 di Tim Beiko](https://hackmd.io/@timbeiko/1559-resources).

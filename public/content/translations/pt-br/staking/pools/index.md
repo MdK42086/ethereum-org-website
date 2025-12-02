@@ -26,7 +26,7 @@ Além dos benefícios delineados em nossa [introdução ao staking](/staking/), 
 <CardGrid>
   <Card title="Limite baixo para entrada" emoji="🐟" description="Not a whale? No problem. Most staking pools let you stake virtually any amount of ETH by joining forces with other stakers, unlike staking solo which requires 32 ETH." />
   <Card title="Faça staking hoje" emoji=":stopwatch:" description="Staking with a pool is as easy as a token swap. No need to worry about hardware setup and node maintenance. Pools allow you to deposit your ETH which enables node operators to run validators. Rewards are then distributed to contributors minus a fee for node operations." />
-  <Card title="tokens participados" emoji=":droplet:" description="Many staking pools provide a token that represents a claim on your staked ETH and the rewards it generates. This allows you to make use of your staked ETH, e.g. as collateral in DeFi applications." />
+  <Card title="Tokens de participação (staking)" emoji=":droplet:" description="Many staking pools provide a token that represents a claim on your staked ETH and the rewards it generates. This allows you to make use of your staked ETH, e.g., as collateral in DeFi applications." />
 </CardGrid>
 
 <StakingComparison page="pools" />
@@ -60,7 +60,7 @@ Alguma sugestão de ferramenta de participação que não mencionamos? Leia a no
 ## Perguntas frequentes {#faq}
 
 <ExpandableCard title="Como ganho recompensas?">
-Normalmente, os tokens de participação ERC-20 são emitidos para participantes (stakers) e representam o valor de ETH participado, mais as recompensas. Lembre-se de que diferentes pools distribuirão recompensas de staking para seus usuários por meio de métodos minimamente diferentes, mas esse é o assunto comum.
+Normalmente, os tokens de participação ERC-20 são emitidos para participantes (stakers) e representam o valor de ETH em stake, mais as recompensas. Lembre-se de que diferentes pools distribuirão recompensas de staking para seus usuários por meio de métodos minimamente diferentes, mas esse é o assunto comum.
 </ExpandableCard>
 
 <ExpandableCard title="Quando posso sacar meu stake?">
@@ -81,5 +81,6 @@ Algumas opções de pooling são mais descentralizadas do que outras quando se t
 
 ## Leitura adicional {#further-reading}
 
+- [O diretório de staking Ethereum](https://www.staking.directory/) - _Eridian e Spacesider_
 - [Fazendo stake com a Rocket Pool – Visão global de staking](https://docs.rocketpool.net/guides/staking/overview.html) - _Documentação do Rocket Pool_
 - [Staking Ethereum com Lido](https://help.lido.fi/en/collections/2947324-staking-ethereum-with-lido) - _Documentação de ajuda Lido_

@@ -23,6 +23,7 @@ export interface DeveloperDocsLink {
  */
 export interface SharedFrontmatter {
   title: string
+  metaTitle?: string
   description: string
   lang: Lang
   sidebarDepth?: number
@@ -40,6 +41,7 @@ export interface StaticFrontmatter extends SharedFrontmatter {
  * deprecate @/lib/util/getSummaryPoints.ts
  */
 export interface SummaryPointsNumbered {
+  summary?: string
   summaryPoint1?: string
   summaryPoint2?: string
   summaryPoint3?: string
@@ -70,6 +72,7 @@ export interface UseCasesFrontmatter
     SummaryPointsNumbered,
     ImageInfo {
   emoji: string
+  showDropdown?: boolean
 }
 
 export interface StakingFrontmatter
@@ -161,10 +164,10 @@ export interface IGetInvolvedCard {
 }
 
 /**
- * TitleCardList
+ * Codeblock
  */
 
-export interface ITitleCardItem {
+export interface CodeExample {
   title: string
   description: string
   caption?: string
@@ -172,13 +175,7 @@ export interface ITitleCardItem {
   image?: string
   alt?: string
   id?: number
-}
-
-/**
- * Codeblock
- */
-
-export interface CodeExample extends ITitleCardItem {
   codeLanguage: string
-  code: string
+  codeUrl: string
+  eventName: string
 }

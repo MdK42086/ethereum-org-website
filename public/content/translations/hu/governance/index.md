@@ -2,7 +2,6 @@
 title: Az Ethereum irányítása
 description: Annak bemutatása, hogy az Ethereummal kapcsolatos döntések hogyan születnek meg.
 lang: hu
-postMergeBannerTranslation: page-upgrades-post-merge-banner-governance-ood
 ---
 
 # Bevezetés az Ethereum irányításába {#introduction}
@@ -19,17 +18,17 @@ Az irányítás az a rendszer, amely lehetővé teszi a döntéshozást. Egy tip
 
 Az Ethereum protokollt nem birtokolja vagy kontrollálja senki, ugyanakkor a változásokról dönteni kell, hogy a hálózat hosszú életét és prosperitását a leginkább biztosítsák. A tulajdonlás hiánya miatt a hagyományos szervezeti irányítás nem működő megoldás.
 
-## Az Ethereum irányítása {#ethereum-governance}
+## Ethereum-felügyelet {#ethereum-governance}
 
 Az Ethereum irányítása (governance) az a folyamat, amely által a protokoll megváltoztatható. Fontos kiemelni, hogy ez nem kapcsolódik ahhoz, hogy az emberek és az alkalmazások hogyan használják a protokollt, mert az Ethereum egy engedélymentes hálózat. A világon bárki bárhonnan részt vehet a láncon zajló tevékenységekben. Nincsenek olyan szabályok, hogy ki csinálhat vagy nem csinálhat alkalmazást vagy indíthat tranzakciókat. Ugyanakkor van egy folyamat, mellyel változásokat lehet kezdeményezni a protokollban, amelyre a decentralizált alkalmazások épülnek. Mivel sok ember függ az Ethereum stabilitásától, ezért a kulcsváltozások koordinációs küszöbe nagyon magas, beleértve a közösségi és technikai folyamatokét is, hogy az Ethereum módosítása biztonságos és a közösség által széles körben támogatott legyen.
 
-### A láncon belüli és kívüli irányítás összehasonlítása {#on-chain-vs-off-chain}
+### A láncon belüli és kívüli irányítás összehasonlítása {#onchain-vs-offchain}
 
-A blokklánc-technológiával új irányítási képességek jelentek meg, mint amilyen a láncon belüli irányítás is. A láncon belüli irányítás az, amikor a javasolt protokollváltoztatásokat az érdekeltek megszavazzák, általában egy irányítási token birtokában, a szavazás pedig a láncon zajlik. A láncon belüli irányítás néhány esetében a javasolt változások már bele vannak írva a kódba és automatikusan végrehajtásra kerülnek, ha az érdekeltek jóváhagyják azt, aláírva a tranzakciót.
+A blokklánc-technológiával új irányítási képességek jelentek meg, mint amilyen a láncon belüli irányítás is. A láncon belüli irányítás az, amikor a javasolt protokollváltoztatásokat az érdekeltek megszavazzák, általában egy irányítási token birtokában, a szavazás pedig a láncon zajlik. A láncon belüli irányítás néhány esetében a javasolt változások már bele vannak írva a kódba és automatikusan végrehajtásra kerülnek, ha az érdekeltek az aláírásukkal jóváhagyják a tranzakciót.
 
-A másik megközelítés, a láncon kívüli irányítás az, amikor a protokoll változtatásait egy közösségi megvitatás informális folyamata vezérli, amit ha jóváhagynak, akkor teszik bele a kódba.
+A másik megközelítés a láncon kívüli irányítás, amikor a protokoll változtatásait a közösségi megvitatás informális folyamata vezérli, amely csak a jóváhagyást követően kerül bele a kódba.
 
-**Az Ethereum-irányítás láncon kívül történik** az érdekeltek széles körét bevonva.
+**Az Ethereum-irányítás a láncon kívül történik** az érdekeltek széles körét bevonva a folyamatba.
 
 _Miközben a protokollszintű Ethereum-irányítás láncon kívül zajlik, addig számos alkalmazási területe van a láncon belüli irányításnak, mint például a decentralizált autonóm szervezetek (DAO) működése._
 
@@ -45,11 +44,11 @@ Az [Ethereum-közösségben](/community/) számos érdekelt fél van, akik szere
 
 - **Ether-használók**: olyan emberek, akik egy tetszőleges összegű ETH-t birtokolnak. [Bővebben az ETH-ről](/eth/).
 - **Az alkalmazások felhasználói**: akik az Ethereum blokkláncán lévő alkalmazásokat használják.
-- **Alkalmazások/eszközök fejlesztői**: akik alkalmazásokat írnak az Ethereum blokkláncra (pl. DeFi, NFT-k stb.), vagy eszközöket építenek, amelyek az Ethereummal lépnek interakcióba (pl. tárcák, tesztcsomagok stb.). [Bővebben a dapp-okról](/dapps/).
+- **Alkalmazások/eszközök fejlesztői**: akik alkalmazásokat írnak az Ethereum blokkláncra (pl. DeFi, NFT-k stb.), vagy eszközöket építenek, amelyek az Ethereummal lépnek interakcióba (pl. tárcák, tesztcsomagok stb.). [Bővebben a dapp-okról](/apps/).
 - **Csomópont-operátorok**: akik csomópontokat működtetnek, amelyek blokkokat és tranzakciókat javasolnak, illetve elutasítják az érvénytelen tranzakciókat vagy blokkokat. [Bővebben a csomópontokról](/developers/docs/nodes-and-clients/).
 - **EIP-szerzők**: ők javasolnak változásokat az Ethereum-protokollt illetően Ethereum fejlesztési javaslatok (EIP) formájában. [Bővebben az EIP-ekről](/eips/).
 - **Validátorok**: ők olyan csomópontokat futtatnak, melyek új blokkokat tudnak adni az Ethereum-blokklánchoz.
-- **Protokollfejlesztők** (azaz „Magfejlesztők”): ők kezelik a különféle Ethereum implementációkat (pl. go-ethereum, Nethermind, Besu, Erigon a végrehajtási rétegen; Prysm, Lighthouse, Nimbus, Teku, Lodestar a konszenzusrétegen). [Bővebben az Ethereum-kliensekről](/developers/docs/nodes-and-clients/).
+- **Protokollfejlesztők** (azaz „Magfejlesztők” ): ők kezelik a különféle Ethereum-implementációkat (pl. go-ethereum, Nethermind, Besu, Erigon, Reth a végrehajtási rétegen; Prysm, Lighthouse, Nimbus, Teku, Lodestar, Grandine a konszenzusrétegen). [Bővebben az Ethereum-kliensekről](/developers/docs/nodes-and-clients/).
 
 _Megjegyzés: bárki lehet több csoport tagja is (pl. a protokollfejlesztő lehet EIP-bajnok is, futtathat Beaconlánc-validátort és használhat DeFi-alkalmazásokat). A koncepcionális egyértelműség miatt könnyebb, ha megkülönböztetjük őket._
 
@@ -119,7 +118,7 @@ Mivel ennyiféle érdekelt van különböző motivációkkal és hitekkel, ezér
 
 Az elágazások akkor jönnek létre, amikor komoly technikai változások történnek a hálózaton és megváltoztatják a protokoll szabályait. Az [Ethereum-klienseknek](/developers/docs/nodes-and-clients/) frissíteni kell a szoftverjét, hogy az új elágazási szabályokat életbe léptessék.
 
-A DAO-elágazás volt a válasz egy [2016-os DAO-támadásra](https://www.coindesk.com/understanding-dao-hack-journalists), amikor egy sebezhető [DAO](/glossary/#dao) szerződésből 3,6 millió ETH-t ürítettek le a támadás során. Az elágazás a pénzeszközöket a hibás szerződésből egy újba tette át, hogy a támadás során károsultak kaphassanak belőle.
+A DAO-elágazás volt a válasz egy [2016-os DAO-támadásra](https://www.coindesk.com/learn/understanding-the-dao-attack), amikor egy sebezhető [DAO](/glossary/#dao) szerződésből 3,6 millió ETH-t ürítettek le a támadás során. Az elágazás a pénzeszközöket a hibás szerződésből egy újba tette át, hogy a támadás során károsultak kaphassanak belőle.
 
 Ennek az akciónak a kezelését megszavazták az Ethereum közösségen belül. Bármely ETH tulajdonos szavazhatott egy tranzakción keresztül [egy szavazási platformon](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/). Az elágazás mellett több mint a szavazók 85%-a voksolt.
 
@@ -153,7 +152,7 @@ Az Ethereum-irányítási folyamat gyakran a gyorsaság és a hatékonyság rov�
 
 Miközben a specifikáció és a fejlesztés teljesen nyitott volt, a hivatalos fejlesztési folyamat nem követte a fenti lépéseket. Így a kutatók és a fejlesztők gyorsabban meg tudtak egyezni a specifikus változtatásokon.
 
-Amikor a Beacon-lánc egyesült az Ethereum végrehajtási réteggel 2022. szeptember 15-én, a Merge teljesült a [Paris hálózati frissítés](/history/#paris) részeként. Az [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) javaslat státusza véglegesre változott befejezve az átállást a proof-of-stake mechanizmusra.
+Amikor a Beacon-lánc egyesült az Ethereum végrehajtási réteggel 2022. szeptember 15-én, a Merge teljesült a [Paris hálózati frissítés](/ethereum-forks/#paris) részeként. Az [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) javaslat státusza véglegesre változott befejezve az átállást a proof-of-stake mechanizmusra.
 
 <ButtonLink href="/roadmap/merge/">
   A beolvadásról bővebben
@@ -181,3 +180,5 @@ Az Ethereumban az irányítás nincs szigorúan definiálva. A közösség kül�
 - [Kik az az Ethereum protokollfejlesztői?](https://hudsonjameson.com/2020-06-22-what-is-an-ethereum-core-developer/) – _Hudson Jameson_
 - [Irányítás, 2. rész: A plutokrácia még mindig rossz](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) – _Vitalik Buterin_
 - [Túl az érmealapú szavazásra épülő irányításon](https://vitalik.eth.limo/general/2021/08/16/voting3.html) – _Vitalik Buterin_
+- [A blokklánc irányítás megértése](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
+- [Az Ethereum irányítása](https://www.galaxy.com/insights/research/ethereum-governance/) - _Christine Kim_

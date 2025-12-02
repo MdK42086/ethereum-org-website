@@ -60,20 +60,23 @@ Su dirección será la misma en todos los proyectos de Ethereum. No tiene que re
 ![Seleccione de una lista de carteras entre las que conectarse](./connect2.png)
 
 5. Confirme la solicitud en su cartera para establecer la conexión. ** Aceptar este mensaje no requiere gastar ETH **.
-6. ¡Y ya está! Puede empezar a utilizar la aplicación. Puede encontrar algunos proyectos interesantes en nuestra [ página DApps](/dapps/#explore). <br />
+6. ¡Y ya está! Puede empezar a utilizar la aplicación. Puede encontrar algunos proyectos interesantes en nuestra [ página DApps](/apps/#explore). <br />
 
-<InfoBanner shouldSpaceBetween emoji=":eyes:">
+<Alert variant="update">
+<AlertEmoji text=":eyes:"/>
+<AlertContent className="justify-between flex-row items-center">
   <div>¿Quiere saber más?</div>
   <ButtonLink href="/guides/">
-    Consulte nuestras demás guias
+    Consulte nuestras demás guías
   </ButtonLink>
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 ## Preguntas más frecuentes
 
-### Si tengo una dirección ETH, ¿tengo la misma dirección en otras cadenas de bloques?
+### Si tengo una dirección de ETH, ¿tengo la misma dirección en otras cadenas de bloques?
 
-Puede utilizar la misma dirección en todas las cadenas de bloques compatibles con EVM (si tiene el tipo de cartera con una frase de recuperación). Esta[ lista](https://chainlist.org/) le mostrará qué cadenas de bloques puede usar con la misma dirección. Algunas cadenas de bloques, como bitcoin, implementan un conjunto de reglas de red completamente por separado y necesitará una dirección diferente con un formato diferente. Si tiene una cartera de contrato inteligente, debe consultar el sitio web del producto para obtener más información sobre qué cadenas de bloque se admiten.
+Puede utilizar la misma dirección en todas las cadenas de bloques compatibles con EVM (si tiene el tipo de cartera con una frase de recuperación). Esta [lista](https://chainlist.org/) le mostrará qué csdenas de bloques puede usar con la misma dirección. Algunas cadenas de bloques, como Bitcoin, implementan un conjunto de reglas de red completamente por separado y necesitará una dirección diferente con un formato diferente. Si tiene una cartera de contrato inteligente, debe consultar el sitio web del producto para obtener más información sobre qué cadenas de bloque se admiten.
 
 ### ¿Puedo usar la misma dirección en múltiples dispositivos?
 

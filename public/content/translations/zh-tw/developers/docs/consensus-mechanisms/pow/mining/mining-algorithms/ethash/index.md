@@ -4,11 +4,16 @@ description: Ethash 演算法詳細介紹。
 lang: zh-tw
 ---
 
-<InfoBanner emoji=":wave:">
-   Ethash 是以太坊的工作量證明挖礦演算法。 工作量證明現在已經被**完全關閉**，取而代之的是，以太坊現在使用<a href="/developers/docs/consensus-mechanisms/pos/">權益證明</a>來確保安全。 閱讀更多關於<a href="/roadmap/merge/">合併 </a>、<a href="/developers/docs/consensus-mechanisms/pos/">權益證明</a>和<a href="/staking/">質押</a>的資訊。 此頁面僅為滿足對歷史的興趣！  
-</InfoBanner>
+<Alert variant="update">
+<AlertEmoji text=":wave:"/>
+<AlertContent>
+<AlertDescription>
+   Ethash 是以太坊的工作量證明挖礦演算法。 工作量證明現在已經被**完全關閉**，取而代之的是，以太坊現在使用[權益證明](/developers/docs/consensus-mechanisms/pos/)來確保安全。 閱讀更多關於[合併 ](/roadmap/merge/)、[權益證明](/developers/docs/consensus-mechanisms/pos/)和[質押](/staking/)的資訊。 此頁面僅為滿足對歷史的興趣！  
+</AlertDescription>
+</AlertContent>
+</Alert>
 
-[Ethash](https://github.com/ethereum/wiki/wiki/Ethash) 是 [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto) 演算法的修改版。 Ethash 工作量證明是[記憶體密集型](https://wikipedia.org/wiki/Memory-hard_function)演算法，這被認為使演算法具有專用積體電路抗性。 Ethash 專用積體電路最終被開發出來，但圖形處理單元挖礦仍然是一個可行的選擇，直至工作量證明被關閉。 Ethash 仍在其他非以太坊工作量證明網路上用於挖掘其他代幣。
+Ethash 是 [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto) 演算法的修改版。 Ethash 工作量證明是[記憶體密集型](https://wikipedia.org/wiki/Memory-hard_function)演算法，這被認為使演算法具有專用積體電路抗性。 Ethash 專用積體電路最終被開發出來，但圖形處理單元挖礦仍然是一個可行的選擇，直至工作量證明被關閉。 Ethash 仍在其他非以太坊工作量證明網路上用於挖掘其他代幣。
 
 ## Ethash 是如何運作的？ {#how-does-ethash-work}
 
@@ -135,7 +140,7 @@ def calc_dataset(full_size, cache):
 
 ## 主循環 {#main-loop}
 
-現在，我們指定了類似「hashimoto」的主要循環。在此循環中，我們匯總了整個資料集的資料，以產生特定區塊頭和隨機數的最終值。 在下面的程式碼中，`header` 代表一個_被截斷_區塊頭的遞歸長度前綴表示的 SHA3-256 _雜湊值_。被截斷是指區塊頭排除了 **mixHash** 和 **nonce** 欄位。 `nonce` 是八字節位元組的 64 位元無符號整數，採用高位元優先序。 因此，`nonce [::-1]` 是上述值的八字節位元組低位元優先序表示：
+現在，我們指定了類似「hashimoto」的主要循環。在此循環中，我們匯總了整個資料集的資料，以產生特定區塊頭和隨機數的最終值。 在下面的程式碼中，`header` 代表一個_被截斷_區塊頭的遞歸長度前綴表示的 SHA3-256 _雜湊值_。被截斷是指區塊頭排除了 **mixHash** 和 **nonce** 欄位。 `nonce` 是八字節位元組的 64 位元無符號整數，採用高位元組在前順序。 因此，`nonce [::-1]` 是上述值的八位元組高位元組在前順序表示：
 
 ```python
 def hashimoto(header, nonce, full_size, dataset_lookup):

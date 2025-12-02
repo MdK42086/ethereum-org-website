@@ -11,7 +11,7 @@ La struttura dei dati di Ethereum è un 'Trie di Merkle-Patricia modificato', co
 
 Un trie di Merkle-Patricia è deterministico e verificabile crittograficamente: il solo modo per generare una radice di stato è calcolandola da ogni singola parte dello stato, e due stati identici sono facilmente dimostrabili confrontando l'hash di radice e gli hash che hanno portato a esso (_una prova di Merkle_). Per contro, non esiste alcun modo per creare due stati differenti con lo stesso hash di radice, e qualsiasi tentativo di modificare lo stato con valori differenti risulterà in un hash della radice di stato differente. Teoricamente, questa struttura rappresenta il 'Sacro Graal' dell'efficienza di `O(log(n))` per inserimenti, ricerche ed eliminazioni.
 
-Nel prossimo futuro, Ethereum prevede di migrare a una struttura ad [Albero di Verkle](https://ethereum.org/en/roadmap/verkle-trees), che aprirà le porte a molte nuove possibilità per le future migliorie al protocollo.
+Nel prossimo futuro, Ethereum prevede di migrare a una struttura ad [Albero di Verkle](/roadmap/verkle-trees), che aprirà le porte a molte nuove possibilità per le future migliorie al protocollo.
 
 ## Prerequisiti {#prerequisites}
 
@@ -252,7 +252,7 @@ Maggiori informazioni a riguardo si possono trovare nella documentazione [EIP 27
 
 ### Trie delle ricevute {#receipts-trie}
 
-Ogni blocco ha il proprio trie delle ricevute. Qui, un `path` è: `rlp(transactionIndex)`. `transactionIndex` è il suo indice nel blocco estratto. L'albero delle ricevute non è mai aggiornato. Analogamento all'albero delle Transazioni, esistono ricevute correnti e legacy. Per interrogare una ricevuta specifica nell'albero delle Ricevute, l'indice della transazione nel suo blocco, il carico utile di ricevute e il tipo di transazione sono necessari. La ricevuta Restituita può essere di tipo `Receipt`, definita come la concatenazione di `TransactionType` e `ReceiptPayload` o di tipo `LegacyReceipt`, definibile come `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
+Ogni blocco ha il proprio trie delle ricevute. Qui, un `path` è: `rlp(transactionIndex)`. `transactionIndex` è il suo indice all'interno del blocco in cui è stato incluso. L'albero delle ricevute non è mai aggiornato. Analogamento all'albero delle Transazioni, esistono ricevute correnti e legacy. Per interrogare una ricevuta specifica nell'albero delle Ricevute, l'indice della transazione nel suo blocco, il carico utile di ricevute e il tipo di transazione sono necessari. La ricevuta Restituita può essere di tipo `Receipt`, definita come la concatenazione di `TransactionType` e `ReceiptPayload` o di tipo `LegacyReceipt`, definibile come `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
 Maggiori informazioni a riguardo si possono trovare nella documentazione [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718).
 

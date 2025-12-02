@@ -10,7 +10,7 @@ lang: hi
 
 **पूर्वावश्यकता:**
 
-- अगर आपके पास क्रिप्टो वॉलेट है, तो आप इस ट्यूटोरियल का अनुसरण कर सकते हैं: [कैसे करें: इथेरियम खाता "रजिस्टर" करें](/guides/how-to-register-an-ethereum-account/)
+- आपके पास क्रिप्टो वॉलेट होने पर, आप इस ट्यूटोरियल का अनुसरण कर सकते हैं: [कैसे: एथेरियम खाते में "रजिस्टर" करें](/guides/how-to-create-an-ethereum-account/)
 - अपने वॉलेट में धनराशि जोड़ें
 
 ## 1. निर्धारित करें कि आप किस लेयर 2 नेटवर्क का इस्तेमाल करना चाहते हैं
@@ -52,12 +52,15 @@ lang: hi
 आप नेटवर्क के RPC विवरण खोजने के लिए [chainlist.org](http://chainlist.org) का इस्तेमाल कर सकते हैं। एक बार जब नेटवर्क जुड़ जाता है और लेनदेन समाप्त हो जाता है, तो आपको अपने वॉलेट में टोकन दिखने चाहिए।
 <br />
 
-<InfoBanner shouldSpaceBetween emoji=":eyes:">
+<Alert variant="update">
+<AlertEmoji text=":eyes:"/>
+<AlertContent className="justify-between flex-row items-center">
   <div>और अधिक सीखना चाहते है?</div>
   <ButtonLink href="/guides/">
     हमारी अन्य गाइडें देखें
   </ButtonLink>
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 ## अक्सर पूछे जाने वाले सवाल
 

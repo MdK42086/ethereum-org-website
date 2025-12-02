@@ -274,7 +274,7 @@ contract Oracle {
 
 多数派の回答とは異なる回答を提供したノードは、ペナルティとして、より適切な値を提供したユーザーに保有トークンを奪われることになります。 各ノードに対して、データ提供前に担保の差し出しを義務付けることで、リターン最大化を目指す合理的な経済アクターと想定されるユーザーに対し、正直な行動を取るように誘導するインセンティブを与えることができます。
 
-ステーキング／投票はさらに、分散型のオラクルから、悪意のアクターが複数のアイデンティティを偽造してコンセンサス形成システムを悪用しようとする「シビル攻撃」から防御する仕組みであるとも言えます。 しかし、ステーキングによっても、「フリーローディング」（他のユーザーから情報をコピーするオラクルノード）や、「怠惰な検証」（自身で検証せずに、多数派の意見に従うオラクルノード）の発生を防ぐことはできません。
+ステーキングや投票は、悪意のある者が複数のアイデンティティを作成してコンセンサスシステムを悪用する[シビル攻撃](/glossary/#sybil-attack)から分散型オラクルを保護する役割も果たします。 しかし、ステーキングによっても、「フリーローディング」（他のユーザーから情報をコピーするオラクルノード）や、「怠惰な検証」（自身で検証せずに、多数派の意見に従うオラクルノード）の発生を防ぐことはできません。
 
 ##### シェリングポイントのメカニズム
 
@@ -358,11 +358,11 @@ contract PriceConsumerV3 {
 
 ブロックチェーンベースのゲームや宝くじなど、一部のブロックチェーン・アプリケーションでは、適切に機能するために高度な予測不可能性およびランダム性が要求されます。 しかし、ブロックチェーンは決定論的な実行という特性を持つため、ランダム性を獲得する手段がありません。
 
-このような場合の通常のアプローチでは、`blockhash`などの擬似的な暗号機能を用いますが、[他のアクターによる操作](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)、つまりプルーフ・オブ・ワークのアルゴリズムを解決するマイナーによりランダム性が操作される可能性があります。 また、イーサリアムにおける[プルーフ・オブ・ステークへの移行](/roadmap/merge/)に伴い、開発者は、`blockhash`によるオンチェーンのランダム性を活用することができなくなりました（ただし、ビーコンチェーンの[RANDAOメカニズム](https://eth2book.info/altair/part2/building_blocks/randomness)は、ランダム性を提供する代替ソースとして機能します）。
+従来のアプローチは、`blockhash`のような擬似乱数暗号関数を使用するものでしたが、これらはプルーフ・オブ・ワークアルゴリズムを解く[マイナーによって操作される](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)可能性がありました。 また、イーサリアムが[プルーフ・オブ・ステークへ移行](/roadmap/merge/)したことで、デベロッパーはオンチェーンの乱数生成に`blockhash`を頼ることができなくなりました。 その代わりに、ビーコンチェーンの [RANDAOメカニズム](https://eth2book.info/altair/part2/building_blocks/randomness)が新たな乱数の供給源として提供されています。
 
 ランダムな値をオフチェーンで生成した上でオンチェーンに送信することは可能ですが、このアプローチではユーザーに対する信頼性の要件が高くなります。 ユーザーは、生成された値が本当に予測不可能なメカニズムによって生成され、転送に伴う改変が生じていないことを信じなければならないためです。
 
-オフチェーンでの計算を念頭に置いて設計されたオラクルでは、オフチェーンでランダムな値をセキュアに生成した上で、生成プロセスの予測不可能性を確証する暗号化された証明と共にオンチェーンでブロードキャストすることで、この問題を解決します。 このようなアプローチの例としては、[Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf/) （検証可能なランダム関数）があります。これは、証明可能な形で、公平かつ操作不可の乱数を生成する機能（RNG）であり、予測不可能な計算値を必要とする用途を持つ信頼性が高いスマートコントラクトを開発する上で有益です。 例をもう一つあげると、 [API3 QRNG](https://docs.api3.org/explore/qrng/)が量子乱数生成器 (QRNG) を提供しています。これは、量子現象に基づくWeb3 RNGの公開メソッドであり、オーストラリア国立大学 (ANU) の好意により提供されています。
+オフチェーンでの計算を念頭に置いて設計されたオラクルでは、オフチェーンでランダムな値をセキュアに生成した上で、生成プロセスの予測不可能性を確証する暗号化された証明と共にオンチェーンでブロードキャストすることで、この問題を解決します。 このようなアプローチの例としては、[Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf/) （検証可能なランダム関数）があります。これは、証明可能な形で、公平かつ操作不可の乱数を生成する機能（RNG）であり、予測不可能な計算値を必要とする用途を持つ信頼性が高いスマートコントラクトを開発する上で有益です。
 
 ### イベントの結果を取得する {#getting-outcomes-for-events}
 
@@ -388,6 +388,8 @@ Chainlinkの[Keeper Network](https://chain.link/keepers)では、スマートコ
 
 **[Chainlink](https://chain.link/)** - _Chainlinkの分散型オラクルネットワークでは、インプット情報、アウトプット情報、および計算処理における改ざん防止を徹底することで、あらゆるブロックチェーンにおける複雑なスマートコントラクトをサポートしています。_
 
+**[Chronicle](https://chroniclelabs.org/)** - _Chronicleは、真にスケーラブルでコスト効率の高い、分散型かつ検証可能なオラクルを開発することで、オンチェーンでのデータ転送における現在の制約を克服します。_
+
 **[Witnet](https://witnet.io/)** - _Witnetは、パーミッションレス性、分散性、および耐検閲性を持つオラクルであり、スマートコントラクトを強力な暗号経済的な保証に基づいて現実世界のイベントに反応できるようにすることができます。_
 
 **[UMAオラクル](https://uma.xyz)** - _UMAのオプティミスティック・オラクルでは、保険、金融派生商品、および予測市場などのさまざまな用途を持つスマートコントラクトに対して、あらゆる種類のデータを迅速に取得する機能を追加することができます。_
@@ -395,8 +397,6 @@ Chainlinkの[Keeper Network](https://chain.link/keepers)では、スマートコ
 **[Tellor](https://tellor.io/)** - _Tellorは、あなたのスマートコントラクトが必要とする際に、常にどんな種類のデータでも取得可能にするための、透明性が高くパーミッションレスのオラクル・プロトコルです。_
 
 **[Band Protocol](https://bandprotocol.com/)** - _Band Protocolは、現実世界のデータを集約し、各種APIとスマートコントラクトを接続するための、クロスチェーンデータを対象とするオラクルプラットフォームです。_
-
-**[Paralink](https://paralink.network/)** - _Paralinkは、イーサリアムおよびその他のメジャーなブロックチェーン上で実行されるスマートコントラクトを対象とする、オープンソースで分散化されたオラクルプラットフォームです。_
 
 **[Pyth Network](https://pyth.network/)** - _Pyth Networkは、改ざん不可、分散化、および自己持続可能な特徴を持つ環境において、現実世界のデータを継続的にオンチェーンで公開するために設計された、ファーストパーティの金融オラクルネットワークです。_
 
@@ -413,7 +413,6 @@ Chainlinkの[Keeper Network](https://chain.link/keepers)では、スマートコ
 - [分散型オラクル：包括的な概要](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _ジュリアン・テヴェナード作成。_
 - [イーサリアムにおける ブロックチェーン・オラクルの実装](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _ペドロ・コスタ作成。_
 - [スマートコントラクトがAPIコールを行えないのはなぜか？](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
-- [分散型のオラクルが必要な理由](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles) — _Bankless_
 - [価格オラクルを使用したい場合の検討事項](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **ビデオ**
@@ -424,6 +423,7 @@ Chainlinkの[Keeper Network](https://chain.link/keepers)では、スマートコ
 **チュートリアル**
 
 - [Solidity上でイーサリアムの現在価格を取得する方法](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
+- [オラクルデータの利用](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
 
 **プロジェクト実例**
 

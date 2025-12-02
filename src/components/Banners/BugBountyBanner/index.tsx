@@ -1,17 +1,14 @@
 // Libraries
 import React from "react"
-import { Center, Text } from "@chakra-ui/react"
 
 // Components
 import BannerNotification from "@/components/Banners/BannerNotification"
+import { Center } from "@/components/ui/flex"
 
 const BugBountyBanner = () => (
   <BannerNotification shouldShow>
     <Center>
-      <Text m={0} p={0}>
-        All Dencun-related bounties currently receive a 2x bonus multiplier (up
-        to 500,000 USD) up to two weeks before the scheduled mainnet hardfork.
-      </Text>
+      <p>Fusaka vulnerabilities are now part of the Bug Bounty Program!</p>
     </Center>
   </BannerNotification>
 )

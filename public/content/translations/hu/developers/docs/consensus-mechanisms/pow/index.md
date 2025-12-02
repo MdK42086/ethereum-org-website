@@ -6,9 +6,14 @@ lang: hu
 
 Az Ethereum-hálózat kezdetben egy olyan konszenzusmechanizmust használt, amely a **[proof-of-work (PoW)](/developers/docs/consensus-mechanisms/pow)** koncepciót használta. Ez lehetővé tette az Ethereum-hálózat csomópontjai számára, hogy az összes Ethereum-blokkláncra feljegyzett információ állapotáról megegyezzenek és kivédjenek bizonyos gazdasági támadásokat. Ugyanakkor az Ethereum 2022-ben leváltotta a proof-of-work mechanizmust, és helyette a [proof-of-stake (letéti igazolás)](/developers/docs/consensus-mechanisms/pos) koncepcióját vezette be.
 
-<InfoBanner emoji=":wave:">
-    A proof-of-work ezzel kivezetésre került. A konszenzusmechanizmusnak többé nem része a proof-of-work az Ethereumon. Ehelyett a proof-of-stake mechanizmus működik. Tudjon meg többet a <a href="/developers/docs/consensus-mechanisms/pos/">proof-of-stake-ről</a> és a <a href="/staking/">letétbe helyezésről</a>.
-</InfoBanner>
+<Alert variant="update">
+<AlertEmoji text=":wave:"/>
+<AlertContent>
+<AlertDescription>
+    A proof-of-work ezzel kivezetésre került. A konszenzusmechanizmusnak többé nem része a proof-of-work az Ethereumon. Ehelyett a proof-of-stake mechanizmus működik. Tudjon meg többet a [proof-of-stake-ről](/developers/docs/consensus-mechanisms/pos/) és a [letétbe helyezésről](/staking/).
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 ## Előfeltételek {#prerequisites}
 
@@ -22,7 +27,7 @@ A Nakamoto konszenzus, amely a proof-of-work (PoW) mechanizmust használja, egyk
 
 A proof-of-work a mögöttes algoritmus, amely a nehézséget és a szabályokat határozza meg a munkához, amelyet a bányászok végeznek proof-of-work blokkláncokon. A bányászat maga a „munka”. Érvényes blokkok hozzáadását jelenti a lánchoz. Ez azért fontos, mert a lánc hossza segíti a hálózatot abban, hogy kövesse a blokklánc megfelelő elágazását. Minél több „munka” van elvégezve, annál hosszabb a lánc, és minél magasabb a blokkszám, annál inkább biztosabb lehet a hálózat a dolgok jelenlegi állapotában.
 
-[A bányászatról bővebben](/developers/docs/consensus-mechanisms/pow/mining/)
+[Többet a bányászatról](/developers/docs/consensus-mechanisms/pow/mining/)
 
 ## Hogyan működött az Ethereum proof-of-work mechanizmusa? {#how-it-works}
 
@@ -56,7 +61,7 @@ Ahhoz, hogy valaki konzisztensen rosszindulatú, de mégis érvényes blokkokat 
 
 A proof-of-work másik feladata az volt, hogy új coinokat bocsásson ki a rendszerbe és ezzel ösztönözze a bányászokat a munka elvégzésére.
 
-A [Constantinople-frissítés](/history/#constantinople) után a bányászok, akik sikeresen létrehoztak egy blokkot, két frissen kibocsátott ETH-t kaptak, valamint a tranzakciós díjak egy része is az övék lett. Az ommer blokkokért is járt 1,75 ETH. Az ommerek olyan érvényes blokkok, melyeket ugyanabban az időben készítenek, mint a kanonikus blokkot, ami végül a lánc folytatása lesz. Ezek általában hálózati késedelemkor fordultak elő.
+A [Constantinople-frissítés](/ethereum-forks/#constantinople) után a bányászok, akik sikeresen létrehoztak egy blokkot, két frissen kibocsátott ETH-t kaptak, valamint a tranzakciós díjak egy része is az övék lett. Az ommer blokkokért is járt 1,75 ETH. Az ommerek olyan érvényes blokkok, melyeket ugyanabban az időben készítenek, mint a kanonikus blokkot, ami végül a lánc folytatása lesz. Ezek általában hálózati késedelemkor fordultak elő.
 
 ## Véglegesség {#finality}
 
@@ -106,3 +111,4 @@ Nagy vonalakban a proof-of-stake-nek ugyanaz a végcélja, mint a proof-of-work-
 
 - [Bányászat](/developers/docs/consensus-mechanisms/pow/mining/)
 - [Proof-of-stake](/developers/docs/consensus-mechanisms/pos/)
+- [Proof-of-authority (jogosultsági igazolás)](/developers/docs/consensus-mechanisms/poa/)

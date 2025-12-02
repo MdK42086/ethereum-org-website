@@ -1,12 +1,12 @@
 ---
-title: Subjetividad débil
+title: Subjetividad debil
 description: Una explicacion de la subjetividad debil y su función en PoS Ethereum.
 lang: es
 ---
 
 La subjetividad en la cadena de bloques hace referencia a la confianza social en la información para acordar el estado actual. Puede haber múltiples bifurcaciones válidas que se elijan de acuerdo a la información recopilada de otros pares de la red. La conversión es la objetividad que se refiere a las cadenas en las que sólo existe una cadena válida posible sobre la que todos los nodos necesariamente estarán de acuerdo aplicando sus reglas codificadas. También existe un tercer estado, conocido como subjetividad débil. Esto se refiere a una cadena que puede progresar objetivamente después de que alguna semilla inicial de información se recupere socialmente.
 
-## Requisitos previos {#prerequisites}
+## Pre requisitos {#prerequisites}
 
 Para entender esta página, es necesario primero familiarizarse con los fundamentos de la [Prueba de participación](/developers/docs/consensus-mechanisms/pos/).
 
@@ -34,6 +34,6 @@ Finalmente, se pueden solicitar puntos de control de otros nodos; tal vez otro u
 
 - [Debilidad subjetiva en Eth2](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
 - [Vitalik: Cómo aprendí a amar la subjetividad débil](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/)
-- [Subjetividad débil (documentos de Teku)](https://docs.teku.consensys.net/en/latest/Concepts/Weak-Subjectivity/)
+- [Subjetividad débil (documentos de Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
 - [Guía de subjetividad débil, Fase-0](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/weak-subjectivity.md)
 - [Análisis de la subjetividad débil en Ethereum 2.0](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

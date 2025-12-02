@@ -4,11 +4,11 @@ description: Aprenda sobre A Fusão — quando a Rede principal do Ethereum adot
 lang: pt-br
 template: upgrade
 image: /images/upgrades/merge.png
-alt: 
-summaryPoint1: A Rede principal do Ethereum usa prova de participação, mas nem sempre foi esse o caso.
+alt:
+summaryPoint1: A rede principal do Ethereum usa prova de participação, mas esse nem sempre foi o caso.
 summaryPoint2: A melhoria do mecanismo original de prova de trabalho para prova de participação foi chamada de The Merge, ou seja, A Fusão.
-summaryPoint3: A Fusão se refere à fusão original da Rede Principal do Ethereum, com uma cadeia de blocos de prova de participação separada chamada Beacon Chain, agora existente como uma cadeia.
-summaryPoint4: A Fusão reduziu o consumo de energia do Ethereum em ~99,95%.
+summaryPoint3: A Fusão se refere à fusão original da Rede principal do Ethereum com uma blockchain de prova de participação separada chamada Beacon Chain, agora existente como uma cadeia.
+summaryPoint4: A Fusão reduziu o consumo de energia do Ethereum em cerca de 99,95%.
 ---
 
 <UpgradeStatus isShipped dateKey="page-upgrades:page-upgrades-beacon-date">
@@ -17,7 +17,7 @@ summaryPoint4: A Fusão reduziu o consumo de energia do Ethereum em ~99,95%.
 
 ## O que foi A Fusão? {#what-is-the-merge}
 
-A Fusão foi a junção da camada de execução original do Ethereum (a Rede principal que existe desde a [origem](/history/#frontier)) com a sua nova camada de consenso de prova de participação, a Beacon Chain. Ele eliminou a necessidade de mineração que faz uso intensivo de energia e, em vez disso, permitiu que a rede fosse protegida usando participação de ETH. Foi uma etapa realmente emocionante para a realização da visão do Ethereum — mais escalabilidade, segurança e sustentabilidade.
+A Fusão foi a junção da camada de execução original do Ethereum (a Rede principal que existe desde a [origem](/ethereum-forks/#frontier)) com a sua nova camada de consenso de prova de participação, a Beacon Chain. Ele eliminou a necessidade de mineração que faz uso intensivo de energia e, em vez disso, permitiu que a rede fosse protegida usando participação de ETH. Foi uma etapa realmente emocionante para a realização da visão do Ethereum — mais escalabilidade, segurança e sustentabilidade.
 
 <MergeInfographic />
 
@@ -37,9 +37,13 @@ A integração representou a mudança oficial para o uso da Beacon Chain como o 
 
 Nenhuma história foi perdida na Fusão. À medida que a Rede principal se uniu com a Beacon Chain, ela também integrou todo o histórico transacional do Ethereum.
 
-<InfoBanner>
-Essa transição para a prova de participação mudou o modo como o ether é emitido. Saiba mais sobre <a href="/roadmap/merge/issuance/">Emissão de ether antes de depois do The Merge</a>.
-</InfoBanner>
+<Alert variant="update">
+<AlertContent>
+<AlertDescription>
+Essa transição para a prova de participação mudou o modo como o ether é emitido. Saiba mais sobre [Emissão de ether antes de depois do The Merge](/roadmap/merge/issuance/).
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 ### Usuários e titulares {#users-holders}
 
@@ -92,7 +96,7 @@ title="Dapp e desenvolvedores de contratos inteligentes"
 contentPreview="The Merge was designed to have minimal impact on smart contract and dapp developers."
 id="developers">
 
-A Fusão veio com alterações no consenso, que também inclui alterações relacionadas a:<
+A Fusão veio com alterações no consenso, que também inclui alterações relacionadas a:
 
 <ul>
   <li>estrutura de bloco</li>
@@ -108,7 +112,7 @@ Para obter mais informações, leia esta publicação de Tim Beiko sobre <a href
 
 ## A Fusão e o consumo de energia {#merge-and-energy}
 
-A Fusão marcou o fim da prova de trabalho para o Ethereum e iniciou a era do Ethereum mais sustentável e ecológico. O consumo de energia do Ethereum reduziu cerca de 99,95%, tornando o Ethereum uma blockchain verde. Descubra mais sobre [Consumo de energia na rede Ethereum](/energy-consumption/).
+A Fusão marcou o fim da prova de trabalho para o Ethereum e deu início à era de um Ethereum mais sustentável e ecológico. O consumo de energia do Ethereum reduziu cerca de 99,95%, tornando o Ethereum uma blockchain verde. Descubra mais sobre [Consumo de energia na rede Ethereum](/energy-consumption/).
 
 ## A Fusão e a escalabilidade {#merge-and-scaling}
 
@@ -118,7 +122,7 @@ The Merge também preparou o terreno para futuras atualizações de escalabilida
 
 <ExpandableCard
 title="Equívoco: &quot;executar um nó requer a participação de 32 ETH.&quot;"
-contentPreview="False. Anyone is free to sync their own self-verified copy of Ethereum (i.e. run a node). No ETH is required—not before The Merge, not after The Merge, not ever.">
+contentPreview="False. Anyone is free to sync their own self-verified copy of Ethereum (i.e., run a node). No ETH is required—not before The Merge, not after The Merge, not ever.">
 
 Existem dois tipos de nós no Ethereum: nós que podem propor blocos e nós que não podem.
 
@@ -130,7 +134,7 @@ Qualquer pessoa pode executar um nó que não produz blocos, em qualquer mecanis
 
 A capacidade de qualquer pessoa de executar seu próprio nó é <em>absolutamente essencial</em> para manter a descentralização da rede Ethereum.
 
-<a href="/run-a-node/">Mais detalhes sobre como executar seu próprio nó</a>
+[Mais detalhes sobre como executar seu próprio nó](/run-a-node/)
 
 </ExpandableCard>
 
@@ -140,7 +144,7 @@ contentPreview="False. The Merge was a change of consensus mechanism, not an exp
 
 Taxas de gás são um produto da demanda de rede relativa à capacidade da rede. A Fusão depreciou o uso da prova de trabalho, passando para a prova de participação por consenso, mas não alterou significativamente nenhum parâmetro que influencie diretamente a capacidade da rede ou a taxa de transferência.
 
-Com um <a href="https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698">planejamento centrado em rollup</a>, os esforços se concentram em dimensionar a atividade do usuário na <a href="/layer-2/">camada 2</a> ao habilitar a rede principal da camada 1 como uma camada de estabelecimento descentralizada e segura, otimizada para o armazenamento de dados de rollup para ajudar a fazer com que as transações de rollup sejam exponencialmente mais acessíveis. A transição para a prova de participação é um precursor crítico para a realização desse objetivo. <a href="/developers/docs/gas/">Mais informações sobre gás e taxas.</a>
+Com um <a href="https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698">planejamento centrado em rollup</a>, os esforços se concentram em dimensionar a atividade do usuário na [camada 2](/layer-2/) ao habilitar a rede principal da camada 1 como uma camada de estabelecimento descentralizada e segura, otimizada para o armazenamento de dados de rollup para ajudar a fazer com que as transações de rollup sejam exponencialmente mais acessíveis. A transição para a prova de participação é um precursor crítico para a realização desse objetivo. [Mais informações sobre gás e taxas.](/developers/docs/gas/)
 
 </ExpandableCard>
 
@@ -163,7 +167,7 @@ Inicialmente, após a Fusão, os participantes podiam acessar apenas as comissõ
 
 Desde a melhoria da rede Shanghai/Capella, os participantes agora podem designar um <em>endereço de saque</em> para começar a receber pagamentos automáticos de qualquer saldo de participação excedente (ETH superior a 32 de recompensas do protocolo). Essa melhoria também permitiu que um validador desbloqueasse e recuperasse todo o saldo ao sair da rede.
 
-<a href="/staking/withdrawals/">Mais sobre saques de participação</a>
+[Mais sobre saques de participação](/staking/withdrawals/)
 
 </ExpandableCard>
 

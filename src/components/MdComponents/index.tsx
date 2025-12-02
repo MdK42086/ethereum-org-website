@@ -1,41 +1,43 @@
-import { ComponentProps, type HTMLAttributes } from "react"
-import { Badge, Box, type BoxProps } from "@chakra-ui/react"
+import { type ComponentProps, type HTMLAttributes } from "react"
 
 import type { ChildOnlyProp } from "@/lib/types"
 
-import ButtonDropdown, {
-  type ButtonDropdownProps,
-} from "@/components/ButtonDropdown"
+import ContributorsQuizBanner from "@/components/Banners/ContributorsQuizBanner"
+import Card from "@/components/Card"
+import { RestakingList } from "@/components/Content/restaking/RestakingList"
+import BrowseApps from "@/components/Content/what-are-apps/BrowseApps"
+import WhatAreAppsStories from "@/components/Content/what-are-apps/WhatAreAppsStories"
 import Contributors from "@/components/Contributors"
-import MarkdownImage from "@/components/MarkdownImage"
+import DocLink from "@/components/DocLink"
+import Emoji from "@/components/Emoji"
+import ExpandableCard from "@/components/ExpandableCard"
+import FeaturedText from "@/components/FeaturedText"
+import GlossaryTooltip from "@/components/Glossary/GlossaryTooltip"
+import IdAnchor from "@/components/IdAnchor"
+import MarkdownImage from "@/components/Image/MarkdownImage"
+import IssuesList from "@/components/IssuesList"
+import LocaleDateTime from "@/components/LocaleDateTime"
+import MainArticle from "@/components/MainArticle"
+import { PieChart } from "@/components/PieChart"
+import { StandaloneQuizWidget } from "@/components/Quiz/QuizWidget"
 import TooltipLink from "@/components/TooltipLink"
+import { ButtonLink } from "@/components/ui/buttons/Button"
+import { Divider } from "@/components/ui/divider"
+import { Flex } from "@/components/ui/flex"
+import { ListItem, OrderedList, UnorderedList } from "@/components/ui/list"
+import { mdxTableComponents } from "@/components/ui/mdx-table-components"
+import { Tag } from "@/components/ui/tag"
 import YouTube from "@/components/YouTube"
 
 import { cn } from "@/lib/utils/cn"
 
-import ContributorsQuizBanner from "../Banners/ContributorsQuizBanner"
-import Card from "../Card"
-import DocLink from "../DocLink"
-import Emoji from "../Emoji"
-import ExpandableCard from "../ExpandableCard"
-import FeaturedText from "../FeaturedText"
-import GlossaryTooltip from "../Glossary/GlossaryTooltip"
-import IdAnchor from "../IdAnchor"
-import InfoBanner from "../InfoBanner"
-import IssuesList from "../IssuesList"
-import LocaleDateTime from "../LocaleDateTime"
-import MainArticle from "../MainArticle"
-import { StandaloneQuizWidget } from "../Quiz/QuizWidget"
-import { ButtonLink } from "../ui/buttons/Button"
-import { Flex } from "../ui/flex"
-import { ListItem, OrderedList, UnorderedList } from "../ui/list"
-import { mdxTableComponents } from "../ui/Table"
+import * as AlertComponents from "../ui/alert"
 
 export const commonHeadingAttributes = (className: string, id?: string) => ({
   id,
   className: cn(
     "font-bold leading-xs my-8",
-    id && "scroll-mt-28 relative",
+    id && "scroll-mt-28 relative group",
     className
   ),
   "data-group": !!id || undefined,
@@ -105,6 +107,13 @@ export const Paragraph = (props: ChildOnlyProp) => (
   <p className="mb-4 mt-8" {...props} />
 )
 
+export const Blockquote = (props: ChildOnlyProp) => (
+  <blockquote
+    className="mb-4 mt-8 border-s-2 border-accent-a bg-accent-a/10 p-6 [&>:first-child]:mt-0 [&>:last-child]:mb-0"
+    {...props}
+  />
+)
+
 export const HR = () => (
   <hr className="mb-4 mt-8 inline-block w-full border-body-medium opacity-60" />
 )
@@ -112,7 +121,7 @@ export const HR = () => (
 // All base html element components
 export const htmlElements = {
   a: TooltipLink,
-  div: Box,
+  blockquote: Blockquote,
   h1: Heading1,
   h2: Heading2,
   h3: Heading3,
@@ -148,45 +157,16 @@ export const Title = (props: ChildOnlyProp) => (
   <Heading1 className="mt-4" {...props} />
 )
 
-export const ContentContainer = (props: Pick<BoxProps, "id" | "children">) => {
+export const ContentContainer = (props: ComponentProps<"article">) => {
   return (
     <MainArticle className="relative flex-[1_1_992px] px-8 pb-8" {...props} />
   )
 }
 
-export const MobileButton = (props: ChildOnlyProp) => {
-  return (
-    <div
-      className="sticky bottom-0 z-sticky w-full bg-background p-8 shadow-md lg:hidden"
-      {...props}
-    />
-  )
-}
-
-export const StyledButtonDropdown = ({
-  list,
-  className,
-  ...rest
-}: HTMLAttributes<HTMLDivElement> & Pick<ButtonDropdownProps, "list">) => (
-  <Flex className={cn("mb-8 items-end justify-end", className)} {...rest}>
-    <ButtonDropdown list={list} w={{ base: "full", lg: "auto" }} minW="240px" />
-  </Flex>
-)
-
-export const MobileButtonDropdown = ({
-  className,
-  ...props
-}: ComponentProps<typeof StyledButtonDropdown>) => (
-  <StyledButtonDropdown className={cn("mb-0", className)} {...props} />
-)
-
-export const Divider = () => (
-  <div className="my-16 h-1 w-[10%] bg-primary-high-contrast" />
-)
-
 // All custom React components
 export const reactComponents = {
-  Badge,
+  ...AlertComponents,
+  BrowseApps,
   ButtonLink,
   Card,
   ContentContainer,
@@ -198,14 +178,14 @@ export const reactComponents = {
   ExpandableCard,
   FeaturedText,
   GlossaryTooltip,
-  InfoBanner,
-  MobileButton,
-  MobileButtonDropdown,
   Page,
+  PieChart,
   QuizWidget: StandaloneQuizWidget,
-  StyledButtonDropdown,
   IssuesList,
+  RestakingList,
+  Tag,
   Title,
+  WhatAreAppsStories,
   YouTube,
 }
 

@@ -95,13 +95,13 @@ This means the website needs to handle many different user journeys, from “a d
 
 ## Product roadmap {#roadmap}
 
-To make our work more accessible and to foster more community collaboration, the ethereum.org core team publishes an overview of our quarterly roadmap goals.
+To make our work more accessible and to foster more community collaboration, the ethereum.org core team publishes an overview of our [shape up cycle](https://www.productplan.com/glossary/shape-up-method/) roadmap goals.
 
-[View our 2024 Q3 product roadmap](https://github.com/ethereum/ethereum-org-website/issues/13399)
+[View our 2025 Cycle 1 product roadmap](https://github.com/ethereum/ethereum-org-website/issues/14726)
 
 **How's that sound?** We always appreciate feedback on our roadmap - if there's something you think we should work on, please let us know! We welcome ideas and PRs from anyone in the community.
 
-**Want to get involved?** [Learn more about contributing](/contributing/), [hit us up on Twitter](https://twitter.com/ethdotorg), or join the community discussions in [our Discord server](https://discord.gg/ethereum-org).
+**Want to get involved?** [Learn more about contributing](/contributing/), [hit us up on Twitter](https://x.com/ethdotorg), or join the community discussions in [our Discord server](https://discord.gg/ethereum-org).
 
 ## Design principles {#design-principles}
 

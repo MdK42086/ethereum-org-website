@@ -44,11 +44,11 @@ _Protokol düzeyinde Ethereum yönetişimi zincir dışı olsa da, DAO'lar gibi 
 
 - **Ether sahipleri**: Bu kişilerin elinde keyfi miktarda ETH bulunur. [ETH hakkında daha fazla bilgi](/eth/).
 - **Uygulama Kullanıcıları**: Bu kişiler, Ethereum blok zincirindeki uygulamalarla etkileşime girer.
-- **Uygulama/Araç Geliştiricileri**: Bu kişiler Ethereum blok zincirinde çalışan uygulamalar yazarlar (örneğin DeFi, NFT'ler vb.) veya Ethereum ile etkileşime giren araçlar oluştururlar (örneğin cüzdanlar, test paketleri vb.). [Dapp'ler hakkında daha fazla bilgi](/dapps/).
+- **Uygulama/Araç Geliştiricileri**: Bu kişiler Ethereum blok zincirinde çalışan uygulamalar yazarlar (örneğin DeFi, NFT'ler vb.) veya Ethereum ile etkileşime giren araçlar oluştururlar (örneğin cüzdanlar, test paketleri vb.). [Dapp'ler hakkında daha fazla bilgi](/apps/).
 - **Düğüm Operatörleri**: Bu kişiler, blokları ve işlemleri yayan, karşılaştıkları geçersiz işlemleri veya blokları reddeden düğümleri çalıştırır. [Düğümler hakkında daha fazla bilgi](/developers/docs/nodes-and-clients/).
 - **EIP Yazarları**: Bu kişiler, Ethereum İyileştirme Önerileri (EIP'ler) aracılığıyla Ethereum protokolüne değişiklikler yapmayı teklif ederler. [EIP'ler hakkında daha fazla bilgi](/eips/).
 - **Doğrulayıcılar**: Bu kişiler, Ethereum blok zincirine yeni bloklar ekleyebilen düğümler çalıştırırlar.
-- **Protokol Geliştiricileri** (diğer adıyla "Çekirdek Geliştiricileri"): Bu kişiler çeşitli Ethereum uygulamalarını (örneğin yürütüm katmanında go-ethereum, Nethermind, Besu, Erigon veya mutabakat katmanında Prysm, Lighthouse, Nimbus, Teku, Lodestar) sürdürür. [Ethereum istemcileri hakkında daha fazla bilgi.](/developers/docs/nodes-and-clients/).
+- **Protokol Geliştiricileri** (diğer adıyla "Çekirdek Geliştiriciler" ): Bu kişiler çeşitli Ethereum uygulamalarını (örneğin yürütüm katmanında go-ethereum, Nethermind, Besu, Erigon, Reth veya fikir birliği katmanında Prysm, Lighthouse, Nimbus, Teku, Lodestar) sürdürür. [Ethereum istemcileri hakkında daha fazla bilgi.](/developers/docs/nodes-and-clients/).
 
 _Not: Herhangi bir kişi bu grupların birçoğunun parçası olabilir (örneğin, bir protokol geliştiricisi bir EIP'ye öncülük edebilir, bir işaret zinciri doğrulayıcı çalıştırabilir ve DeFi uygulamalarını kullanabilir). Kavramsal netlik için, aralarında ayrım yapmak en iyisidir._
 
@@ -118,9 +118,9 @@ Genel olarak anlaşmazlıklar, sorunun kökenini anlamak ve herkesin durumu öl�
 
 Çatallar, ağda büyük teknik yükseltmeler veya değişiklikler yapılması ve protokolün "kurallarının" değiştirilmesi gerekmesidir. [Ethereum istemcileri](/developers/docs/nodes-and-clients/) yeni çatal kurallarını uygulamak için yazılımlarını güncellemelidir.
 
-DAO çatalı, güvenli olmayan bir [DAO](/glossary/#dao) sözleşmesinin bir hackte 3,6 milyon ETH boşaltıldığı [2016 DAO saldırısına](https://www.coindesk.com/understanding-dao-hack-journalists) yanıt olarak yapıldı. Çatal, fonları hatalı sözleşmeden yeni bir sözleşmeye taşıdı ve hack sırasında fon kaybeden herkesin fonlarını geri almasını sağladı.
+DAO çatalı, güvenli olmayan bir [DAO](/glossary/#dao) sözleşmesinin bir hackte 3,6 milyon ETH boşaltıldığı [2016 DAO saldırısına](https://www.coindesk.com/learn/understanding-the-dao-attack) yanıt olarak yapıldı. Çatal, fonları hatalı sözleşmeden yeni bir sözleşmeye taşıdı ve hack sırasında fon kaybeden herkesin fonlarını geri almasını sağladı.
 
-Bu eylem planı, Ethereum topluluğu tarafından oylandı. Tüm ETH sahipleri, [bir oylama platformunda](http://v1.carbonvote.com/) bir işlem aracılığıyla oy kullanabildi. Çatallanma kararı oyların %85'inden fazlasına ulaştı.
+Bu eylem planı, Ethereum topluluğu tarafından oylandı. Tüm ETH sahipleri, [bir oylama platformunda](https://web.archive.org/web/20170620030820/http://v1.carbonvote.com/) bir işlem aracılığıyla oy kullanabildi. Çatallanma kararı oyların %85'inden fazlasına ulaştı.
 
 Protokol, hack'in etkilerini geri almak için çatallama yapmış olsa da çatallamaya karar veren oyların ağırlığı birkaç nedenden dolayı tartışmaya açıktır:
 
@@ -152,7 +152,7 @@ Ethereum yönetişim süreci, genellikle açıklık ve kapsayıcılık için hı
 
 Tanım ve geliştirme uygulamaları her zaman tamamen açık kaynak olsa da, yukarıda açıklanan güncellemeleri önermek için kullanılan resmi süreçler kullanılmadı. Bu, değişikliklerin araştırmacılar ve uygulayıcılar tarafından daha hızlı belirlenmesine ve üzerinde anlaşmaya varılmasına izin verdi.
 
-İşaret Zinciri 15 Eylül 2022'de Ethereum yürütüm katmanı ile birleştiğinde Birleşim [Paris ağ yükseltmesinin](/history/#paris) bir parçası olarak tamamlanmıştı. [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) önerisi 'Son Çağrı' yerine 'Final' olmuştu ve hisse ispatına geçiş tamamlanmıştı.
+İşaret Zinciri 15 Eylül 2022'de Ethereum yürütüm katmanı ile birleştiğinde Birleşim [Paris ağ yükseltmesinin](/ethereum-forks/#paris) bir parçası olarak tamamlanmıştı. [EIP-3675](https://eips.ethereum.org/EIPS/eip-3675) önerisi 'Son Çağrı' yerine 'Final' olmuştu ve hisse ispatına geçiş tamamlanmıştı.
 
 <ButtonLink href="/roadmap/merge/">
   Birleştirme hakkında ek bilgi
@@ -174,9 +174,9 @@ Tanım ve geliştirme uygulamaları her zaman tamamen açık kaynak olsa da, yuk
 
 Ethereum'daki yönetişimin katı kuralları yoktur. Çeşitli topluluk katılımcıları bu konuda farklı bakış açılarına sahiptir. İşte bunlardan birkaçı:
 
-- [Blok Zinciri Yönetişimi Üzerine Notlar](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
+- [Blokzincir Yönetişimi Üzerine Notlar](https://vitalik.eth.limo/general/2017/12/17/voting.html) - _Vitalik Buterin_
 - [Ethereum yönetişimi nasıl çalışır?](https://cryptotesters.com/blog/ethereum-governance) – _Cryptotesters_
 - [Ethereum yönetişimin çalışması](https://medium.com/coinmonks/how-ethereum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Ethereum çekirdek geliştiricisi nedir?](https://hudsonjameson.com/2020-06-22-what-is-an-ethereum-core-developer/) - _Hudson Jameson_
-- [Yönetişim, 2. Bölüm: Plütokrasi Hâlâ Kötü](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
+- [Yönetişim, Bölüm 2: Plütokrasi Hâlâ Kötü](https://vitalik.eth.limo/general/2018/03/28/plutocracy.html) - _Vitalik Buterin_
 - [Parayla oylama yönetişiminin ötesine geçmek](https://vitalik.eth.limo/general/2021/08/16/voting3.html) - _Vitalik Buterin_

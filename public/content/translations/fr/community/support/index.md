@@ -10,7 +10,7 @@ lang: fr
 
 Vous recherchez l'assistance officielle Ethereum ? La première chose que vous devez savoir est le fait qu'Ethereum est décentralisé. Cela signifie qu'aucune organisation, entité ou personne n'est propriétaire d'Ethereum et, de ce fait, il n'existe aucune assistance officielle.
 
-Comprendre la nature décentralisée d'Ethereum est essentiel, car quiconque prétendant représenter l'assiatnce officielle d'Ethereum essaie probablement de vous escroquer ! La meilleure protection contre les arnaques consiste à vous informer et à prendre la sécurité au sérieux.
+Comprendre la nature décentralisée d’Ethereum est essentiel car **toute personne prétendant être le support officiel d’Ethereum essaie probablement de vous arnaquer !** La meilleure protection contre les escrocs est de vous informer et de prendre la sécurité au sérieux.
 
 <DocLink href="/security/">
   Sécurité d'Ethereum et prévention des arnaques
@@ -20,7 +20,7 @@ Comprendre la nature décentralisée d'Ethereum est essentiel, car quiconque pr�
   Apprendre les fondamentaux d'Ethereum
 </DocLink>
 
-Malgré le manque d'assistance officielle, de nombreux groupes, communautés et projets à travers l'écosystème Ethereum sont heureux de vous aider. Vous pouvez trouver beaucoup d'informations et de ressources utiles sur cette page. Vous avez d'autres questions ? Rejoignez le [Discord ethereum.org](/discord/) et nous essaierons de vous aider.
+Malgré le manque d'assistance officielle, de nombreux groupes, communautés et projets à travers l'écosystème Ethereum sont heureux de vous aider. Vous pouvez trouver beaucoup d'informations et de ressources utiles sur cette page. Vous avez d'autres questions ? Rejoignez le [Discord ethereum.org](https://discord.gg/ethereum-org) et nous essaierons de vous aider.
 
 ## Questions fréquemment posées {#faq}
 
@@ -57,7 +57,6 @@ Le développement d'une application décentralisée peut être difficile. Voici 
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [Discord CryptoDevs](https://discord.com/invite/5W5tVb3)
 - [StackExchange Ethereum](https://ethereum.stackexchange.com/)
-- [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 
@@ -91,6 +90,7 @@ La plupart des équipes qui créent des clients Ethereum disposent aussi d'espac
 - [Nethermind](https://discord.gg/YJx3pm8z5C)
 - [Besu](https://discord.gg/p8djYngzKN)
 - [Erigon](https://github.com/ledgerwatch/erigon/issues)
+- [Reth](https://github.com/paradigmxyz/reth/discussions)
 
 ### Clients de consensus {#consensus-clients}
 
@@ -99,5 +99,6 @@ La plupart des équipes qui créent des clients Ethereum disposent aussi d'espac
 - [Lighthouse](https://discord.gg/cyAszAh)
 - [Teku](https://discord.gg/7hPv2T6)
 - [Lodestar](https://discord.gg/aMxzVcr)
+- [Grandine](https://discord.gg/H9XCdUSyZd)
 
 Vous pouvez aussi [apprendre comment exécuter un nœud ici](/developers/docs/nodes-and-clients/run-a-node/).

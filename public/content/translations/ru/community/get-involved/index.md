@@ -15,15 +15,17 @@ lang: ru
 - Узнайте подробнее об Ethereum на [ethereum.org/developers/](/developers/) и попробуйте использовать
 - Посетите ближайший к вам хакатон [ETHGlobal](http://ethglobal.co/)!
 - Ознакомьтесь с [проектами в вашей компетенции или на языке программирования по вашему выбору](/developers/docs/programming-languages/)
-- [Онлайн-встречи Core Dev](https://www.youtube.com/@EthereumProtocol): смотрите или участвуйте сами
+- Смотрите [звонки, посвященные уровням консенсуса и исполнения](https://www.youtube.com/@EthereumProtocol/streams), или участвуйте в них
 - [Список предпочтений для программы поддержки экосистемы](https://esp.ethereum.foundation/wishlist/) — сферы инструментария, документации и инфраструктуры, в которых активно ищут заявителей на гранты в рамках программы поддержки экосистемы Ethereum
 - [Web3Bridge](https://www.web3bridge.com/) — присоединяйтесь к амбициозному сообществу web3 в их инициативе по выявлению, обучению и поддержке сотен разработчиков и членов сообщества по всей Африке
+- Присоединяйтесь к [Discord-каналу Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Присоединяйтесь к [Discord-каналу Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
 
 ## Исследователи и академики <Emoji text=":mag:" size={1} />‍ {#researchers-and-academics}
 
 У вас есть опыт работы в области математики, криптографии или экономики? Возможно, вам будет интересно узнать о некоторых передовых разработках в рамках экосистемы Ethereum:
 
+- Присоединяйтесь к [Discord-каналу Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Составьте или рассмотрите предложение по улучшению Ethereum (EIP)
   - Составьте EIP
     1. Представьте свою идею на [Ethereum Magicians](https://ethereum-magicians.org)
@@ -38,7 +40,7 @@ lang: ru
 - [Ethresear.ch](https://ethresear.ch) — основной форум Ethereum по исследованиям и наиболее влиятельный в мире форум по криптоэкономике
 - [EF Research AMA](https://old.reddit.com/r/ethereum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) — текущая серия вопросов и ответов с участием исследователей. По мере открытия каждой следующей части любой человек может размещать вопросы.
 - [Список предпочтений для программы поддержки экосистемы](https://esp.ethereum.foundation/wishlist/) — области исследований, в которых активно ищут заявителей на гранты в рамках программы поддержки экосистемы Ethereum
-- [AllWalletDevs](https://allwallet.dev) — форум для разработчиков, дизайнеров и заинтересованных пользователей Ethereum, где они регулярно собираются и обсуждают кошельки.
+- [AllWalletDevs](https://allwallet.dev) — форум для разработчиков, дизайнеров и заинтересованных пользователей Ethereum, где они регулярно собираются и обсуждают кошельки
 
 [Посмотрите больше активных областей исследований](/community/research/).
 
@@ -112,7 +114,6 @@ lang: ru
 - [Web3 Army](https://web3army.xyz/)
 - [Вакансии на Crypto Valley](https://cryptovalley.jobs/)
 - [Вакансии Ethereum](https://startup.jobs/ethereum-jobs)
-- [CryptoJobster](https://cryptojobster.com/tag/ethereum/)
 
 ## Присоединитесь к DAO {#decentralized-autonomous-organizations-daos}
 
@@ -123,7 +124,6 @@ DAO — децентрализованные автономные организ
 - [dOrg](https://dOrg.tech) [@dOrg_tech](https://twitter.com/dOrg_tech) — _коллектив разработчиков-фрилансеров Web3, работающий как децентрализованная автономная организация (DAO)_
 - [HausDAO](https://daohaus.club) [@nowdaoit](https://twitter.com/nowdaoit) — _управление сообщества DAOhaus_
 - [LexDAO](https://lexdao.org) [@lex_DAO](https://twitter.com/lex_DAO) — _инжиниринг в сфере юридических вопросов_
-- [Machi X](https://machix.com) [@MachiXOfficial](https://twitter.com/MachiXOfficial) — _арт-сообщество_
 - [MetaCartel Ventures](https://metacartel.xyz) [@VENTURE_DAO](https://twitter.com/VENTURE_DAO) — _венчурный капитал для предварительного этапа криптовалютных проектов_
 - [MetaGame](https://metagame.wtf) [@MetaFam](https://twitter.com/MetaFam) — _механика игр MMORPG для реальной жизни_
 - [MetaFactory](https://metafactory.ai) [@TheMetaFactory](https://twitter.com/TheMetaFactory) — _бренды цифро-физических вещей_

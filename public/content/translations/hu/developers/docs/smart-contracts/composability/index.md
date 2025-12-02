@@ -29,7 +29,7 @@ Az Ethereum-okosszerződések olyanok, mint a nyilvános API-ok, így bárki kö
 
 ### Rövidebb fejlesztési ciklus {#shorter-development-cycle}
 
-Az összeilleszthetőség leveszi a munkaterhelést a fejlesztők válláról a [dappok](/dapps/#what-are-dapps) létrehozásakor. [Ahogy Naval Ravikant fogalmaz:](https://twitter.com/naval/status/1444366754650656770) „A nyílt forráskód azt jelenti, hogy egy adott problémát csak egyszer kell megoldani.”
+Az összeilleszthetőség leveszi a munkaterhelést a fejlesztők válláról a [dappok](/apps/#what-are-dapps) létrehozásakor. [Ahogy Naval Ravikant fogalmaz:](https://twitter.com/naval/status/1444366754650656770) „A nyílt forráskód azt jelenti, hogy egy adott problémát csak egyszer kell megoldani.”
 
 Ha van egy okosszerződés, amely megold egy problémát, más fejlesztők újra felhasználhatják, így nem kell ugyanazt a problémát megoldaniuk. Ezáltal a fejlesztők a meglévő szoftverkönyvtárakat felhasználhatják, és extra funkciókat adhatnak hozzá, hogy új dappokat hozzanak létre.
 
@@ -69,7 +69,7 @@ Ahelyett, hogy egyéni hitelesítési rendszert építene vagy központi szolgá
 
 ## További olvasnivaló {#further-reading}
 
-_Van olyan közösségi erőforrása, amely segített Önnek? Szerkessze ezt az oldalt, és adja hozzá!_
+_Ismersz olyan közösségi anyagot, mely segített neked? Módosítsd az oldalt és add hozzá!_
 
 - [Az összeilleszthetőség az innováció](https://future.a16z.com/how-composability-unlocks-crypto-and-everything-else/)
 - [Miért fontos az összeilleszthetőség a web3-nak](https://hackernoon.com/why-composability-matters-for-web3)

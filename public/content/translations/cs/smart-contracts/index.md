@@ -26,7 +26,7 @@ Představme si, že Alice a Bob jedou cyklistický závod. Řekněme, že Alice 
 
 Tento jednoduchý příklad ilustruje problém s jakoukoliv dohodou, která není založená na chytrém kontraktu. I když jsou podmínky dohody splněny (tj. jste vítězem závodu), musíte stále důvěřovat jiné osobě, že splní svou část dohody (např. že vám vyplatí výhru).
 
-## Digitální prodejní automat {#vending-machine}
+## Digitální výdejní automat {#vending-machine}
 
 Jednoduchá metafora pro chytrý kontrakt je prodejní automat, který funguje podobně jako chytrý kontrakt – konkrétní vstupy zaručují předem stanovené výstupy.
 
@@ -50,7 +50,7 @@ Tradiční kontrakty jsou nejednoznačné, protože se spoléhají na to, že je
 
 ## Veřejný záznam {#public-record}
 
-Chytré kontrakty jsou užitečným nástrojem pro audity a sledování. Jelikož jsou ethereovské smart kontrakty na veřejném blockchainu, každý může okamžitě sledovat převody aktiv a další související informace. Můžete například zkontrolovat, zda někdo poslal peníze na vaši adresu.
+Chytré kontrakty jsou užitečným nástrojem pro audity a sledování. Jelikož jsou ethereovské chytré kontrakty na veřejném blockchainu, každý může okamžitě sledovat převody aktiv a další související informace. Můžete například zkontrolovat, zda někdo poslal peníze na vaši adresu.
 
 ## Ochrana soukromí {#privacy-protection}
 
@@ -69,7 +69,7 @@ Mohou provádět výpočty, vytvářet měnu, ukládat data, těžit [NFT](/glos
 - [Stablecoiny](/stablecoins/)
 - [Vytváření a distribuce jedinečných digitálních majetků](/nft/)
 - [Automatická otevřená směnárna](/get-eth/#dex)
-- [Decentralizované počítačové hry](/dapps/?category=gaming#explore)
+- [Decentralizované počítačové hry](/apps/categories/gaming)
 - [Pojistná smlouva, která automaticky vyplatí plnění](https://etherisc.com/)
 - [Standard, který umožňuje vytvářet interoperabilní měny dle konkrétních požadavků](/developers/docs/standards/tokens/)
 

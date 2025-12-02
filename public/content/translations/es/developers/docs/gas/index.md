@@ -87,7 +87,7 @@ Para ejecutar una transacción en la red, los usuarios pueden especificar la má
 
 ### Tamaño del bloque {#block-size}
 
-Cada bloque tiene un tamaño esperado de 15 millones de gas, pero el tamaño de los bloques aumentará o disminuirá de acuerdo con la demanda de la red, hasta alcanzar el límite por bloque de 30 millones de gas (el doble del tamaño esperado del bloque). El protocolo alcanza un tamaño de equilibrio del bloque en torno a 15 millones de media, a través del proceso de _«tâtonnement»_ (o tanteo). Esto significa que si el tamaño del bloque es mayor que el esperado, el protocolo aumentará la tarifa de base para el siguiente bloque. De manera similar, el protocolo disminuirá la tarifa de base si el tamaño del bloque es menor que el tamaño esperado. La cantidad que se toma de referencia para ajustar la tarifa de base es proporcional a la diferencia entre el tamaño del bloque actual y el tamaño esperado. [Más información sobre bloques](/developers/docs/blocks/).
+Cada bloque tiene un tamaño esperado de 30 millones de gas, pero el tamaño de los bloques aumentará o disminuirá de acuerdo con la demanda de la red, hasta alcanzar el límite por bloque de 60 millones de gas (el doble del tamaño esperado del bloque). El protocolo alcanza un tamaño de equilibrio del bloque en torno a 15 millones de media, a través del proceso de _«tâtonnement»_ (o tanteo). Esto significa que si el tamaño del bloque es mayor que el esperado, el protocolo aumentará la tarifa de base para el siguiente bloque. De manera similar, el protocolo disminuirá la tarifa de base si el tamaño del bloque es menor que el tamaño esperado. La cantidad que se toma de referencia para ajustar la tarifa de base es proporcional a la diferencia entre el tamaño del bloque actual y el tamaño esperado. [Más información sobre bloques](/developers/docs/blocks/).
 
 ### Cómo calcular las tarifas de gas en la práctica {#calculating-fees-in-practice}
 
@@ -117,7 +117,7 @@ Las [mejoras de escalabilidad](/roadmap/) de Ethereum deberían abordar algunos 
 
 La escalabilidad de la capa 2 es una iniciativa primordial para mejorar de manera considerable los costes del gas, la experiencia de usuario y la escalabilidad. [Más información sobre la escalabilidad de la capa 2](/developers/docs/scaling/#layer-2-scaling).
 
-## Vigilar las tarifas de gas {#moitoring-gas-fees}
+## Vigilar las tarifas de gas {#monitoring-gas-fees}
 
 Si desea supervisar las tarifas de gas, para poder enviar sus ETH por menos, puede usar diferentes herramientas, como:
 
@@ -133,7 +133,6 @@ Si desea supervisar las tarifas de gas, para poder enviar sus ETH por menos, pue
 
 - [Explicación sobre el gas de Ethereum](https://defiprime.com/gas)
 - [Reducir el consumo de gas de sus contratos inteligentes](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
-- [Prueba de participación frente a prueba de trabajo](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [Estrategias de optimización de gas para desarrolladores](https://www.alchemy.com/overviews/solidity-gas-optimization)
 - [Documentacion sobre EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
 - [Recursos Tim Beiko's EIP-1559](https://hackmd.io/@timbeiko/1559-resources).

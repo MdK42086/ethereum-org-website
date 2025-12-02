@@ -295,7 +295,7 @@ def register(name, value):
     self.storage[name] = value
 ```
 
-El contrato es muy simple: es una base de datos dentro de la red Ethereum que se puede añadir, pero no modificar ni eliminar. Cualquiera puede registrar un nombre con algún valor, y ese registro se mantiene para siempre. Un contrato de registro de nombres más sofisticado también tendrá una «cláusula de función» que permitirá que otros contratos lo consulten, así como un mecanismo para que el «propietario» (es decir, el primer registrador) de un nombre cambie los datos o transfiera la propiedad. Incluso se puede añadir la reputación y la funcionalidad web de confianza en la parte superior.
+El contrato es muy simple; es una base de datos dentro de la red Ethereum que se puede agregar, pero no modificar ni eliminar. Cualquiera puede registrar un nombre con algún valor, y ese registro se mantiene para siempre. Un contrato de registro de nombres más sofisticado también tendrá una «cláusula de función» que permitirá que otros contratos lo consulten, así como un mecanismo para que el «propietario» (es decir, el primer registrador) de un nombre cambie los datos o transfiera la propiedad. Incluso se puede añadir la reputación y la funcionalidad web de confianza en la parte superior.
 
 ### Almacenamiento de archivos descentralizado {#decentralized-file-storage}
 
@@ -355,7 +355,7 @@ En Ethereum, se emplea una versión simplificada de GHOST que se solo extiende h
 
 - Un bloque debe especificar un padre, y debe especificar 0 o más tíos.
 - Un bloque tío incluido en el bloque B debe tener las siguientes propiedades:
-  - Debe ser un hijo directo del ancestro de la generación k de B, donde 2 ≤ k ≤ 7
+  - Debe ser un hijo directo del antepasado de la generación kth, donde `2 <= k <= 7`.
   - No puede ser ancestro de B
   - Un tío debe ser una cabecera de bloque válida, pero no necesita ser un bloque previamente verificado, ni siquiera válido.
   - Un tío debe ser distinto de todos los tíos incluidos en bloques anteriores y de todos los otros tíos incluidos en el mismo bloque (no debe haber doble inclusión).
@@ -374,7 +374,7 @@ Sin embargo, resulta que este fallo en el mecanismo basado en el mercado, cuando
 3. Hay `N` nodos de minado, cada uno con exactamente la misma potencia de procesamiento (es decir, `1/N` del total)
 4. No existen nodos completos que no minen.
 
-Un minero estaría dispuesto a procesar una transacción si la recompensa esperada es mayor que el coste. Por lo tanto, la recompensa esperada es `kR/N` ya que el minero tiene una `1/N` probabilidad de procesar el siguiente bloque, y el coste del procesamiento para el minero es simplemente`kC`. Por lo tanto, los mineros incluirán transacciones en las que `kR/N> kC`, o `R> NC`. Tenga en cuenta que `R` es la tarifa por operación facilitada por el remitente, y es un límite inferior del beneficio que obtiene el remitente de la transacción, y `NC` es el coste de toda la red en conjunto para procesar una operación. Por eso, los mineros tienen el incentivo de incluir solo aquellas transacciones cuyo beneficio utilitario total exceda el coste.
+Un minero estaría dispuesto a procesar una transacción si la recompensa esperada es mayor que el coste. Por lo tanto, la recompensa esperada es `kR/N` ya que el minero tiene una `1/N` probabilidad de procesar el siguiente bloque, y el coste del procesamiento para el minero es simplemente `kC`. Por lo tanto, los mineros incluirán transacciones en las que `kR/N> kC`, o `R> NC`. Tenga en cuenta que `R` es la tarifa por operación facilitada por el remitente, y es un límite inferior del beneficio que obtiene el remitente de la transacción, y `NC` es el coste de toda la red en conjunto para procesar una operación. Por eso, los mineros tienen el incentivo de incluir solo aquellas transacciones cuyo beneficio utilitario total exceda el coste.
 
 No obstante, hay varias desviaciones de esos supuestos en la realidad:
 
@@ -383,7 +383,7 @@ No obstante, hay varias desviaciones de esos supuestos en la realidad:
 3. La distribución de potencia de minado puede acabar siendo radicalmente desigualitaria en la práctica.
 4. Los especuladores, enemigos políticos y dementes, cuya función de utilidad incluye causar daño a la red, existen y pueden establecer hábilmente contratos cuyo coste es mucho menor que el coste pagado por otros nodos de verificación.
 
-(1) proporciona una tendencia al minero a que incluya menos transacciones, e (2) incrementa `NC`; por lo tanto, estos dos efectos al menos parcialmente se cancelan entre sí.<sup>[¿Cómo?](https://github.com/ethereum/wiki/issues/447#issuecomment-316972260)</sup> (3) y (4) son el principal problema; para resolverlos, simplemente fijamos un límite reajustable: ningún bloque puede tener más operaciones que `BLK_LIMIT_FACTOR` veces el promedio de la media móvil exponencial a largo plazo. Específicamente:
+(1) proporciona una tendencia al minero a que incluya menos transacciones, e (2) incrementa `NC`; por lo tanto, estos dos efectos al menos parcialmente se cancelan entre sí.<sup>[¿Cómo?](https://web.archive.org/web/20250427212319/https://github.com/ethereum/wiki/issues/447#issuecomment-316972260#issuecomment-316972260)</sup> (3) y (4) son el principal problema; para resolverlos, simplemente fijamos un límite reajustable: ningún bloque puede tener más operaciones que `BLK_LIMIT_FACTOR` veces el promedio de la media móvil exponencial a largo plazo. Específicamente:
 
 ```js
 blk.oplimit = floor((blk.parent.oplimit \* (EMAFACTOR - 1) +
@@ -508,10 +508,10 @@ El concepto de una función de transición de estado arbitraria implementada por
 16. [GHOST](https://eprint.iacr.org/2013/881.pdf)
 17. [StorJ y agentes autónomos, Jeff Garzik](http://garzikrants.blogspot.ca/2013/01/storj-and-bitcoin-autonomous-agents.html)
 18. [Mike Hearn, sobre propiedad inteligente en Turing Festival](https://www.youtube.com/watch?v=MVyv4t0OKe4)
-19. [RLP en Ethereum](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-RLP)
-20. [Árboles de Merkle y Patricia en Ethereum](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree)
+19. [RLP en Ethereum](https://web.archive.org/web/20250427212320/https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-RLP)
+20. [Árboles de Merkle y Patricia en Ethereum](https://web.archive.org/web/20250427212320/https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree)
 21. [Peter Todd sobre los árboles de suma Merkle](https://web.archive.org/web/20140623061815/http://sourceforge.net/p/bitcoin/mailman/message/31709140/)
 
-_Para consultar el historial del informe, ver [este enlace](https://github.com/ethereum/wiki/blob/old-before-deleting-all-files-go-to-wiki-wiki-instead/old-whitepaper-for-historical-reference.md)._
+_Para consultar el historial del informe, ver [este enlace](https://web.archive.org/web/20250427212319/https://github.com/ethereum/wiki/blob/old-before-deleting-all-files-go-to-wiki-wiki-instead/old-whitepaper-for-historical-reference.md)._
 
 _Ethereum, al igual que muchos proyectos de software de código abierto impulsados por la comunidad, ha evolucionado desde su concepción inicial. Para aprender sobre los últimos desarrollos de Ethereum, y cómo se hacen los cambios en el protocolo, recomendamos [esta guía](/learn/)._

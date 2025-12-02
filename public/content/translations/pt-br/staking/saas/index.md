@@ -22,7 +22,7 @@ Staking como um serviço ("SaaS") representa uma categoria de serviços de staki
 O protocolo Ethereum não suporta nativamente a delegação de stake, portanto esses serviços foram construídos para cumprir esta demanda. Se você tem 32 ETH para stake, mas não se sente à vontade para lidar com hardware, os serviços SaaS permitem que você delegue a parte difícil enquanto ganha recompensas nativas do bloco.
 
 <CardGrid>
-  <Card title="Seu próprio validador" emoji=":desktop_computer:" description="Deposit your own 32 ETH to activate your own set of signing keys that will participate in Ethereum consensus. Monitor your progress with dashboards to watch those ETH rewards accumulate." />    
+  <Card title="Seu próprio validador" emoji=":desktop_computer:" description="Deposit your own 32 ETH to activate your own set of signing keys that will participate in Ethereum consensus. Monitor your progress with dashboards to watch those ETH rewards accumulate." />
   <Card title="Fácil de iniciar" emoji="🏁" description="Forget about hardware specs, setup, node maintenance and upgrades. SaaS providers let you outsource the hard part by uploading your own signing credentials, allowing them to run a validator on your behalf, for a small cost." />
   <Card title="Limite seu risco" emoji=":shield:" description="In many cases users do not have to give up access to the keys that enable withdrawing or transferring staked funds. These are different from the signing keys, and can be stored separately to limit (but not eliminate) your risk as a staker." />
 </CardGrid>
@@ -39,11 +39,11 @@ Os indicadores de atributo são usados abaixo para sinalizar os pontos fortes ou
 
 ## Explore provedores de serviços de staking {#saas-providers}
 
-Abaixo estão alguns provedores SaaS disponíveis. Use os indicadores acima para guiá-lo pelos serviços abaixo
+Abaixo estão alguns provedores de SaaS disponíveis. Use os indicadores acima para guiá-lo pelos serviços abaixo
 
 <ProductDisclaimer />
 
-### Provedores SaaS
+### Provedores de SaaS
 
 <StakingProductsCardGrid category="saas" />
 
@@ -86,9 +86,10 @@ Usando um provedor SaaS, você está confiando a operação do seu nó a um terc
 
 Após a conclusão do processo de remoção/saída, esses fundos serão transferidos para o endereço de saque atribuído ao validador. Para isso, é necessário habilitar um endereço de saque. Ela pode ter sido fornecida no depósito inicial. Caso contrário, será necessário usar as chaves de saque do validador para assinar uma mensagem declarando um endereço de saque. Os fundos permanecerão bloqueados até um endereço de saque ser fornecido.
 
-Entre em contato com o provedor de SaaS para obter mais detalhes sobre quaisquer garantias ou opções de seguro e instruções sobre como fornecer um endereço de saque. Se você preferir estar no controle total da sua configuração do validador, <a href="/staking/solo/">saiba mais sobre como fazer staking individual de seu ETH</a>.
+Entre em contato com o provedor de SaaS para obter mais detalhes sobre quaisquer garantias ou opções de seguro e instruções sobre como fornecer um endereço de saque. Se você preferir estar no controle total da sua configuração do validador, [saiba mais sobre como fazer staking individual de seu ETH](/staking/solo/).
 </ExpandableCard>
 
 ## Leitura adicional {#further-reading}
 
+- [O diretório de staking Ethereum](https://www.staking.directory/) - _Eridian e Spacesider_
 - [Avaliando os Serviços de Staking](https://www.attestant.io/posts/evaluating-staking-services/) - _Jim McDonald 2020_

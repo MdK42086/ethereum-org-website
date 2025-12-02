@@ -63,7 +63,7 @@ lang: ja
 **Tenderly -** **_ブロックチェーンデベロッパーがスマートコントラクトを構築、テスト、デバッグ、監視、操作し、dApp UXを改善できるWeb3開発プラットフォーム。_**
 
 - [ウェブサイト](https://tenderly.co/)
-- [ドキュメント](https://docs.tenderly.co/ethereum-development-practices)
+- [ドキュメント](https://docs.tenderly.co/)
 
 **The Graph -** **_ブロックチェーンデータのクエリを効率化。_**
 
@@ -117,6 +117,13 @@ lang: ja
 - [ウェブサイト](https://catapulta.sh/)
 - [ドキュメント](https://catapulta.sh/docs)
 - [GitHub](https://github.com/catapulta-sh)
+
+**Covalent -** **_200以上のチェーンで使えるリッチなブロックチェーンAPI_**
+
+- [covalenthq.com](https://www.covalenthq.com/)
+- [ドキュメント](https://www.covalenthq.com/docs/api/)
+- [GitHub](https://github.com/covalenthq)
+- [Discord](https://www.covalenthq.com/discord/)
 
 **Wake -** **_コントラクトのテスト、ファジング、デプロイ、脆弱性スキャン、コードナビゲーションが可能なオールインワンPythonフレームワーク。_**
 

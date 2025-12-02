@@ -22,7 +22,7 @@ summaryPoints:
 پروتکل اتریوم به‌طور بومی از تفویض سهام پشتیبانی نمی‌کند، بنابراین این سرویس‌ها برای برطرف کردن این تقاضا ساخته شده‌اند. اگر 32 اتر برای سهام‌گذاری در اختیار دارید، اما در مواجهه با سخت‌افزار احساس راحتی نمی‌کنید، سرویس‌های SaaS به شما امکان می‌دهند تا زمانی که پاداش‌های بلوک بومی را دریافت می‌کنید، بخش سخت را تفویض کنید.
 
 <CardGrid>
-  <Card title="اعتبارسنج خودتان" emoji=":desktop_computer:" description="Deposit your own 32 ETH to activate your own set of signing keys that will participate in Ethereum consensus. Monitor your progress with dashboards to watch those ETH rewards accumulate." />    
+  <Card title="اعتبارسنج خودتان" emoji=":desktop_computer:" description="Deposit your own 32 ETH to activate your own set of signing keys that will participate in Ethereum consensus. Monitor your progress with dashboards to watch those ETH rewards accumulate." />
   <Card title="شروع آسان" emoji="🏁" description="Forget about hardware specs, setup, node maintenance and upgrades. SaaS providers let you outsource the hard part by uploading your own signing credentials, allowing them to run a validator on your behalf, for a small cost." />
   <Card title="محدود کردن ریسکتان" emoji=":shield:" description="In many cases users do not have to give up access to the keys that enable withdrawing or transferring staked funds. These are different from the signing keys, and can be stored separately to limit (but not eliminate) your risk as a staker." />
 </CardGrid>
@@ -39,7 +39,7 @@ summaryPoints:
 
 ## ارائه‌دهندگان خدمات سهام‌گذاری را مشاهده و بررسی کنید {#saas-providers}
 
-در زیر برخی از ارائه‌دهندگان SaaS قید شده‌اند. از شاخص‌های بالا برای راهنمایی درباره این خدمات استفاده کنید
+در زیر برخی از ارائه‌دهندگان موجود SaaS قید شده‌اند. از شاخص‌های بالا برای راهنمایی درباره این خدمات استفاده کنید
 
 <ProductDisclaimer />
 
@@ -47,7 +47,7 @@ summaryPoints:
 
 <StakingProductsCardGrid category="saas" />
 
-لطفاً از اهمیت انتخاب سرویسی که [تنوع کلاینت](/developers/docs/nodes-and-clients/client-diversity/) را جدی بگیرد غافل نشوید، زیرا امنیت شبکه را بهبود می‌بخشد و ریسک شما را محدود می‌کند. سرویس‌هایی که مدارکی از محدود کردن استفاده اکثریت کاربران را دارند با عنوان <em style={{ textTransform: "uppercase" }}>"تنوع کاربر اجرایی"</em> و <em style={{ textTransform: "uppercase" }}>"تنوع کاربر اجماعی"</em> نشان داده می‌شوند.
+لطفاً از اهمیت انتخاب سرویسی که [تنوع کلاینت](/developers/docs/nodes-and-clients/client-diversity/) را جدی بگیرد غافل نشوید، زیرا امنیت شبکه را بهبود می‌بخشد و ریسک شما را محدود می‌کند. سرویس‌هایی که شواهدی از محدود کردن استفاده اکثریت کاربران دارند با عنوان <em style={{ textTransform: "uppercase" }}>"تنوع کاربر اجرایی"</em> و <em style={{ textTransform: "uppercase" }}>"تنوع کاربر اجماعی"</em> نشان داده می‌شوند
 
 ### تولید‌کنندگان کلید
 
@@ -69,7 +69,7 @@ summaryPoints:
 بروزرسانی اطلاعات رمز برداشت، یک اقدام لازم برای فعالسازی امکان برداشت است. این فرایند شامل تولید کلیدهای برداشت با استفاده از عبارت بازیابی شما است.
 
 <strong>مطمئن شوید که پشتیبان امنی از این عبارت بازیابی دارید یا در هر زمان ممکن نخواهید توانست کلیدهای برداشت خود را تولید کنید.</strong>
-/\*سهامگذارانی که آدرس برداشت را با واریز اولیه تدارک دیده‌اند نیازی به تنظیم این مورد ندارند. با ارائه دهنده سرویس SaaS خود برای راهنمایی در مورد نحوه راه اندازی اعتبار سنج خود تماس بگیرید.
+/*سهامگذارانی که آدرس برداشت را با واریز اولیه تدارک دیده‌اند نیازی به تنظیم این مورد ندارند. با ارائه دهنده سرویس SaaS خود برای راهنمایی در مورد نحوه راه اندازی اعتبار سنج خود تماس بگیرید.
 </ExpandableCard>
 
 <ExpandableCard title="چه زمانی می‌توانم برداشت کنم؟" eventCategory="SaasStaking" eventName="clicked when can I withdraw">
@@ -81,13 +81,14 @@ summaryPoints:
 </ExpandableCard>
 
 <ExpandableCard title="اگر مشمول تقطیع شوم چه اتفاقی می افتد؟" eventCategory="SaasStaking" eventName="clicked what happens if I get slashed">
-با استفاده از یک ارائه‌دهنده SaaS، عملیات گره خود را به شخص دیگری تفویض می‌کنید. این کار، خطر عملکرد ضعیف گره را به همراه دارد، که در کنترل شما نیست. در صورتی که اعتبارسنج شما مشمول تقطیع شود، موجودی اعتبارسنج شما جریمه می‌شود و قاطعانه از استخر اعتبارسنج حذف می‌شود.
+شما با استفاده از یک ارائه‌دهنده SaaS عملیات نود خود را به شخص دیگری تفویض می‌کنید. این کار، خطر عملکرد ضعیف گره را به همراه دارد، که در کنترل شما نیست. در صورتی که اعتبارسنج شما مشمول تقطیع شود، موجودی اعتبارسنج شما جریمه می‌شود و قاطعانه از استخر اعتبارسنج حذف می‌شود.
 
 پس از تکمیل فرایند اسلشینگ/خروج، این وجوه به آدرس برداشت اختصاص یافته به اعتبارسنج منتقل خواهند شد. این امر نیاز به ارائه یک آدرس برداشت برای فعالسازی دارد. آدرس برداشت ممکن است در واریز اولیه ارائه شده باشد. اگر آدرس برداشت ارائه نشده بود، لازم است از کلیدهای برداشت اعتبارسنج برای امضای پیام مشخص کننده آدرس برداشت استقاده شود. اگر آدرس برداشت ارائه نشده باشد، وجوه تا زمان ارائه آدرس، غیر قبل برداشت خواهند بود.
 
-برای جزئیات بیشتر در مورد ضمانت‌ نامه ها یا بیمه و دستورالعمل‌هایی درباره نحوه ارائه آدرس برداشت، با ارائه‌دهنده سرویس SaaS تماس بگیرید. اگر ترجیح می‌دهید راه‌اندازی اعتبارسنج خود را کاملاً تحت کنترل داشته باشید، <a href="/staking/solo/">درباره نحوه به اشتراک گذاشتن اتر خود به‌صورت انفرادی بیشتر بدانید</a>.
+برای جزئیات بیشتر در مورد ضمانت‌ نامه ها یا بیمه و دستورالعمل‌هایی درباره نحوه ارائه آدرس برداشت، با ارائه‌دهنده سرویس SaaS تماس بگیرید. اگر ترجیح می‌دهید راه‌اندازی اعتبارسنج خود را کاملاً تحت کنترل داشته باشید، [درباره نحوه به اشتراک گذاشتن اتر خود به‌صورت انفرادی بیشتر بدانید](/staking/solo/).
 </ExpandableCard>
 
 ## بیشتر بخوانید {#further-reading}
 
+- [فهرست سهامگذاری اتریوم](https://www.staking.directory/) - _Eridian و Spacesider_
 - [ارزیابی سرویس‌های سهام‌گذاری](https://www.attestant.io/posts/evaluating-staking-services/) - _جیم مک‌دونالد 2020_

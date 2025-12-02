@@ -1,5 +1,6 @@
 ---
 title: Token non fungibili (NFT)
+metaTitle: Cosa sono i NFT? | Benefici e utilizzi
 description: Una panoramica dei NFT su Ethereum
 lang: it
 template: use-cases
@@ -20,7 +21,7 @@ L'unicità di ciascun NFT consente la tokenizzazione di oggetti come oggetti d'a
 
 <YouTube id="Xdkkux6OxfM" />
 
-## L'Internet delle risorse {#internet-of-assets}
+## L'internet degli asset {#internet-of-assets}
 
 Gli NFT ed Ethereum risolvono alcuni dei problemi esistenti oggi in internet. Man mano che tutto diventa più digitale, aumenta l'esigenza di replicare le proprietà degli oggetti fisici, come la scarsità, l'unicità e la prova di proprietà in modo da non essere controllate da un'organizzazione centrale. Per esempio, con gli NFT, puoi possedere un file musicale mp3 in tutte le app basate su Ethereum e non essere vincolato da una specifica azienda per app di musica come Spotify o Apple Music. Puoi possedere del materiale sui social media che puoi vendere o scambiare, ma ** che non può venirti requisito arbitrariamente** dal provider di una piattaforma.
 
@@ -54,12 +55,15 @@ Gli NFT vengono utilizzati per molti scopi, tra cui:
 
 Magari sei un artista che vuole condividere il proprio lavoro utilizzando gli NFT, senza perdere il controllo e sacrificare i tuoi profitti agli intermediari. Puoi creare un nuovo contratto e specificare il numero di NFT, le loro proprietà e un collegamento ad alcune opere d'arte specifiche. In qualità di artista, **puoi programmare nel contratto intelligente le royalty** che ti devono essere pagate (ad es. trasferire il 5% del prezzo di vendita al proprietario del contratto ogni volta che un NFT viene trasferito). Inoltre, puoi sempre dimostrare di aver creato gli NFT perché possiedi il [portafoglio](/glossary/#wallet) che ha distribuito il contratto. I tuoi acquirenti possono facilmente dimostrare di possedere un **NFT autentico** della tua collezione perché l'[indirizzo](/glossary/#address) del loro portafoglio è associato a un token nel tuo contratto intelligente. Possono utilizzarlo in tutto l'ecosistema Ethereum, certi della sua autenticità.
 
-<InfoBanner shouldSpaceBetween emoji=":eyes:" mt="8">
+<Alert variant="update" className="mt-8">
+<AlertEmoji text=":eyes:"/>
+<AlertContent className="justify-between flex-row items-center">
   <div>Esplora, acquista o crea opere d'arte/oggetti da collezione NFT...</div>
-  <ButtonLink href="/dapps/?category=collectibles#explore">
+  <ButtonLink href="/apps/categories/collectibles">
     Esplora l'arte NFT
   </ButtonLink>
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 Oppure, prendiamo ad esempio un biglietto per un evento sportivo. Proprio come **l'organizzatore di un evento può scegliere quanti biglietti vendere**, il creatore di un NFT può decidere quante repliche esistono. A volte queste sono repliche esatte, come 5000 biglietti di ingresso generici. A volte ne vengono coniati diversi molto simili, ma ognuno leggermente diverso, come nel caso dei biglietti con i posti assegnati. Questi possono essere acquistati e venduti tra pari senza pagare i gestori dei biglietti e l'acquirente ha sempre la certezza dell'autenticità del biglietto controllando l'indirizzo del contratto.
 
@@ -75,7 +79,7 @@ Questo sito web ha un nome di dominio alternativo alimentato da NFT, **ethereum.
 
 ## Come funzionano gli NFT? {#how-nfts-work}
 
-Gli NFT, come ogni elemento digitale sulla blockchain di Ethereum, sono creati attraverso uno speciale programma basato su Ethereum chiamato contratto intelligente. Questi contratti seguono determinate regole, come gli standard [ERC-721](/glossary/#erc-721) o [ERC-1155](/glossary/#erc-1155), che determinano cosa può fare il contratto.
+Gli NFT, come ogni elemento digitale sulla blockchain di Ethereum, sono creati attraverso uno speciale programma basato su Ethereum chiamato "contratto intelligente". Questi contratti seguono determinate regole, come gli standard [ERC-721](/glossary/#erc-721) o [ERC-1155](/glossary/#erc-1155), che determinano cosa può fare il contratto.
 
 Il contratto intelligente degli NFT può fare alcune cose essenziali:
 

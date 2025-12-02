@@ -82,7 +82,7 @@ Ayrıca lütfen [kullanım koşullarımıza](/terms-of-use/) başvurun. Ethereum
 
 Ethereum'un akıcı yapısında olduğu gibi, ekipler ve ürünler gelir ve gider; yenilikler her gün gerçekleşir, bu nedenle şu amaçlarla içeriğimizin rutin kontrollerini gerçekleştireceğiz:
 
-- listelenen merkeziyetsiz uygulamaların hala kriterlerimizi yerine getirdiğinden emin olmak
+- listelenen tüm merkeziyetsiz uygulamaların kriterlerimizi hala karşıladığından emin olmak
 - şu anda listelenenlerden daha fazla sayıda kriterimizi karşılayan önerilmiş ürünler olmadığını doğrulamak
 
 Kontrol edip bize bildirerek bu konuda yardımcı olabilirsiniz. [Bir konu oluşturun](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.md&title=) veya [website@ethereum.org](mailto:website@ethereum.org) adresine bir e-posta gönderin
@@ -95,6 +95,6 @@ _Ayrıca, topluluğun tercihlerini belirtebilmesi ve önerebileceğimiz en iyi �
 
 Ethereum.org'a bir merkeziyetsiz uygulama eklemek istiyorsanız ve bu uygulama kriterleri karşılıyorsa GitHub'da bir konu oluşturun.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dapp.yaml">
+<ButtonLink href="https://submitapp.paperform.co/">
   Bir konu oluştur
 </ButtonLink>

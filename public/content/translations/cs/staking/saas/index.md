@@ -47,7 +47,7 @@ Níže uvádíme několik dostupných poskytovatelů SaaS. Pomocí výše uveden
 
 <StakingProductsCardGrid category="saas" />
 
-Vezměte prosím na vědomí, že je důležité podporovat [rozmanitost klientů](/developers/docs/nodes-and-clients/client-diversity/), protože zlepšuje zabezpečení sítě a omezuje vaše riziko. Služby, které prokazatelně omezují většinové klientské používání, jsou označeny <em style={{ textTransform: "uppercase" }}>„rozmanitost realizačního klienta“</em> a <em style={{ textTransform: "uppercase" }}>„rozmanitost klientů konsensu“.</em>
+Vezměte prosím na vědomí, že je důležité podporovat [rozmanitost klientů](/developers/docs/nodes-and-clients/client-diversity/), protože zlepšuje zabezpečení sítě a omezuje vaše riziko. Služby, které prokazatelně omezují většinové klientské používání, jsou označeny <em style={{ textTransform: "uppercase" }}>„rozmanitost exekučního klienta“</em> a <em style={{ textTransform: "uppercase" }}>„rozmanitost konsenzus klienta“.</em>
 
 ### Generátory klíčů
 
@@ -55,7 +55,7 @@ Vezměte prosím na vědomí, že je důležité podporovat [rozmanitost klient�
 
 Máte návrh na poskytovatele vkladu jako služby, kterého jsme vynechali? Podívejte se na naše [zásady pro záznam produktů](/contributing/adding-staking-products/), abyste zjistili, zda by se hodily, a odešlete je ke kontrole.
 
-## Často kladené otázky {#faq}
+## Často kladené dotazy {#faq}
 
 <ExpandableCard title="Kdo drží moje klíče?" eventCategory="SaasStaking" eventName="clicked who holds my keys">
 Ujednání se budou u jednotlivých poskytovatelů lišit, ale obvykle vás provedeme nastavením všech potřebných podpisových klíčů (jeden na 32 ETH) a jejich nahráním poskytovateli, aby je mohl ověřit vaším jménem. Samotné podpisové klíče nedávají žádnou možnost vybrat, převést nebo utratit vaše prostředky. Poskytují však možnost odevzdat hlasy směrem ke konsenzu, což, pokud není provedeno správně, může mít za následek offline penalizaci nebo trest.
@@ -86,7 +86,7 @@ Používáním poskytovatele SaaS svěřujete provoz svého uzlu někomu jinému
 
 Po dokončení procesu trestání/opuštění budou tyto prostředky převedeny na adresu pro výběr přidělenou validátoru. To vyžaduje poskytnutí adresy pro výběr. To může být poskytnuto při počátečním vkladu. Pokud ne, bude nutné použít klíče pro výběr validátoru k podepsání zprávy deklarující adresu pro výběr. Pokud nebyla zadána žádná adresa pro výběr, prostředky zůstanou uzamčeny, dokud je nezadáte.
 
-Obraťte se na jednotlivého poskytovatele SaaS pro další podrobnosti o jakýchkoli zárukách nebo možnostech pojištění a pro pokyny, jak zadat adresu pro výběr. Pokud chcete mít nastavení validátoru pod plnou kontrolou, <a href="/staking/solo/">přečtěte si další informace o tom, jak samostatně vložit ETH</a>.
+Obraťte se na jednotlivého poskytovatele SaaS pro další podrobnosti o jakýchkoli zárukách nebo možnostech pojištění a pro pokyny, jak zadat adresu pro výběr. Pokud chcete mít nastavení validátoru pod plnou kontrolou, [přečtěte si další informace o tom, jak samostatně vložit ETH](/staking/solo/).
 </ExpandableCard>
 
 ## Další četba {#further-reading}

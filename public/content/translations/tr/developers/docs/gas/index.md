@@ -55,7 +55,7 @@ Her blokun bir rezerv fiyatı niteliğinde bir ana ücreti vardır. Bir bloka da
 Ana ücret, önceki blokun boyutunu (tüm işlemler için kullanılan gaz miktarını) hedef boyutla karşılaştıran bir formülle hesaplanır. Hedef blok boyutu aşılırsa ana ücret blok başına maksimum %12,5 oranında artacaktır. Bu katlanarak büyüme, blok boyutunun süresiz olarak yüksek kalmasını ekonomik olarak imkânsız hale getiriyor.
 
 | Blok Numarası | Dahil Edilen Gaz | Ücret Artışı | Mevcut Taban Ücret |
-| ------------- | ---------------: | -----------: | -----------------: |
+| ------------- | ----------------:| ------------:| ------------------:|
 | 1             |        15 milyon |           0% |           100 gwei |
 | 2             |        30 milyon |           0% |           100 gwei |
 | 3             |        30 milyon |        %12,5 |         112,5 gwei |
@@ -70,7 +70,7 @@ Yukarıdaki tabloyu takip ederek: 9 numaralı blokta bir işlem oluşturmak içi
 Ayrıca, blok başlatılırken oluşan ana ücretin artışı sebebiyle uzun ve esnek blok artışları görmemizin pek olası olmadığına da dikkat etmek önemlidir.
 
 | Blok Numarası | Dahil Edilen Gaz | Ücret Artışı | Mevcut Taban Ücret |
-| ------------- | ---------------: | -----------: | -----------------: |
+| ------------- | ----------------:| ------------:| ------------------:|
 | 30            |        30 milyon |        %12,5 |        2705,6 gwei |
 | ...           |              ... |        %12,5 |                ... |
 | 50            |        30 milyon |        %12,5 |       28531,3 gwei |
@@ -87,7 +87,7 @@ Ağ üzerinde bir işlem yürütmek için kullanıcılar, işlemlerinin yürüt�
 
 ### Blok boyutu {#block-size}
 
-Her blokun hedef boyutu 15 milyon gazdır, ancak blokların boyutu, 30 milyon gaz blok sınırına kadar (hedef blok boyutunun 2 katı) ağ talebine göre artacak veya azalacaktır. Protokol, _tâtonnement_ süreci ile ortalama 15 milyonluk bir denge bloku boyutuna ulaşır. Bu, blok boyutunun hedef blok boyutundan büyük olması durumunda, protokolün bir sonraki blok için ana ücreti artıracağı anlamına gelir. Benzer şekilde, blok boyutu hedef blok boyutundan küçükse protokol ana ücreti düşürür. Ana ücretin ayarlandığı miktar, mevcut blok boyutunun hedeften ne kadar uzak olduğu ile orantılıdır. [Bloklar hakkında daha fazlası](/developers/docs/blocks/).
+Her blokun hedef boyutu 30 milyon gazdır, ancak blokların boyutu, 60 milyon gaz blok sınırına kadar (hedef blok boyutunun 2 katı) ağ talebine göre artacak veya azalacaktır. Protokol, _tâtonnement_ süreci ile ortalama 30 milyonluk bir denge bloku boyutuna ulaşır. Bu, blok boyutunun hedef blok boyutundan büyük olması durumunda, protokolün bir sonraki blok için ana ücreti artıracağı anlamına gelir. Benzer şekilde, blok boyutu hedef blok boyutundan küçükse protokol ana ücreti düşürür. Ana ücretin ayarlandığı miktar, mevcut blok boyutunun hedeften ne kadar uzak olduğu ile orantılıdır. [Bloklar hakkında daha fazlası](/developers/docs/blocks/).
 
 ### Pratikte gaz ücretlerini hesaplamak {#calculating-fees-in-practice}
 
@@ -117,23 +117,7 @@ Ethereum [ölçeklenebilirlik yükseltmeleri](/roadmap/) nihayetinde platformun 
 
 Katman 2 ölçeklendirme; gaz maliyetlerini, kullanıcı deneyimini ve ölçeklenebilirliği büyük ölçüde iyileştirmeye yönelik birincil bir girişimdir. [Katman 2 ölçeklendirme hakkında daha fazlası](/developers/docs/scaling/#layer-2-scaling).
 
-## London Yükseltmesi/EIP-1559 neydi? {#what-was-the-london-upgrade-eip-1559}
-
-London yükseltmesinden önce, Ethereum'un sabit boyutlu blokları vardı. Ağ talebinin yüksek olduğu zamanlarda, bu bloklar tam kapasitede çalıştılar. Sonuç olarak, kullanıcılar bloka girebilmek için çok sık talebin azalmasını beklediler ve bu kötü bir kullanıcı deneyimine sebep oldu. London yükseltmesi Ethereum'a değişken boyutlu blokları tanıttı.
-
-Ethereum ağındaki işlem ücretlerinin hesaplanma şekli, Ağustos 2021'deki [London Yükseltmesi](/history/#london) ile değişti. London yükseltmesinden önce, aşağıda görüldüğü gibi ücretler `ana` ücret ve `öncelik` ücreti ayrılmadan hesaplanırdı:
-
-Alice'in Bob'a 1 ETH ödemek zorunda olduğunu varsayalım. İşlemde gaz limiti 21.000 birim, gaz fiyatı ise 200 gwei'dir.
-
-Toplam ücret: `Gaz birimi (limit) * birim başına gaz ücreti` yani `21.000 * 200 = 4.200.000 gwei` ya da 0,0042 ETH olurdu
-
-[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)'un uygulanması London Yükseltmesinde işlem ücretleri mekanizmasını daha da kompleks hale getirdi, ancak gaz ücretlerini daha tahmin edilebilir kıldı, bu da daha etkili bir işlem ücreti marketine yol açtı. Kullanıcılar, gaza piyasa değerinden (`baseFeePerGas`) daha fazla ödemeyeceklerini bilerek `maxFeePerGas` ile işlemin gerçekleşmesi için ne kadar ödemek istediklerine bağlı olarak işlem gönderebiliriler ve herhangi olası fazlalığı da bahşişleri harici tutularak geri alırlar.
-
-Bu video, EIP-1559'u ve getirdiği faydaları açıklıyor:
-
-<YouTube id="MGemhK9t44Q" />
-
-## Gaz ücretlerini izlemek {#moitoring-gas-fees}
+## Gaz ücretlerini takip etme {#monitoring-gas-fees}
 
 ETH'nizi daha ucuza gönderebilmeniz için gaz fiyatlarını takip etmek istiyorsanız, aşağıdakiler gibi birçok farklı araç kullanabilirsiniz:
 
@@ -149,7 +133,6 @@ ETH'nizi daha ucuza gönderebilmeniz için gaz fiyatlarını takip etmek istiyor
 
 - [Ethereum Gazı Açıklaması](https://defiprime.com/gas)
 - [Akıllı Sözleşmelerinizin gaz tüketimini azaltmak](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
-- [Hisse İspatına karşı İş İspatı](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [Geliştiriciler İçin Gaz Optimizasyonu](https://www.alchemy.com/overviews/solidity-gas-optimization)
 - [EIP-1559 dokümanları](https://eips.ethereum.org/EIPS/eip-1559).
 - [Tim Beiko'nun EIP-1559 Kaynakları](https://hackmd.io/@timbeiko/1559-resources).

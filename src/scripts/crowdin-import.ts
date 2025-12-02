@@ -26,7 +26,7 @@ const argv = require("minimist")(process.argv.slice(2))
  ******************************/
 
 /**
- * 1. Run `yarn crowdin-clean` to initialize fresh ./.crowdin folder. This can also be used to erase contents when finished.
+ * 1. Run `pnpm crowdin-clean` to initialize fresh ./.crowdin folder. This can also be used to erase contents when finished.
  *
  * 2a. Export/import CSV of languages ready for review:
  *   1. Open "Website translation board" document in ethereum.org Notion (internal only)
@@ -42,19 +42,19 @@ const argv = require("minimist")(process.argv.slice(2))
  *
  * 2b. Alternatively, you can manually add buckets to import to the USER_OVERRIDE object below.
  *   1. Add the number of the corresponding content bucket to the chosen language array below
- *      ie. `es: [1, 10],` would import the "Homepage" and "Learn" buckets for Spanish
+ *      i.e., `es: [1, 10],` would import the "Homepage" and "Learn" buckets for Spanish
  *   2. Save file without committing*
  *
- * Optionally: To view summary of buckets from CSV, run `yarn crowdin-import --buckets` or `yarn crowdin-import -b`
+ * Optionally: To view summary of buckets from CSV, run `pnpm crowdin-import --buckets` or `pnpm crowdin-import -b`
  *   Any items in USER_OVERRIDE will override the CSV import
  *
  * 3. Export translated content from Crowdin and import into ./.crowdin folder:
  *   1. Export latest translated content from Crowdin and unzip
  *   2. Copy languages folder from Crowdin export to ./.crowdin
- *      ie. ./.crowdin/{lang-codes}
+ *      i.e., ./.crowdin/{lang-codes}
  *
  * 4. Execute script:
- *   1. Execute script by running `yarn crowdin-import`
+ *   1. Execute script by running `pnpm crowdin-import`
  *   2. If successful, copy `BUILD_LOCALES={langs}` output and paste in
  *      your `.env`, then build site to test results.
  *
@@ -407,7 +407,7 @@ const langsSummary: string = summary.reduce(
 log("Empty buckets:", trackers.emptyBuckets)
 if (summary.length) {
   console.table(summary)
-  console.log("Langs to test:", `\nBUILD_LOCALES=en${langsSummary}`)
+  console.log("Langs to test:", `\nNEXT_PUBLIC_BUILD_LOCALES=en${langsSummary}`)
   console.log("🎉 Crowdin import complete.")
 } else {
   console.warn("Nothing imported, see instruction at top of crowdin-imports.ts")

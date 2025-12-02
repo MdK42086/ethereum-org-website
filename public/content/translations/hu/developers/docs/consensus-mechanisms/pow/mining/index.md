@@ -4,9 +4,14 @@ description: Áttekintés – hogyan működött a bányászat az Ethereumon.
 lang: hu
 ---
 
-<InfoBanner emoji=":wave:">
+<Alert variant="update">
+<AlertEmoji text=":wave:"/>
+<AlertContent>
+<AlertDescription>
 A proof-of-work (munkaigazolás) már nem az Ethereum konszenzusmechanizmus alapja, tehát a bányászatot kikapcsolták. Ehelyett az Ethereumot úgy biztosítják a validátorok, hogy letétbe helyeznek ETH-t. Ön is letétbe helyezheti a rendelkezésére álló ETH-t. Tudjon meg többet a <a href='/roadmap/merge/'>egyesítés (Merge)</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>proof-of-stake (letéti igazolás)</a> és <a href='/staking/'>letétbe helyezés</a> témákról. Ez az oldal csak elavult témákat tartalmaz.
-</InfoBanner>
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 ## Előfeltételek {#prerequisites}
 
@@ -62,7 +67,7 @@ A proof-of-work mechanizmusban végzett blokkbányászat valószínűségen alap
 
 Az „ommer” kifejezés a szülőblokk testvérblokkjának semleges formája, de néha nagybácsi/uncle formában is hivatkoznak rá. **Mióta az Ethereum átállt a proof-of-stake mechanizmusra, többé nincsenek ommer blokkok**, mivel csak egy előterjesztő van minden slotban. Ezt a változást megtekintheti a kibányászott ommer blokkok [előzményábráján](https://ycharts.com/indicators/ethereum_uncle_rate) is.
 
-## Vizuális bemutató {#a-visual-demo}
+## Egy vizuális bemutató {#a-visual-demo}
 
 Tekintse meg, ahogy Austin elmagyarázza a bányászatot és a proof-of-work blokkláncot.
 

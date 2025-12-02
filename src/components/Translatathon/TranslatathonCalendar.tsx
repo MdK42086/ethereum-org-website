@@ -1,17 +1,17 @@
-import { useRouter } from "next/router"
-import { FaDiscord } from "react-icons/fa"
-import { Heading, Icon, Text } from "@chakra-ui/react"
+"use client"
+
+import { useLocale } from "next-intl"
 
 import type { Lang } from "@/lib/types"
 
-import { ButtonLink } from "@/components/Buttons"
-import InlineLink from "@/components/Link"
+import Discord from "@/components/icons/discord.svg"
+import { ButtonLink } from "@/components/ui/buttons/Button"
+import { Flex } from "@/components/ui/flex"
+import InlineLink from "@/components/ui/Link"
 
 import { cn } from "@/lib/utils/cn"
 import { trackCustomEvent } from "@/lib/utils/matomo"
 import { getLocaleTimestamp } from "@/lib/utils/time"
-
-import { Flex } from "../ui/flex"
 
 const matomoEvent = (buttonType: string) => {
   trackCustomEvent({
@@ -23,39 +23,27 @@ const matomoEvent = (buttonType: string) => {
 
 const events = [
   {
-    date: "2024-08-06T09:30:00Z",
-    title: "Crowdin walkthrough + Q&A",
+    date: "2025-08-20T17:00:00Z",
+    title: "Translatathon overview #1",
     calendarLink:
-      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MHJoczcybG42Y2R2YXFncDBwZmxvbzRoNjUgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
+      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWQxNWM3dnA5MjdhazF0a3BvbHNubmUxOHMgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
   },
   {
-    date: "2024-08-07T16:00:00Z",
-    title: "Crowdin walkthrough + Q&A",
+    date: "2025-08-21T12:00:00Z",
+    title: "Translatathon overview #2",
     calendarLink:
-      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGRpZWo3Y3E4a2d2dWVqMjdjNnFtZzZzZTEgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
+      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWU3ZzE3czNyazViYXVqcjNqZnQ5dHYxMmMgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
   },
   {
-    date: "2024-08-09T12:00:00Z",
+    date: "2025-08-25T12:00:00Z",
     title: "Translatathon kickoff call",
     calendarLink:
-      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjU5dDRoNW9yNG0waDM3bjY0dDJmNWx2dmsgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
-  },
-  {
-    date: "2024-08-13T09:30:00Z",
-    title: "Translatathon office hours",
-    calendarLink:
-      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N292aDBqNWRnb3BoY2lldXBmcDVsM2o4MjIgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
-  },
-  {
-    date: "2024-08-15T15:00:00Z",
-    title: "Translatathon office hours",
-    calendarLink:
-      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGJxazFsa2xjdm9ocmZnaGU0ZWZqbGIwNWEgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
+      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MzBzYzQ0ODU5YnZkNHNiY251bDl0M2M2bnMgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
   },
 ]
 
 export const TranslatathonCalendar = () => {
-  const { locale } = useRouter()
+  const locale = useLocale()
 
   return (
     <Flex className="w-full flex-col py-16 lg:flex-row">
@@ -65,31 +53,26 @@ export const TranslatathonCalendar = () => {
           "bg-gradient-to-r from-accent-a/10 to-accent-c/10 dark:from-accent-a/20 dark:to-accent-c-hover/20"
         )}
       >
-        <Heading as="h3" fontSize="2xl">
-          Translatathon calls
-        </Heading>
-        <Text>
+        <h3 className="text-2xl font-bold">Translatathon calls</h3>
+        <p>
           Join us on the ethereum.org Discord for a series of onboarding calls
           and workshops where we’ll cover everything you need to know about the
           Translatathon, walk through using Crowdin and answer any questions you
           might have.
-        </Text>
+        </p>
         <ButtonLink
-          href="/discord/"
-          gap={2}
+          href="https://discord.gg/ethereum-org/"
           onClick={() => matomoEvent("discord")}
         >
-          <Icon as={FaDiscord} fontSize={25} />
+          <Discord className="text-2xl" />
           Join Discord
         </ButtonLink>
       </Flex>
       <Flex className="w-full flex-col bg-background-highlight p-8 lg:w-1/2">
-        <Text fontSize="lg" fontWeight="bold" mb={2}>
-          Translatathon calls
-        </Text>
+        <p className="mb-2 text-lg font-bold">Translatathon calls</p>
         {events.map((event, index) => (
           <Flex className="mb-4 gap-6" key={index}>
-            <Text>{getLocaleTimestamp(locale! as Lang, event.date)}</Text>
+            <p>{getLocaleTimestamp(locale! as Lang, event.date)}</p>
             <InlineLink href={event.calendarLink}>{event.title}</InlineLink>
           </Flex>
         ))}

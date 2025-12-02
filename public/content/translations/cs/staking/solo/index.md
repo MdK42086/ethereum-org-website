@@ -1,10 +1,10 @@
 ---
-title: Samostatný vklad do ETH
-description: Přehled toho, jak začít samostatně vkládat ETH
+title: Uzamykejte své ETH z domova
+description: Přehled toho, jak začít uzamykat své ETH z domova
 lang: cs
 template: staking
 emoji: ":money_with_wings:"
-image: /images/staking/leslie-solo.png
+image: /images/staking/leslie-saas.png
 alt: Nosorožec Leslie na svém vlastním počítačovém čipu.
 sidebarDepth: 2
 summaryPoints:
@@ -13,31 +13,31 @@ summaryPoints:
   - Odstraňte důvěru a nikdy se nevzdávejte kontroly nad klíči ke svým prostředkům
 ---
 
-## Co je samostatný vklad? {#what-is-solo-staking}
+## Co je uzamčení z domova? {#what-is-solo-staking}
 
-Samostatný vklad je akt [spuštění uzlu Ethereum](/run-a-node/) připojeného k internetu a vložením 32 ETH k aktivaci [validátoru](#faq), což vám dává možnost přímo se podílet na konsenzu sítě.
+Uzamčení z domova je akt [spuštění uzlu Ethereum](/run-a-node/) připojeného k internetu a vložení 32 ETH k aktivaci [validátoru](#faq), což vám dává možnost přímo se podílet na konsenzu sítě.
 
-**Samostatný vklad zvyšuje decentralizaci sítě Ethereum**, díky čemuž je Ethereum odolnější vůči cenzuře a odolnější vůči útokům. Jiné metody vkladů nemusí síti pomoci stejným způsobem. Samostatný vklad je nejlepší možností vkládání pro zajištění Etherea.
+**Uzamčení z domova zvyšuje decentralizaci sítě Ethereum**, díky čemuž je Ethereum odolnější vůči cenzuře a útokům. Jiné metody vkladů nemusí síti pomoci stejným způsobem. Uzamčení z domova je nejlepší možností uzamčení pro zajištění Etherea.
 
-Uzel Ethereum se skládá jak z klienta prováděcí vrstvy (EL), tak z klienta konsensuální vrstvy (CL). Tito klienti jsou software, který společně s platnou sadou podpisových klíčů ověřuje transakce a bloky, osvědčuje správnému vedoucímu řetězce, shromažďuje atestace a navrhuje bloky.
+Uzel Ethereum se skládá jak z klienta prováděcí vrstvy (EL), tak z klienta konsensuální vrstvy (CL). Tyto klienty jsou software, který společně s platnou sadou podpisových klíčů ověřuje transakce a bloky, osvědčuje správnému vedoucímu řetězce, shromažďuje atestace a navrhuje bloky.
 
-Samostatní vkladatelé jsou zodpovědní za provoz hardwaru potřebného ke spuštění těchto klientů. Důrazně se doporučuje používat k tomu vyhrazený počítač, který obsluhujete z domova – to je mimořádně prospěšné pro zdraví sítě.
+Uzamykatelé z domova jsou zodpovědní za provoz hardwaru potřebného ke spuštění těchto klientů. Důrazně se doporučuje používat k tomu vyhrazený počítač, který obsluhujete z domova – to je mimořádně prospěšné pro zdraví sítě.
 
-Samostatný vkladatel dostává odměny přímo z protokolu za to, že jejich validátor řádně funguje a je online.
+Uzamykatel z domova dostává odměny přímo z protokolu za to, že jejich validátor řádně funguje a je online.
 
-## Proč vkládat samostatně? {#why-stake-solo}
+## Proč uzamykat z domova? {#why-stake-solo}
 
-Samostatné vklady přináší větší odpovědnost, ale poskytuje vám maximální kontrolu nad vašimi prostředky a nastavením vkladů.
+Uzamčení z domova přináší větší odpovědnost, ale poskytuje vám maximální kontrolu nad vašimi prostředky a nastavením uzamčení.
 
 <CardGrid>
   <Card title="Vydělávejte čerstvé ETH" emoji="💸" description="Earn ETH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
   <Card title="Plná kontrola" emoji="🎛️" description="Keep your own keys. Choose the combination of clients and hardware that allows you to minimize your risk and best contribute to the health and security of the network. Third-party staking services make these decisions for you, and they don't always make the safest choices." />
-  <Card title="Zabezpečení sítě" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
+  <Card title="Zabezpečení sítě" emoji="🔐" description="Home staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
 </CardGrid>
 
-## Úvahy před samostatným vkladem {#considerations-before-staking-solo}
+## Úvahy před uzamčením z domova {#considerations-before-staking-solo}
 
-Jakkoli si přejeme, aby byly samostatné vklady přístupné a bez rizika pro každého, není to realita. Než se rozhodnete vložit své ETH samostatně, je třeba mít na paměti několik praktických a vážných úvah.
+I když bychom si přáli, aby bylo uzamčení z domova dostupné a bez rizika pro každého, není to realita. Než se rozhodnete uzamčít své ETH z domova, je třeba mít na paměti několik praktických a vážných úvah.
 
 <InfoGrid>
 <ExpandableCard title="Povinná četba" eventCategory="SoloStaking" eventName="clicked required reading">
@@ -53,12 +53,12 @@ Vyžaduje také velmi základní nastavení hardwaru a určité porozumění min
 </ExpandableCard>
 
 <ExpandableCard title="Bezpečná správa klíčů" eventCategory="SoloStaking" eventName="clicked secure key management">
-Stejně jako soukromé klíče zajišťují vaši adresu Ethereum, budete muset vygenerovat klíče speciálně pro váš validátor. Musíte rozumět tomu, jak uchovat všechny počáteční fráze nebo soukromé klíče v bezpečí.{' '}
+Stejně jako privátní klíče zajišťují vaši adresu Ethereum, budete muset vygenerovat klíče speciálně pro váš validátor. Musíte rozumět tomu, jak uchovat všechny počáteční fráze nebo privátní klíče v bezpečí.{' '}
 
-<a href="/security/">Zabezpečení Etherea a prevence podvodů</a>
+[Zabezpečení Etherea a prevence podvodů](/security/)
 </ExpandableCard>
 
-<ExpandableCard title="Maintenance" eventCategory="SoloStaking" eventName="clicked maintenance">
+<ExpandableCard title="Údržba" eventCategory="SoloStaking" eventName="clicked maintenance">
 Hardware občas selže, dojde k chybě síťových připojení a klientský software občas potřebuje upgrade. Údržba uzlů je nevyhnutelná a občas bude vyžadovat vaši pozornost. Budete si chtít být jisti, že budete informováni o všech očekávaných upgradech sítě nebo jiných důležitých upgradech klientů.
 </ExpandableCard>
 
@@ -93,7 +93,7 @@ Vkladový spouštěcí panel je open source aplikace, která vám pomůže stát
 
 ## Co je třeba zvážit u nástrojů pro nastavení uzlů a klienta {#node-tool-considerations}
 
-Existuje rostoucí počet nástrojů a služeb, které vám pomohou samostatně vložit vaše ETH, ale každý přichází s jinými riziky a výhodami.
+Existuje rostoucí počet nástrojů a služeb, které vám pomohou uzamčít vaše ETH z domova, ale každý přichází s jinými riziky a výhodami.
 
 Atributové indikátory se používají níže k signalizaci pozoruhodných silných nebo slabých stránek, které mohou mít uvedený vkladový nástroj. Použijte tuto část jako referenci, jak definujeme tyto atributy, když vybíráte nástroje, které vám pomohou s vaší cestou vkladu.
 
@@ -119,26 +119,26 @@ Tyto nástroje lze použít jako alternativu k [Staking Deposit CLI](https://git
 
 Máte návrh na vkladový nástroj, který nám chyběl? Podívejte se na naše [zásady pro záznam produktů](/contributing/adding-staking-products/), abyste zjistili, zda by se hodily, a odešlete je ke kontrole.
 
-## Prozkoumejte průvodce samostatným vkládáním {#staking-guides}
+## Prozkoumejte návody na uzamčení z domova {#staking-guides}
 
 <StakingGuides />
 
-## Často kladené otázky {#faq}
+## Často kladené dotazy {#faq}
 
 Toto je několik nejčastějších otázek týkajících se vkládání, které stojí za to vědět.
 
 <ExpandableCard title="Co je to validátor?">
 
-<em>Validátor</em> je virtuální entita, která žije na Ethereu a účastní se konsenzu protokolu Ethereum. Validátory jsou reprezentovány zůstatkem, veřejným klíčem a dalšími vlastnostmi. <em>Klient validátoru</em> je software, který jedná jménem validátoru tím, že drží a používá jeho soukromý klíč. Jeden klient validátoru může pojmout mnoho párů klíčů a ovládat mnoho validátorů.
+<em>Validátor</em> je virtuální entita, která žije na Ethereu a účastní se konsenzu protokolu Ethereum. Validátory jsou reprezentovány zůstatkem, veřejným klíčem a dalšími vlastnostmi. <em>Klient validátoru</em> je software, který jedná jménem validátoru tím, že drží a používá jeho privátní klíč. Jeden klient validátoru může pojmout mnoho párů klíčů a ovládat mnoho validátorů.
 
 </ExpandableCard>
 
 <ExpandableCard title="Mohu vložit více než 32 ETH?">
 Každý pár klíčů spojený s validátorem vyžaduje k aktivaci přesně 32 ETH. Více ETH uložených na jednu sadu klíčů nezvyšuje potenciál odměn, protože každý validátor je omezen na <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">efektivní zůstatek</a> 32 ETH. To znamená, že vytyčování se provádí ve 32 krocích ETH, z nichž každý má svou vlastní sadu klíčů a zůstatek.
 
-Nevkládejte více než 32 ETH na jeden validátor. Nezvýší to vaše odměny. Pokud byla pro validátor nastavena adresa pro výběr, přebytečné prostředky nad 32 ETH budou automaticky vybrány na tuto adresu během příští <a href="/staking/withdrawals/#validator-sweeping">kontroly validátoru</a>.
+Nevkládejte více než 32 ETH na jeden validátor. Nezvýší to vaše odměny. Pokud byla pro validátor nastavena adresa pro výběr, přebytečné prostředky nad 32 ETH budou automaticky vybrány na tuto adresu během příští [kontroly validátoru](/staking/withdrawals/#validator-sweeping).
 
-Pokud se vám samostatné vkládání zdá příliš náročné, zvažte použití poskytovatele <a href="/staking/saas/">staking-as-a-service</a>, nebo pokud pracujete s méně než 32 ETH, zkontrolujte <a href="/staking/pools/">vkladové fondy</a>.
+Pokud se vám uzamčení z domova zdá příliš náročné, zvažte použití poskytovatele typu [uzamčení-jako-služba](/staking/saas/), nebo pokud pracujete s méně než 32 ETH, koukněte se na [vkladové fondy](/staking/pools/).
 </ExpandableCard>
 
 <ExpandableCard title="Budu potrestán, když přejdu offline? (ve zkratce: Ne.)">
@@ -146,7 +146,7 @@ Přechod do režimu offline v době, kdy se síť správně dokončuje, NEBUDE m
 
 Všimněte si, že sankce za nečinnost jsou úměrné tomu, kolik validátorů je současně offline. V případech, kdy je velká část sítě offline najednou, budou postihy pro každý z těchto validátorů vyšší, než když je jeden validátor nedostupný.
 
-V extrémních případech, pokud se síť přestane dokončovat v důsledku toho, že více než třetina validátorů je offline, tito uživatelé utrpí takzvaný <em>kvadratický únik nečinnosti</em>, což je exponenciální odliv ETH z účtů offline validátoru. To umožňuje, aby se síť časem samoopravila spotřebováním EHT neaktivních validátorů, dokud nebude zůstatek 16 EHT, přičemž budou automaticky vyřazeny z fondu validátorů. Zbývající online validátoři budou nakonec opět zahrnovat více než 2/3 sítě, čímž uspokojí nadpoloviční většinu potřebnou k opětovnému dokončení řetězce.
+V extrémních případech, pokud se síť přestane dokončovat v důsledku toho, že více než třetina validátorů je offline, tito uživatelé utrpí takzvaný <em>kvadratický únik nečinnosti</em>, což je exponenciální odliv ETH z účtů offline validátoru. To umožňuje, aby se síť časem samoopravila spotřebováním ETH neaktivních validátorů, dokud nebude zůstatek 16 ETH, přičemž budou automaticky vyřazeny z fondu validátorů. Zbývající online validátoři budou nakonec opět zahrnovat více než 2/3 sítě, čímž uspokojí nadpoloviční většinu potřebnou k opětovnému dokončení řetězce.
 </ExpandableCard>
 
 <ExpandableCard title="Jak zajistím, že nebudu potrestán?">
@@ -156,7 +156,7 @@ Existuje jen několik konkrétních způsobů, které mohou vést k tomu, že va
 
 Provozování supervětšinového klienta (jakéhokoli klienta používaného více než 2/3 sítě) také nese riziko potenciálního trestu v případě, že tento klient má chybu, která vede k rozvětvení řetězce. To může mít za následek vadnou vidlici, která se finalizuje. Oprava zpět na zamýšlený řetězec by vyžadovala odeslání <em>prostorového hlasování</em> pokusem o vrácení dokončeného bloku. Za to můžete být také potrestáni. Lze se tomu vyhnout tím, že místo toho spustíte menšinového klienta.
 
-Ekvivalentní chyby v <em>menšinovém klientovi by se nikdy nedokončily</em>, a proto by nikdy nevedly k prostorovému hlasování a jednoduše by vedly k penalizaci za nečinnost, <em>nikoli trestu</em>.
+Ekvivalentní chyby v <em>menšinovém klientu by se nikdy nedokončily</em>, a proto by nikdy nevedly k prostorovému hlasování a jednoduše by vedly k penalizaci za nečinnost, <em>nikoli trestu</em>.
 
 <ul>
   <li><a href="https://hackernoon.com/ethereums-client-diversity-problem">Zjistěte více o důležitosti provozování menšinového klienta.</a></li>
@@ -164,10 +164,10 @@ Ekvivalentní chyby v <em>menšinovém klientovi by se nikdy nedokončily</em>, 
 </ul>
 </ExpandableCard>
 
-<ExpandableCard title="Který směr je lepší?">
-Jednotliví klienti se mohou mírně lišit, pokud jde o výkon a uživatelské rozhraní, protože každý je vyvíjen různými týmy pomocí různých programovacích jazyků. Jak již bylo řečeno, žádný z nich není „nejlepší“ Všichni produkční klienti jsou vynikající softwary, které všechny provádějí stejné základní funkce pro synchronizaci a interakci s blockchainem.
+<ExpandableCard title="Který klient je lepší?">
+Jednotlivé klienty se mohou mírně lišit, pokud jde o výkon a uživatelské rozhraní, protože každý je vyvíjen různými týmy pomocí různých programovacích jazyků. Jak již bylo řečeno, žádný z nich není „nejlepší“ Všechny produkční klienty jsou vynikající softwary, které všechny provádějí stejné základní funkce pro synchronizaci a interakci s blockchainem.
 
-Protože všichni produkční klienti poskytují stejnou základní funkcionalitu, je ve skutečnosti velmi důležité, abyste si vybrali <strong>menšinového klienta</strong>, což znamená jakéhokoli klienta, kterého momentálně NEPOUŽÍVÁ většina validátorů v síti. Může to znít neintuitivně, ale provozování většinového nebo supervětšinového klienta vás vystavuje zvýšenému riziku trestu v případě chyby v tomto klientovi. Provozování menšinového klienta tato rizika drasticky omezuje.
+Protože všechny produkční klienty poskytují stejnou základní funkcionalitu, je ve skutečnosti velmi důležité, abyste si vybrali <strong>menšinového klienta</strong>, což znamená jakéhokoli klienta, kterého momentálně NEPOUŽÍVÁ většina validátorů v síti. Může to znít neintuitivně, ale provozování většinového nebo supervětšinového klienta vás vystavuje zvýšenému riziku trestu v případě chyby v tomto klientu. Provozování menšinového klienta tato rizika drasticky omezuje.
 
 <a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA">Další informace o tom, proč je rozmanitost klientů kritická</a>
 </ExpandableCard>
@@ -200,7 +200,6 @@ Chcete-li odemknout a získat zpět celý zůstatek, musíte také dokončit pro
 - [Pomáháme rozmanitosti klientů](https://www.attestant.io/posts/helping-client-diversity/) – _Jim McDonald 2022_
 - [Klientská diverzita na konsensuální vrstvě Etherea](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) – _jmcook.eth 2022_
 - [Jak na to: Nakupovat hardware validátoru Ethereum](https://www.youtube.com/watch?v=C2wwu1IlhDc) – _EthStaker 2022_
-- [Krok za krokem: Jak se připojit k testovací síti Ethereum 2.0](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) – _ Butta_
 - [Tipy pro prevenci trestu Eth2](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) – _Raul Jordan 2020 _
 
-<QuizWidget quizKey="solo-staking" />
+<QuizWidget quizKey="staking-solo" />

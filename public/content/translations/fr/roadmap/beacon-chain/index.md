@@ -3,7 +3,7 @@ title: La chaîne phare
 description: En savoir plus sur la chaîne phare - la mise à niveau qui a introduit la preuve d'enjeu d'Ethereum.
 lang: fr
 template: upgrade
-image: /images/upgrades/core.png
+image: /images/use-cases/defi.png
 alt:
 summaryPoint1: La Chaîne phare a introduit la preuve d'enjeu dans l'écosystème Ethereum.
 summaryPoint2: Elle a été fusionnée avec la chaîne originale de preuve de travail Ethereum en septembre 2022.
@@ -34,9 +34,14 @@ La transition vers la preuve d'enjeu a rendu Ethereum nettement plus sûr et dé
 
 De plus, l'utilisation de la preuve d'enjeu comme mécanisme de consensus est un composant fondamental pour un [Ethereum sécurisé, respectueux de l'environnement et évolutif tel que nous le connaissons maintenant](/roadmap/vision/).
 
-<InfoBanner emoji=":money_bag:">
-  Si vous souhaitez devenir validateur et aider à sécuriser Ethereum, <a href="/staking/">familiarisez-vous avec le concept de mise en jeu</a>.
-</InfoBanner>
+<Alert variant="update">
+<AlertEmoji text=":money_bag:"/>
+<AlertContent>
+<AlertDescription>
+  Si vous souhaitez devenir validateur et aider à sécuriser Ethereum, [familiarisez-vous avec le concept de mise en jeu](/staking/).
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 ### Mise en place de la fragmentation {#setting-up-for-sharding}
 

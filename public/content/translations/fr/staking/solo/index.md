@@ -1,6 +1,6 @@
 ---
-title: Misez votre ETH de manière individuelle
-description: Un aperçu de la façon de commencer à miser votre ETH de manière individuelle
+title: Miser individuellement votre ETH à domicile
+description: Un aperçu de la façon de commencer à miser votre ETH à domicile
 lang: fr
 template: staking
 emoji: ":money_with_wings:"
@@ -13,31 +13,31 @@ summaryPoints:
   - Supprimez le tiers de confiance et gardez en permanence le contrôle sur vos fonds
 ---
 
-## Qu'est-ce que la mise en jeu individuelle ? {#what-is-solo-staking}
+## Qu'est-ce que la mise en jeu à domicile ? {#what-is-solo-staking}
 
-La mise en jeu individuelle consiste à [faire fonctionner un noeud Ethereum](/run-a-node/) connecté à Internet et à déposer 32 ETH pour activer un [validateur](#faq), vous donnant la possibilité de participer directement au consensus du réseau.
+La mise en jeu à domicile consiste à [faire fonctionner un nœud Ethereum](/run-a-node/) connecté à Internet et à déposer 32 ETH pour activer un [validateur](#faq), vous donnant la possibilité de participer directement au consensus du réseau.
 
-**Le staking individuel augmente la décentralisation du réseau Ethereum**, rendant Ethereum plus résistant à la censure et robuste contre les attaques. D'autres méthodes de mises en jeu peuvent ne pas aider le réseau de la même manière. La mise en jeu individuelle est la meilleure option de staking pour sécuriser Ethereum.
+**La mise en jeu à domicile augmente la décentralisation du réseau Ethereum**, rendant Ethereum plus résistant à la censure et robuste contre les attaques. D'autres méthodes de mises en jeu peuvent ne pas aider le réseau de la même manière. La mise en jeu à domicile est la meilleure option de staking pour sécuriser Ethereum.
 
 Un nœud Ethereum est constitué à la fois d'un client de couche d'exécution (EL) et d'un client de consensus (CL). Ces clients sont des logiciels qui se coordonnent, avec un ensemble valide de clés de signature, pour vérifier les transactions et les blocs, attester de la tête de la chaîne, agréger les attestations et proposer des blocs.
 
-Les validateurs individuels sont responsables du fonctionnement du matériel nécessaire à l'exécution de ces clients. Pour cela, il est fortement recommandé d'utiliser une machine dédiée que vous opérez depuis chez vous - c'est extrêmement bénéfique pour la santé du réseau.
+Les validateurs à domicile sont responsables du fonctionnement du matériel nécessaire à l'exécution de ces clients. Pour cela, il est fortement recommandé d'utiliser une machine dédiée que vous opérez depuis chez vous - c'est extrêmement bénéfique pour la santé du réseau.
 
-Un validateur individuel reçoit des récompenses directement du protocole pour le maintien de son validateur en bon état de fonctionnement et en ligne.
+Un validateur à domicile reçoit des récompenses directement du protocole pour le maintien de son validateur en bon état de fonctionnement et en ligne.
 
-## Pourquoi miser de manière individuelle ? {#why-stake-solo}
+## Pourquoi effectuer des mises en jeu depuis chez soi ? {#why-stake-solo}
 
-La mise en jeu individuelle demande plus de responsabilités, mais vous donne un contrôle maximal sur vos fonds et votre configuration de mise en jeu.
+La mise en jeu à domicile demande plus de responsabilités, mais vous donne un contrôle maximal sur vos fonds et votre configuration de mise en jeu.
 
 <CardGrid>
   <Card title="Gagnez de l'ETH frais" emoji="💸" description="Earn ETH-denominated rewards directly from the protocol when your validator is online, without any middlemen taking a cut." />
   <Card title="Contrôle total" emoji="🎛️" description="Keep your own keys. Choose the combination of clients and hardware that allows you to minimize your risk and best contribute to the health and security of the network. Third-party staking services make these decisions for you, and they don't always make the safest choices." />
-  <Card title="Sécurité du réseau" emoji="🔐" description="Solo staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
+  <Card title="Sécurité du réseau" emoji="🔐" description="Home staking is the most impactful way to stake. By running a validator on your own hardware at home, you strengthen the robustness, decentralization, and security of the Ethereum protocol." />
 </CardGrid>
 
-## Considérations avant de miser de manière individuelle {#considerations-before-staking-solo}
+## Considérations avant de miser à domicile {#considerations-before-staking-solo}
 
-Bien que nous souhaitions que la mise en jeu individuelle soit accessible et sans risque pour tout le monde, la réalité est différente. Diverses considérations pratiques et sérieuses sont à garder à l'esprit avant de choisir de miser vos ETH de manière individuelle.
+Bien que nous souhaitions que la mise en jeu à domicile soit accessible et sans risque pour tout le monde, la réalité est différente. Diverses considérations pratiques et sérieuses sont à garder à l'esprit avant de choisir de miser vos ETH à domicile.
 
 <InfoGrid>
 <ExpandableCard title="Lecture nécessaire" eventCategory="SoloStaking" eventName="clicked required reading">
@@ -55,7 +55,7 @@ Il faut également faire un petit peu de configuration matérielle et posséder 
 <ExpandableCard title="Gestion des clés sécurisée" eventCategory="SoloStaking" eventName="clicked secure key management">
 Tout comme la façon dont les clés privées sécurisent votre adresse Ethereum, vous devrez générer des clés spécifiques pour votre validateur. Vous devez comprendre comment conserver toutes vos phrases de récupération ou vos clés privées en sécurité.{' '}
 
-<a href="/security/">Sécurité d'Ethereum et prévention des escroqueries</a>
+[Sécurité d'Ethereum et prévention des escroqueries](/security/)
 </ExpandableCard>
 
 <ExpandableCard title="Maintenance" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -93,7 +93,7 @@ La plateforme de lancement de la mise en jeu est une application open source qui
 
 ## Éléments à prendre en compte avec les outils de configuration de nœud et de client {#node-tool-considerations}
 
-Un nombre croissant d'outils et de services vous aident à miser vos ETH, mais chacun comporte des risques et des avantages différents.
+Un nombre croissant d'outils et de services vous aident à mettre en jeu vos ETH à domicile, mais chacun comporte des risques et des avantages différents.
 
 Les indicateurs d'attributs sont utilisés ci-dessous pour signaler des forces ou faiblesses notables d'un outil de mise en jeu répertorié. Utilisez cette section comme référence pendant que vous choisissez les outils qui vous aideront dans votre parcours de mise en jeu.
 
@@ -119,7 +119,7 @@ Ces outils peuvent être utilisés en alternative à [l'interface de dépôt de 
 
 Vous souhaitez suggérer un outil de mise en jeu que nous avons manqué ? Consultez notre [politique de liste de produits](/contributing/adding-staking-products/) pour voir s'il conviendrait, et le soumettre à examen.
 
-## Explorer les guides de mise en jeu individuelle {#staking-guides}
+## Explorer les guides de mise en jeu à domicile {#staking-guides}
 
 <StakingGuides />
 
@@ -136,9 +136,9 @@ Un validateur est une entité virtuelle existant sur Ethereum et participant au 
 <ExpandableCard title="Puis-je déposer plus de 32 ETH ?">
 Chaque paire de clés associée à un validateur nécessite exactement 32 ETH pour être activée. Déposer plus d'ETH sur un même ensemble de clés n'augmente pas le potentiel de récompense, car chaque validateur est limité à un <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">solde effectif</a> de 32 ETH. Cela signifie que la mise en jeu se fait par tranches de 32 ETH, chacune avec son propre jeu de clés et son propre solde.
 
-Ne déposez pas plus de 32 ETH pour un seul validateur. Cela n'augmentera pas vos récompenses. Si une adresse de retrait a été définie pour le validateur, Les fonds excédentaires de 32 ETH seront automatiquement retirés à cette adresse lors du prochain <a href="/staking/withdrawals/#validator-sweeping">balayage de validateur</a>.
+Ne déposez pas plus de 32 ETH pour un seul validateur. Cela n'augmentera pas vos récompenses. Si une adresse de retrait a été définie pour le validateur, Les fonds excédentaires de 32 ETH seront automatiquement retirés à cette adresse lors du prochain [balayage de validateur](/staking/withdrawals/#validator-sweeping).
 
-Si la mise en jeu individuelle vous semble trop exigeante, envisagez d'utiliser un <a href="/staking/saas/">fournisseur de mise en jeu en tant que service</a>, ou si vous possédez moins de 32 ETH, consultez <a href="/staking/pools/">les groupes d'enjeu</a>.
+Si la mise en jeu à domicile vous semble trop exigeante, envisagez d'utiliser un fournisseur [de mise en jeu en tant que service](/staking/saas/), ou si vous possédez moins de 32 ETH, consultez [les groupes d'enjeu](/staking/pools/).
 </ExpandableCard>
 
 <ExpandableCard title="Vais-je être sanctionné si je me déconnecte ? (tdlr : Non.)">
@@ -200,7 +200,6 @@ Pour déverrouiller et recevoir la totalité de votre solde, vous devez égaleme
 - [Helping Client Diversity](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Client diversity on Ethereum's consensus layer](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [How To: Shop For Ethereum Validator Hardware](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [Step by Step: How to join the Ethereum 2.0 Testnet](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
 - [Eth2 Slashing Prevention Tips](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) - _Raul Jordan 2020_
 
-<QuizWidget quizKey="solo-staking" />
+<QuizWidget quizKey="staking-solo" />

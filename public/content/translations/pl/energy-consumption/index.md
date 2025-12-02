@@ -25,8 +25,8 @@ Powyższy wykres przedstawia szacowane zużycie energii w TWh/rok dla Ethereum w
 | PoW Ethereum           |              21              |           x 8100           |                                                                    [źródło](https://ccaf.io/cbnsi/ethereum/1)                                                                     |
 | Google                 |              19              |           x 7300           |                                           [źródło](https://www.gstatic.com/gumdrop/sustainability/google-2022-environmental-report.pdf)                                           |
 | Netflix                |            0,457             |           x 176            | [źródło](https://assets.ctfassets.net/4cd45et68cgf/7B2bKCqkXDfHLadrjrNWD8/e44583e5b288bdf61e8bf3d7f8562884/2021_US_EN_Netflix_EnvironmentalSocialGovernanceReport-2021_Final.pdf) |
-| PayPal                 |             0,26             |            100x            |                                  [źródło](https://s202.q4cdn.com/805890769/files/doc_downloads/global-impact/CDP_Climate_Change_PayPal-(1).pdf)                                   |
-| AirBnB                 |             0,02             |             8x             |                               [źródło](https://s26.q4cdn.com/656283129/files/doc_downloads/governance_doc_updated/Airbnb-ESG-Factsheet-(Final).pdf)                               |
+| PayPal                 |             0,26             |           x 100            |                                  [źródło](https://s202.q4cdn.com/805890769/files/doc_downloads/global-impact/CDP_Climate_Change_PayPal-(1).pdf)                                   |
+| AirBnB                 |             0,02             |            x 8             |                               [źródło](https://s26.q4cdn.com/656283129/files/doc_downloads/governance_doc_updated/Airbnb-ESG-Factsheet-(Final).pdf)                               |
 | **PoS Ethereum**       |          **0,0026**          |          **x 1**           |                                                               [źródło](https://carbon-ratings.com/eth-report-2022)                                                                |
 
 \*Obejmuje urządzenia użytkowników końcowych, takie jak komputery, laptopy i konsole do gier.
@@ -61,14 +61,19 @@ Obecnie zużycie energii przez Ethereum jest bardzo niskie, a ponadto istnieje r
 
 Natywne platformy Web3 do finansowania dóbr publicznych, takie jak [Gitcoin](https://gitcoin.co), przeprowadzają rundy klimatyczne w celu stymulowania świadomego i ekologicznego budowania w warstwie aplikacji Ethereum. Dzięki rozwojowi tych inicjatyw (i innych, takich jak [DeSci](/desci/)) Ethereum staje się technologią o pozytywnym wpływie środowiskowym i społecznym.
 
-<InfoBanner emoji=":evergreen_tree:">
+<Alert variant="update">
+<AlertEmoji text=":evergreen_tree:" />
+<AlertContent>
+<AlertDescription>
   Jeśli uważasz, że ta strona może być dokładniejsza, zgłoś problem lub PR. Statystyki na tej stronie są szacunkami opartymi na danych, które są dostępne publicznie — nie stanowią one oficjalnego oświadczenia ani obietnicy ze strony zespołu ethereum.org lub Fundacji Ethereum.
-</InfoBanner>
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 ## Dalsza lektura {#further-reading}
 
 - [Cambridge Blockchain Network Sustainability Index](https://ccaf.io/cbnsi/ethereum)
-- [Raport Białego Domu na temat blockchainów proof-of-work](https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
+- [Raport Białego Domu na temat blockchainów proof-of-work](https://web.archive.org/web/20221109005700/https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
 - [Emisje Ethereum: wstępne oszacowanie](https://kylemcdonald.github.io/ethereum-emissions/) — _Kyle McDonald_
 - [Indeks zużycia energii Ethereum](https://digiconomist.net/ethereum-energy-consumption/) — _Digiconomist_
 - [ETHMerge.com](https://ethmerge.com/) — _[@InsideTheSim](https://twitter.com/InsideTheSim)_

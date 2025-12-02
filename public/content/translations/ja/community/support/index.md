@@ -20,7 +20,7 @@ lang: ja
   イーサリアムの基礎知識を学ぶ
 </DocLink>
 
-公式サポートはありませんが、イーサリアムエコシステム全体で多くのグループ、コミュニティ、およびプロジェクトからサポートを受けることができます。このページに有用な情報やリソースを記載していますので、ご確認ください。 ご質問やご不明点がある場合は、 [ethereum.org Discord](/discord/)に参加すると、サポートできることがあると思います。
+公式サポートはありませんが、イーサリアムエコシステム全体で多くのグループ、コミュニティ、およびプロジェクトからサポートを受けることができます。このページに有用な情報やリソースを記載していますので、ご確認ください。 ご質問やご不明点がある場合は、 [ethereum.org Discord](https://discord.gg/ethereum-org)に参加すると、サポートできることがあると思います。
 
 ## よくある質問 {#faq}
 
@@ -57,7 +57,6 @@ lang: ja
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [CryptoDevs discord](https://discord.com/invite/5W5tVb3)
 - [Ethereum StackExchange](https://ethereum.stackexchange.com/)
-- [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 
@@ -91,6 +90,7 @@ lang: ja
 - [Nethermind](https://discord.gg/YJx3pm8z5C)
 - [Besu](https://discord.gg/p8djYngzKN)
 - [Erigon](https://github.com/ledgerwatch/erigon/issues)
+- [Reth](https://github.com/paradigmxyz/reth/discussions)
 
 ### コンセンサスクライアント {#consensus-clients}
 

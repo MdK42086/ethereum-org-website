@@ -4,10 +4,10 @@ description: Informieren Sie sich über die Beacon Chain – das Upgrade, mit de
 lang: de
 template: upgrade
 image: /images/upgrades/core.png
-alt: 
-summaryPoint1: Mit der Beacon Chain wurde Proof-of-Stake in das Ethereum Ökosystem eingeführt.
-summaryPoint2: Sie wurde 2022 mit der ursprünglichen Ethereum Proof-of-Work Blockchain vereinigt.
-summaryPoint3: Die Beacon Chain führte die Konsenslogik und das Block-Gossip-Protokoll ein, das nun Ethereum sichert.
+alt:
+summaryPoint1: Mit der Bacon Chain wurde Proof-of-Stake in das Ethereum-Ökosystem eingeführt.
+summaryPoint2: Sie wurde im September 2022 mit der ursprünglichen Proof-of-Work-Blockchain von Ethereum vereinigt.
+summaryPoint3: Mit der Beacon Chain wurde die Konsenslogik und das Block-Gossip-Protokoll eingeführt, die heute für die Sicherheit von Ethereum sorgen.
 ---
 
 <UpgradeStatus isShipped dateKey="page-upgrades:page-upgrades-beacon-date">
@@ -28,15 +28,20 @@ Die Beacon Chain ist die Bezeichnung für ein Kontenbuch, das das Netzwerk von E
 
 Die Beacon Chain brachte [Proof-of-Stake](/developers/docs/consensus-mechanisms/pos/) zu Ethereum. Dieser Mechanismus sichert Ethereum und sorgt dafür, dass die Validatoren dabei ETH verdienen. In der Praxis bedeutet dies ETH einzusetzen, um die Validierungssoftware zu aktivieren. Als Staker führen Sie die Software aus die in der Chain neue Blöcke erstellt und validiert.
 
-Staking erfüllt denselben Zweck wie einst [Mining](/developers/docs/consensus-mechanisms/pow/mining/), aber unterscheidet sich davon in vielerlei Hinsicht. Mining erforderte hohe Voraufwendungen in Form von mächtiger Hardware und hohem Energieverbrauch. Dies führte zu Skaleneffekten und förderte Zentralisierung. Mining sah auch keine Verpflichtung vor Vermögenswerte, als Sicherheiten zu sperren. Das Protokoll hatte dadurch weniger Möglichkeiten feindselige Akteure nach einer Attacke zu bestrafen.
+Staking erfüllt einen ähnlichen Zweck wie einst [Mining](/developers/docs/consensus-mechanisms/pow/mining/), aber unterscheidet sich davon in vielerlei Hinsicht. Mining erforderte hohe Voraufwendungen in Form von mächtiger Hardware und hohem Energieverbrauch. Dies führte zu Skaleneffekten und förderte Zentralisierung. Mining sah auch keine Verpflichtung vor Vermögenswerte, als Sicherheiten zu sperren. Das Protokoll hatte dadurch weniger Möglichkeiten feindselige Akteure nach einer Attacke zu bestrafen.
 
 Der Wechsel zu Proof-of-Stake machte Ethereum wesentlich sicherer und dezentralisierte im Vergleich zu Proof-of-Work. Je mehr Menschen sich am Netzwerk beteiligen, desto dezentralisierter und sicherer wird es vor Angriffen.
 
 Und die Verwendung von Proof-of-Stake als Konsensmechanismus ist eine grundlegende Komponente für [das sichere, umweltfreundliche und skalierbare Ethereum, das wir jetzt haben](/roadmap/vision/).
 
-<InfoBanner emoji=":money_bag:">
-  Wenn Sie Interesse daran haben ein Validator zu werden und bei der Sicherung von Ethereum mitwirken wollen können Sie hier mehr über das <a href="/staking/">Staking</a> erfahren.
-</InfoBanner>
+<Alert variant="update">
+<AlertEmoji text=":money_bag:"/>
+<AlertContent>
+<AlertDescription>
+  Wenn Sie Interesse daran haben ein Validator zu werden und bei der Sicherung von Ethereum mitwirken wollen können Sie hier mehr über das [Staking](/staking/) erfahren.
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 ### Vorbereitung für Sharding {#setting-up-for-sharding}
 

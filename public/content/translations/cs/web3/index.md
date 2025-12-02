@@ -61,12 +61,15 @@ Web3 vám umožňuje vlastnit vaše digitální aktiva dosud nevídaným způsob
 
 Web3 umožňuje přímé vlastnictví prostřednictvím [nezaměnitelných tokenů (NFT)](/glossary/#nft). Nikdo, ani tvůrci hry, nemají moc vás vlastnictví zbavit. A pokud přestanete hrát, můžete své herní předměty prodat nebo vyměnit na veřejně přístupných tržištíích a získat tak zpět prostředky, které jste vynaložili na jejich pořízení.
 
-<InfoBanner shouldSpaceBetween emoji=":eyes:">
+<Alert variant="update">
+<AlertEmoji text=":eyes:"/>
+<AlertContent className="flex-row items-center justify-between">
   <div>Další informace o NFT</div>
   <ButtonLink href="/nft/">
     Více o NFT
   </ButtonLink>
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 #### Odolnost proti cenzuře {#censorship-resistance}
 
@@ -86,12 +89,15 @@ DAO jsou technicky definovány jako [chytré kontrakty](/glossary/#smart-contrac
 
 Lidé definují spoustu Web3 komunit jako DAO. Všechny tyto komunity mají různé úrovně decentralizace a automatizace v závislosti na kódu. V současné době jsme ve fázi výzkumu, co DAO jsou a jak by se mohly v budoucnu vyvíjet.
 
-<InfoBanner shouldSpaceBetween emoji=":eyes:">
-  <div>Learn more about DAOs</div>
+<Alert variant="update">
+<AlertEmoji text=":eyes:"/>
+<AlertContent className="flex-row items-center justify-between">
+  <div>Více o DAO</div>
   <ButtonLink href="/dao/">
     Více o DAO
   </ButtonLink>
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 ### Identita {#identity}
 
@@ -107,7 +113,7 @@ Platební infrastruktura Web2 spoléhá na banky a další subjekty, přičemž 
   Více na ETH
 </ButtonLink>
 
-## Web3 limitations {#web3-limitations}
+## Omezení Web3 {#web3-limitations}
 
 Navzdory četným výhodám Web3 sxistuje v jeho současné podobě stále mnoho omezení, která musí ekosystém vyřešit, aby se mohl dále rozvíjet.
 
@@ -119,7 +125,7 @@ Důležité funkce Web3, jako je přihlášení pomocí ethereovské adresy, jso
 
 Technické překážky vstupu do Web3 jsou v současnosti příliš vysoké. Uživatelé musí chápat bezpečnostní otázky, rozumět složité technické dokumentaci a orientovat se v neintuitivních uživatelských rozhraních. Na vyřešení tohoto problému pracují zejména [poskytovatelé peněženek](/wallets/find-wallet/), ale než se Web3 masově rošíří, bude zapotřebí většího pokroku.
 
-### Education {#education}
+### Vzdělávání {#education}
 
 Web3 zavádí nová paradigmata, která vyžadují učení se jiným mentálním modelům, než jaké se používají ve Web2.0. K podobnému vzdělávacímu přerodu došlo v době, kdy Web1.0 získával koncem 90. let na popularitě; zastánci World Wide Webu používali různé vzdělávací techniky, aby edukovali veřejnost, a to od jednoduchých metafor (informační dálnice, prohlížeče, surfování na webu) až po [televizní vysílání](https://www.youtube.com/watch?v=SzQLI7BxfYI). Web3 není složitý, ale je jiný. Vzdělávací iniciativy, které informují uživatele Web2 o paradigmatech Web3, jsou zásadní pro jeho úspěch.
 
@@ -139,7 +145,7 @@ Jsme teprve na začátku lepšího webu s pomocí Web3, ale díky neustávajíc�
 
 - [Vybrat peněženku](/wallets/)
 - [Najděte svoji komunitu](/community/)
-- [Prozkoumejte Web3 aplikace](/dapps/)
+- [Prozkoumejte Web3 aplikace](/apps/)
 - [Připojte se k DAO](/dao/)
 - [Budujte na Web3](/developers/)
 
@@ -147,11 +153,11 @@ Jsme teprve na začátku lepšího webu s pomocí Web3, ale díky neustávajíc�
 
 Web3 není pevně definován. Různí členové komunity mají na jeho definici odlišné pohledy. Zde je několik z nich:
 
-- [Co je Web3? Vysvětlení decentralizovaného internetu budoucnosti](https://www.freecodecamp.org/news/what-is-web3/) – _Nader Dabit_
+- [Co je Web3? Vysvětlení decentralizovaného internetu budoucnosti](https://www.freecodecamp.org/news/what-is-web3) – _Nader Dabit_
 - [Jak dáváme Web3 smysl](https://medium.com/l4-media/making-sense-of-web-3-c1a9e74dcae) – _Josh Stark_
 - [Proč na Web3 záleží](https://future.a16z.com/why-web3-matters/) — _Chris Dixon_
 - [Proč na decentralizaci záleží](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) - _Chris Dixon_
 - [Web3 ekosystém](https://a16z.com/wp-content/uploads/2021/10/The-web3-Readlng-List.pdf) – _a16z_
-- [Debata o Web3](https://www.notboring.co/p/the-web3-debate?s=r) – _Packy McCormick_
+- [Debata o Web3](https://www.notboring.co/p/the-web3-debate) – _Packy McCormick_
 
 <QuizWidget quizKey="web3" />

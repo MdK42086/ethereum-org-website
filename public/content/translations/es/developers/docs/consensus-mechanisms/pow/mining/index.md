@@ -4,9 +4,14 @@ description: Una explicación de cómo funcionaba la minería en Ethereum.
 lang: es
 ---
 
-<InfoBanner emoji=":wave:">
+<Alert variant="update">
+<AlertEmoji text=":wave:"/>
+<AlertContent>
+<AlertDescription>
 La prueba de trabajo ya no es la base del mecanismo de consenso de Ethereum, lo que significa que la minería se ha desactivado. En lugar de ello, Ethereum está asegurado por validadores que participan en ETH. Puede comenzar hoy mismo a participar en ETH. Descubrá más cosas sobre <a href='/roadmap/merge/'>La Fusión</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>la prueba de participación (PoS)</a> y <a href='/staking/'>la participación</a>. Esta página es para interés histórico solamente.
-</InfoBanner>
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 ## Requisitos previos {#prerequisites}
 
@@ -70,9 +75,9 @@ Observe a Austin mientras le guía por el proceso de minado y la cadena de bloqu
 
 ## El algoritmo de minería {#mining-algorithm}
 
-Ethereum Mainnet sólo ha usado un algoritmo de minería- ['Ethash'](/developers/docs/consensus-mechanisms/pow/mining-algorithms/ethash/). Ethhash fue el sucesor de un algoritmo de R&D original conocido como ['Dagger-Hashimoto'](/developers/docs/consensus-mechanisms/pow/mining-algorithms/dagger-hashimoto/).
+La Red principal de Ethereum solo ha utilizado un algoritmo de minado: ["Ethash"](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash/). Ethash fue el sucesor de un algoritmo original de Investigación y Desarrollo conocido como ["Dagger-Hashimoto"](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/).
 
-[Más información sobre los algoritmos de minería](/developers/docs/consensus-mechanisms/pow/mining-algorithms/).
+[Más sobre algoritmos de minado](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/).
 
 ## Temas relacionados {#related-topics}
 

@@ -12,7 +12,7 @@ A maximálisan kinyerhető értéket először a [proof-of-work (munkaigazolás)
 
 ## Előfeltételek {#prerequisites}
 
-A téma könnyebb megértése érdekében érdemes megismeri a [tranzakciókkal](/developers/docs/transactions/), [blokkokkal](/developers/docs/blocks/), [proof-of-stake-kel](/developers/docs/consensus-mechanisms/pos) és [gázzal](/developers/docs/gas/) foglalkozó témákat. Emellett a [dappok](/dapps/) és a [DeFi](/defi/) ismerete szintén hasznos.
+A téma könnyebb megértése érdekében érdemes megismeri a [tranzakciókkal](/developers/docs/transactions/), [blokkokkal](/developers/docs/blocks/), [proof-of-stake-kel](/developers/docs/consensus-mechanisms/pos) és [gázzal](/developers/docs/gas/) foglalkozó témákat. Emellett a [dappok](/apps/) és a [DeFi](/defi/) ismerete szintén hasznos.
 
 ## MEV kivonása {#mev-extraction}
 
@@ -120,9 +120,9 @@ Amint azt kifejtettük, a MEV negatív hatással van az általános felhasznál�
 
 ### Validátorcentralizáció {#validator-centralization}
 
-A Beolvadás utáni Ethereumban a validátorok (miután 32 ETH értékű letétet helyeztek el) konszenzusra jutnak a Beacon lánchoz hozzáadott blokkok érvényességéről. A 32 ETH sokak számára elérhetetlen lehet, ezért megvalósíthatóbb [egy letéti alaphoz való csatlakozás](/staking/pools/). Mindazonáltal az [önálló letétbe helyezők](/staking/solo/) egészséges eloszlása ideális, mivel enyhíti a validátorok centralizációját és javítja az Ethereum biztonságát.
+A Beolvadás utáni Ethereumban a validátorok (miután 32 ETH értékű letétet helyeztek el) konszenzusra jutnak a Beacon lánchoz hozzáadott blokkok érvényességéről. A 32 ETH sokak számára elérhetetlen lehet, ezért megvalósíthatóbb[ egy letéti alaphoz való csatlakozás ](/staking/pools/). Mindazonáltal az [önálló letétbe helyezők](/staking/solo/) egészséges eloszlása ideális, mivel enyhíti a validátorok centralizációját és javítja az Ethereum biztonságát.
 
-A MEV-kivonás vélhetően képes felgyorsítani a validátorok centralizációját. Ez részben azért van így, mert a validátorok [kevesebbet keresnek a blokkelőterjesztésért](/roadmap/merge/issuance/#how-the-merge-impacts-ETH-supply), mint a bányászatért, a MEV-kivonás jelentősen [befolyásolhatja a validátorok bevételeit](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) a Beolvadás után.
+A MEV-kivonás vélhetően képes felgyorsítani a validátorok centralizációját. Ez részben azért van így, mert a validátorok [kevesebbet kapnak a blokkelőterjesztésért](/roadmap/merge/issuance/#how-the-merge-impacts-ETH-supply), mint korábban a bányászatért, a MEV-kivonás jelentősen [befolyásolhatja a validátorok bevételeit](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) a [Beolvadás](/roadmap/merge/) után.
 
 A nagyobb letéti alapok valószínűleg több erőforrással rendelkeznek ahhoz, hogy befektessenek a MEV-lehetőségek kihasználásához szükséges optimalizálásokba. Minél több MEV-t termelnek ki ezek a poolok, annál több erőforrásuk van ennek fejlesztésére (és a bevétel növelésére), ami [méretgazdaságosságot](https://www.investopedia.com/terms/e/economiesofscale.asp#) eredményez.
 
@@ -136,13 +136,13 @@ Ennek az elrendezésnek egy nagyobb változatai a „sötét alapok”, melyek e
 
 Az engedélyhez kötött memóriakészletek az előző szakaszban leírt centralizációs kockázatokat is felgyorsítják. A több validátort működtető nagy alapok valószínűleg profitálni fognak abból, hogy a kereskedők és a felhasználók számára tranzakciós adatvédelmet kínálnak, növelve ezzel a MEV-bevételeiket.
 
-Ezeknek a MEV-hez kapcsolódó problémáknak a leküzdése a Beolvadás utáni Ethereumban a kutatás egyik fő területe. Két megoldás merült fel, hogy a MEV negatív hatását csökkentsék az Ethereum decentralizációja és biztonsága szempontjából a Beolvadás után: **javaslattevő-építő szétválasztása (PBS)** és az **építő API**.
+Ezeknek a MEV-hez kapcsolódó problémáknak a leküzdése a Beolvadás utáni Ethereumban a kutatás egyik fő területe. Két megoldás merült fel, hogy a MEV negatív hatását csökkentsék az Ethereum decentralizációja és biztonsága szempontjából a Beolvadás után: [**javaslattevő-építő szétválasztása (PBS)**](/roadmap/pbs/) és az [**építő API**](https://github.com/ethereum/builder-specs).
 
 ### Javaslattevő-építő szétválasztása (PBS) {#proposer-builder-separation}
 
 Mind a proof-of-work, mind a proof-of-stake esetében egy csomópont építi a blokkot, majd javasolja azt a konszenzusban részt vevő többi csomópontnak a láncba való felvételre. Egy új blokk akkor válik a kanonikus lánc részévé, ha egy másik bányász ráépít (PoW esetén), vagy ha a validátorok többségétől tanúsítást kap (PoS esetén).
 
-A blokképítő és blokkajánló szerepek kombinációja az, ami a legtöbb MEV-hez kapcsolódó problémát okozza. A konszenzuscsomópontokat például arra ösztönzik, hogy a MEV-bevételek maximalizálása érdekében időzített támadásokban láncátrendezéseket indítsanak el.
+A blokképítő és blokkajánló szerepek kombinációja az, ami a legtöbb MEV-hez kapcsolódó problémát okozza. A konszenzuscsomópontokat például arra ösztönzik, hogy a MEV-bevételek maximalizálása érdekében [időzített támadásokban](https://www.mev.wiki/attack-examples/time-bandit-attack) láncátrendezéseket indítsanak el.
 
 A [javaslattevő-építő szétválasztása (PBS)](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725) a MEV hatásának mérséklésére szolgál, különösen a konszenzusrétegben. A PBS fő jellemzője a blokképítő és a blokkelőterjesztő szabályainak szétválasztása. A validátorok továbbra is felelősek a blokkok előterjesztéséért és az azokra vonatkozó szavazásért, de a tranzakciók elrendezése és a blokkok építése egy új, specializált entitás, a **blokképítő** feladata.
 
@@ -180,9 +180,9 @@ Az alábbiakban látható az építő API működése:
 
 5. Az építő API-t használó validátortól továbbra is elvárják, hogy helyben építsen blokkot, ha a blokképítő nem válaszol azonnal, így nem marad le a blokkjavaslatok jutalmáról. A validátor azonban nem hozhat létre egy másik blokkot a felfedett tranzakciókkal vagy egy másik adaggal, mivel ez _kétértelműség_ lenne (két blokk aláírása egy sloton belül), ami szabálysértésnek minősül.
 
-Az építő API egyik példája a [MEV Boost](https://github.com/flashbots/mev-boost), a [Flashbots aukciós mechanizmus](https://docs.flashbots.net/Flashbots-auction/overview/) továbbfejlesztése, amelynek célja a MEV negatív hatásainak csökkentése az Ethereumban. A Flashbots aukció lehetővé teszi a proof-of-work mechanizmusban a bányászok számára, hogy a nyereséges blokkok építését specializált **keresőknek** adják ki.
+Az építő API egyik példája a [MEV Boost](https://github.com/flashbots/mev-boost), a [Flashbots aukciós mechanizmus](https://docs.flashbots.net/Flashbots-auction/overview/) továbbfejlesztése, amelynek célja a MEV negatív hatásainak csökkentése az Ethereumban. A Flashbots aukció lehetővé teszi a proof-of-stake mechanizmusban a validátorok számára, hogy a nyereséges blokkok építését specializált **keresőknek** adják ki. ![Egy diagram, amely a MEV áramlását mutatja be részleteiben](./mev.png)
 
-A keresők jövedelmező MEV-lehetőségeket keresnek, és tranzakciós csomagokat küldenek a bányászoknak egy [lepecsételt árú ajánlattal](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) együtt a blokkba való felvételre. A mev-geth-et, a go-ethereum (Geth) kliens elágaztatott változatát futtató bányásznak csak ki kell választania a legnagyobb nyereséget hozó köteget, és azt az új blokk részeként bányásznia kell. A bányászok spamektől és érvénytelen tranzakcióktól való védelme érdekében a tranzakciókötegeket **közvetítők (relayer)** ellenőrzik, mielőtt eljutnak a bányászokhoz.
+A keresők jövedelmező MEV-lehetőségeket keresnek, és tranzakciós csomagokat küldenek a blokkelőterjesztőknek egy [lepecsételt árú ajánlattal](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) együtt a blokkba való felvételre. A mev-geth-et, a go-ethereum (Geth) kliens elágaztatott változatát futtató validátornak csak ki kell választania a legnagyobb nyereséget hozó köteget, és azt az új blokk részévé kell tennie. A blokkelőterjesztők (validátorok) spamektől és érvénytelen tranzakcióktól való védelme érdekében a tranzakciókötegeket **közvetítők (relayer)** ellenőrzik, mielőtt azok eljutnak az előterjesztőhöz.
 
 A MEV Boost megtartja az eredeti Flashbots aukció működését, bár az Ethereum proof-of-stake-re való átállásához tervezett új funkciókkal. A keresők továbbra is találnak jövedelmező MEV-tranzakciókat a blokkokba való felvételhez, de a tranzakciók és kötegek blokkokká történő összevonásáért új, specializált szereplők, az **építők** felelősek. Az építő elfogadja a keresők lepecsételt-árú ajánlatait, és optimalizálásokat futtat a legjövedelmezőbb sorrend megtalálása érdekében.
 
@@ -204,7 +204,6 @@ Egyes projektek, mint például a MEV Boost, az építő API-t egy olyan átfog�
 
 - [Flashbots-dokumentáció](https://docs.flashbots.net/)
 - [Flashbots GitHub](https://github.com/flashbots/pm)
-- [MEV-Explore](https://explore.flashbots.net/) – _Dashboard és tranzakciófelfedező a MEV tranzakciókhoz_
 - [mevboost.org](https://www.mevboost.org/) – _Tracker valós idejű statisztikákkal a MEV-Boost közvetítőkhöz és blokképítőkhöz_
 
 ## További olvasnivaló {#further-reading}

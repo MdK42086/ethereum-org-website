@@ -1,5 +1,6 @@
 ---
 title: 燃料和費用
+metaTitle: "以太坊燃料和費用：技術概覽"
 description:
 lang: zh-tw
 ---
@@ -87,7 +88,7 @@ lang: zh-tw
 
 ### 區塊大小 {#block-size}
 
-每個區塊具 15M 單位燃料用量之目標大小，但區塊大小將跟隨網路需求增減，最大可達到 30M 燃料用量的區塊大小限制（目標區塊大小之兩倍）。 協議往往透過 _tâtonnement_ 流程達成 15M 的均衡區塊大小。 這意味著，如果區塊大小大於目標區塊大小，協議將增加下一個區塊的基本費用。 同樣，如果區塊大小小於目標區塊大小，協議將減少基本費用。 基本費用的調節額度與實際區塊大小與目標區塊大小之間的差異成比例。 [更多區塊相關資訊](/developers/docs/blocks/)。
+每個區塊具 15M 單位燃料用量之目標大小，但區塊大小將跟隨網路需求增減，最大可達到 60M 燃料用量的區塊大小限制（目標區塊大小之兩倍）。 協議往往透過 _tâtonnement_ 流程達成 30M 的均衡區塊大小。 這意味著，如果區塊大小大於目標區塊大小，協議將增加下一個區塊的基本費用。 同樣，如果區塊大小小於目標區塊大小，協議將減少基本費用。 基本費用的調節額度與實際區塊大小與目標區塊大小之間的差異成比例。 [更多區塊相關資訊](/developers/docs/blocks/)。
 
 ### 實際計算燃料費 {#calculating-fees-in-practice}
 
@@ -117,11 +118,12 @@ lang: zh-tw
 
 二層網路擴容為一項主要倡議，可大幅減低燃料費用並加強用戶體驗及可擴容性。 [更多二層網路擴容相關資訊](/developers/docs/scaling/#layer-2-scaling)。
 
-## 監控燃料費 {#moitoring-gas-fees}
+## 監控燃料費 {#monitoring-gas-fees}
 
 若你想要監控燃料價格，以便能以更低的費用發送以太幣，你可以使用許多不同的工具，例如：
 
 - [Etherscan](https://etherscan.io/gastracker) _交易燃料費價格估算器_
+- [以太幣燃料追蹤器](https://www.ethgastracker.com/)_監控並追蹤以太坊和二層網路的燃料價格，以降低交易費用並節省資金_
 - [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _燃料估算 Chrome 延伸模組，支援 0 類原始交易及 2 類 EIP-1559 交易。_
 - [Cryptoneur燃料Fees Calculator](https://www.cryptoneur.xyz/gas-fees-calculator) _在主網、Arbitrum、Polygon 上使用當地貨幣計算不同交易類型的燃料費。_
 
@@ -133,7 +135,6 @@ lang: zh-tw
 
 - [以太坊燃料詳解](https://defiprime.com/gas)
 - [減低智慧型合約之燃料消耗](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
-- [權益證明與工作量證明](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [開發者的燃料優化策略](https://www.alchemy.com/overviews/solidity-gas-optimization)
 - [EIP-1559 文檔](https://eips.ethereum.org/EIPS/eip-1559)。
 - [Tim Beiko 的 EIP-1559 資源](https://hackmd.io/@timbeiko/1559-resources)。

@@ -29,7 +29,7 @@ Ethereum akıllı sözleşmeleri, genel API'ler gibidir, bu nedenle herkes sözl
 
 ### Daha kısa geliştirme döngüsü {#shorter-development-cycle}
 
-Birleştirilebilirlik, geliştiricilerin [dapps](/dapps/#what-are-dapps) oluştururken yapması gereken işi azaltır. [Naval Ravikant'ın dediği gibi:](https://twitter.com/naval/status/1444366754650656770) "Açık kaynak, her problemin bir kez çözülmesi gerektiği anlamına gelir."
+Birleştirilebilirlik, geliştiricilerin [dapps](/apps/#what-are-dapps) oluştururken yapması gereken işi azaltır. [Naval Ravikant'ın dediği gibi:](https://twitter.com/naval/status/1444366754650656770) "Açık kaynak, her problemin bir kez çözülmesi gerektiği anlamına gelir."
 
 Bir sorunu çözen akıllı bir sözleşme varsa, diğer geliştiriciler onu yeniden kullanabilir, böylece aynı sorunu çözmeleri gerekmez. Bu şekilde, geliştiriciler mevcut yazılım kitaplıklarını alabilir ve yeni dapp'ler oluşturmak için ekstra işlevsellik ekleyebilir.
 
@@ -65,8 +65,7 @@ Bir [DAO](/dao/) için ısmarlama yönetim sistemleri oluşturmak pahalı ve zam
 
 ## İlgili öğreticiler {#related-tutorials}
 
-- [Sözleşme Birleştirilebilirliği: Ethereum Akıllı Sözleşme Geliştirmenin Yapı Taşları](https://www.decentlabs.io/blog/contract-composability-the-building-blocks-of-ethereum-smart-contract-development)
-- [create-eth-app ile dapp ön yüz geliştirmeye bir adım önde başlayın](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Popüler akıllı sözleşmelerle uygulamalar oluşturmak için create-eth-app kullanımına genel bir bakış._
+- [create-eth-app ile merkeziyetsiz uygulama ön yüz geliştirmeye bir adım önde başlayın](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Popüler akıllı sözleşmelerle uygulamalar oluşturmak için create-eth-app kullanımına genel bir bakış._
 
 ## Daha fazla okuma {#further-reading}
 

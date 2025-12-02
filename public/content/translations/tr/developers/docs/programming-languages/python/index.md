@@ -5,7 +5,7 @@ lang: tr
 incomplete: true
 ---
 
-<FeaturedText>Python tabanlı projeler ve araçlarla nasıl Ethereum için geliştireceğinizi öğrenin</FeaturedText>
+<FeaturedText>Python tabanlı projeler ve araçlar kullanarak Ethereum için nasıl geliştirme yapacağınızı öğrenin</FeaturedText>
 
 Use Ethereum to create decentralized applications (or "dapps") that utilize the benefits of cryptocurrency and blockchain technology. Bu dapp'ler güvenilir olabilir, yani Ethereum'a dağıtıldıktan sonra her zaman programlandığı gibi çalışırlar. Yeni tür finansal uygulamalar oluşturmak için dijital varlıkları kontrol edebilirler. Merkeziyetsiz olabilirler, yani hiç bir kurum veya kişi onları kontrol edemez ve sansürlenmeleri neredeyse imkansızdır.
 
@@ -51,21 +51,22 @@ Başlamadan önce temel bilgilere mi ihtiyacınız var? [ethereum.org/learn](/le
 - [Web3.py](https://github.com/ethereum/web3.py) - _Ethereum ile etkileşim için Phyton kütüphanesi_
 - [Vyper](https://github.com/ethereum/vyper/) - _EVM İçin Pythonic Akıllı Sözleşme Dili_
 - [Ape](https://github.com/ApeWorX/ape) - _Pythoncular, Veri Bilimciler ve Güvenlik Uzmanları için akıllı sözleşme geliştirme aracı_
-- [Brownie](https://github.com/eth-brownie/brownie) - _Ethereum akıllı sözleşmelerini dağıtmak, test etmek ve bunlarla etkileşimde bulunmak için Python çerçevesi_
 - [py-evm](https://github.com/ethereum/py-evm) - _Ethereum Sanal Makinesinin uygulanması_
 - [eth-tester](https://github.com/ethereum/eth-tester) - _Ethereum tabanlı uygulamaları test etmek için araçlar_
 - [eth-utils](https://github.com/ethereum/eth-utils/) - _Ethereum ile ilgili kod tabanlarıyla çalışmak için yardımcı işlevler_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _0.5.x desteği ile solc solidity derleyicisine yönelik Python paketleyici_
-- [py-wasm](https://github.com/ethereum/py-wasm) - _Web assembly yorumlayıcısının Python uygulaması_
-- [pydevp2p](https://github.com/ethereum/pydevp2p) - _Ethereum P2P yığınının uygulanması_
 - [pymaker](https://github.com/makerdao/pymaker) - _Maker sözleşmeleri için Python API_
-- [siwe](https://github.com/spruceid/siwe-py) - _Python için Ethereum (siwe) ile oturum açın_
+- [siwe](https://github.com/signinwithethereum/siwe-py) - _Python için Ethereum (siwe) ile oturum açın_
 - [Ethereum entegrasyonları için Web3 DeFi](https://github.com/tradingstrategy-ai/web3-ethereum-defi) - _ERC-20, Uniswap ve diğer popüler projeler için hazır entegrasyonlar içeren bir Python paketi_
+- [Wake](https://getwake.io) - _Sözleşme testleri, bulanıklaştırma, dağıtım, güvenlik açığı taraması ve kodda gezinme için hepsi bir arada Python çerçevesi (dil sunucusu - [Solidity Araçları](https://marketplace.visualstudio.com/items?itemName=AckeeBlockchain.tools-for-solidity))_
 
 ### Arşivlenmiş / Artık sürdürülmeyen: {#archived--no-longer-maintained}
 
 - [Trinity](https://github.com/ethereum/trinity) - _Ethereum Python istemcisi_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _Vyper dilinde yazılmış akıllı sözleşmeleri yazmak, derlemek ve dağıtmak için çerçeve_
+- [Brownie](https://github.com/eth-brownie/brownie) - _Ethereum akıllı sözleşmelerini dağıtmak, test etmek ve bunlarla etkileşimde bulunmak için Python çerçevesi_
+- [pydevp2p](https://github.com/ethereum/pydevp2p) - _Ethereum P2P yığınının uygulanması_
+- [py-wasm](https://github.com/ethereum/py-wasm) - _Web assembly yorumlayıcısının Python uygulaması_
 
 Daha fazla kaynak mı arıyorsunuz? Göz atın: [ethereum.org/developers](/developers/).
 
@@ -86,4 +87,4 @@ Aşağıdaki Ethereum tabanlı projeler bu sayfada bahsedilen araçları kullan�
 
 ## Diğer Toplu Listeler {#other-aggregated-lists}
 
-Vyper wikisi [Vyper için müthiş bir kaynak listesine](https://github.com/ethereum/vyper/wiki/Vyper-tools-and-resources) sahiptir
+Vyper wiki'sinde [Vyper için inanılmaz bir kaynak listesi](https://github.com/vyperlang/vyper/wiki/Vyper-tools-and-resources) mevcuttur

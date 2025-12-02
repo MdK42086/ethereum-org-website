@@ -6,7 +6,7 @@ lang: de
 
 # So erkennen Sie betrügerische Token {#identify-scam-tokens}
 
-Eine der häufigsten Verwendungen von Ethereum ist die Schaffung eines handelbaren Tokens durch eine Gruppe, gewissermaßen ihre eigene Währung. Diese Token folgen in der Regel dem Standard, [ERC-20](/developers/docs/standards/tokens/erc-20/). Jedoch gibt es überall, wo es legitime wertschöpfende Anwendungsmöglichkeiten gibt, auch Kriminelle, die diese Werte stehlen möchten.
+Eine der häufigsten Anwendungen von Ethereum ist die Schaffung eines handelbaren Tokens durch eine Gruppe, der gewissermaßen ihre eigene Währung darstellt. Diese Token folgen in der Regel dem Standard, [ERC-20](/developers/docs/standards/tokens/erc-20/). Jedoch gibt es überall, wo es legitime wertschöpfende Anwendungsmöglichkeiten gibt, auch Kriminelle, die diese Werte stehlen möchten.
 
 Die beiden folgenden Täuschungsversuche sind dabei gängig:
 
@@ -19,7 +19,7 @@ Um zu veranschaulichen, was Betrugs-Token sind und wie man sie erkennt, sehen wi
 title="Was ist ARB?"
 contentPreview=''>
 
-Arbitrum ist eine Organisation zur Entwicklung und Verwaltung von <a href="/developers/docs/scaling/optimistic-rollups/">optimistischen Rollups</a>. Ursprünglich war Arbitrum als gewinnorientiertes Unternehmen organisiert, unternahm dann aber Schritte zur Dezentralisierung. Im Rahmen dieses Prozesses wurde ein handelbarer <a href="/dao/#token-based-membership">Governance-Token</a> ausgegeben.
+Arbitrum ist eine Organisation zur Entwicklung und Verwaltung von [optimistischen Rollups](/developers/docs/scaling/optimistic-rollups/). Ursprünglich war Arbitrum als gewinnorientiertes Unternehmen organisiert, unternahm dann aber Schritte zur Dezentralisierung. Im Rahmen dieses Prozesses wurde ein handelbarer [Governance-Token](/dao/#token-based-membership) ausgegeben.
 
 </ExpandableCard>
 
@@ -41,7 +41,7 @@ Dezentralisierung ist das zentrale Element von Ethereum. Das bedeutet, dass es k
 title="Was sind Smart Contracts?"
 contentPreview=''>
 
-<a href="/developers/docs/smart-contracts/">Smart Contracts</a> sind die Programme, die auf der Ethereum-Blockchain laufen. Jeder ERC-20 Token ist beispielsweise als Smart Contract implementiert.
+[Smart Contracts](/developers/docs/smart-contracts/) sind die Programme, die auf der Ethereum-Blockchain laufen. Jeder ERC-20 Token ist beispielsweise als Smart Contract implementiert.
 
 </ExpandableCard>
 

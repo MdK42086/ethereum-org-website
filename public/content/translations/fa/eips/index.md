@@ -54,9 +54,17 @@ EIPها در کنار ارائه مشخصات فنی برای تغییرات، �
 
 اگر علاقه‌مند به مطالعه بیشتر راجع به EIPها هستید، به [وبسایت EIPها](https://eips.ethereum.org/)و[EIP-1](https://eips.ethereum.org/EIPS/eip-1) سر بزنید. تعدادی مرجع مفید برای مطالعه بیشتر:
 
-- [لیست تمام EIPها](https://eips.ethereum.org/all)
+- [فهرستی از هر پیشنهاد بهبود اتریوم](https://eips.ethereum.org/all)
 - [توضیح تمام انواع EIPها](https://eips.ethereum.org/EIPS/eip-1#eip-types)
 - [توضیح وضعیت تمام EIPها](https://eips.ethereum.org/EIPS/eip-1#eip-process)
+
+### پروژه های آموزش جامعه {#community-projects}
+
+- [PEEPanEIP](https://www.youtube.com/playlist?list=PL4cwHXAawZxqu0PKKyMzG_3BJV_xZTi1F) — پروژه *PEEPanEIP یک مجموعه ویدیویی آموزشی است که در مورد پیشنهاد بهبود اتریوم (EIP) و ویژگی‌های کلیدی ارتقاهای آینده بحث می‌کند.*
+- [EIPs For Nerds](https://ethereum2077.substack.com/t/eip-research) — پروژه *EIPs For Nerds مروری جامع و به سبک ELI5 از پیشنهادهای مختلف بهبود اتریوم (EIPها)، از جمله EIP های اصلی و EIP های لایه کاربردی/زیرساختی (ERC) برای آموزش خوانندگان و ایجاد اجماع در مورد تغییرات پیشنهادی در پروتکل اتریوم، ارائه می‌کند.*
+- [EIPs.wtf](https://www.eips.wtf/) — پروژه *EIPs.wtf اطلاعات اضافی برای پیشنهادهای بهبود اتریوم (EIPها)، از جمله وضعیت، جزئیات پیاده‌سازی، درخواست‌های ادغام مرتبط، و بازخورد جامعه ارائه می‌دهد.*
+- [EIP.Fun](https://eipfun.substack.com/) — پروژه *EIP.Fun آخرین اخبار در مورد پیشنهادهای بهبود اتریوم (EIP)، به‌روزرسانی‌های جلسات EIP و موارد دیگر را ارائه می‌دهد.*
+- [EIPs Insight](https://eipsinsight.com/) — پروژه *EIPs Insight نمایشی از وضعیت فرآیند پیشنهادهای بهبود اتریوم (EIPs) و & آمار بر اساس اطلاعات جمع آوری شده از منابع مختلف است.*
 
 ## مشارکت کنید {#participate}
 
@@ -66,6 +74,6 @@ EIPها در کنار ارائه مشخصات فنی برای تغییرات، �
 
 <cite class="citation">
 
-بخشی از محتوای صفحه از [حاکمیت توسعه‌ی پروتکل اتریوم و هماهنگی ارتقای شبکه‌](https://hudsonjameson.com/2020-03-23-ethereum-protocol-development-governance-and-network-upgrade-coordination/) نوشته‌ی هادسون جیمسون تهیه شده‌است
+بخشی از محتوای صفحه از [حاکمیت توسعه‌ی پروتکل اتریوم و هماهنگی ارتقای شبکه‌](https://hudsonjameson.com/posts/2020-03-23-ethereum-protocol-development-governance-and-network-upgrade-coordination/) نوشته‌ی هادسون جیمسون تهیه شده‌است
 
 </cite>

@@ -6,7 +6,7 @@ lang: tr
 
 # Bir cüzdan nasıl kullanılır
 
-Bir cüzdanın temel fonksiyonlarının nasıl kullanılacağını öğrenin. Eğer henüz bir cüzdanınız yoksa, [Nasıl yapılır: Bir Ethereum hesabı oluşturun](/guides/how-to-create-an-ethereum-account/) öğreticimize bakın.
+Bir cüzdanın temel fonksiyonlarının nasıl kullanılacağını öğrenin. Eğer halen bir hesabınız yoksa, [Nasıl Ethereum hesabı açılır](/guides/how-to-create-an-ethereum-account/) yazımızı inceleyebilirsiniz.
 
 ## Cüzdanınızı açın
 
@@ -51,7 +51,7 @@ Adresiniz tüm Ethereum projelerinde aynı olacaktır. Hiçbir projeye tek tek k
 
 1. Herhangi bir projenin web sitesine girin.
 2. Eğer projenin giriş sayfası sadece projenin statik bir açıklamasıysa, menüde olan ve sizi asıl web uygulamasına yönlendirecek "Uygulamayı Aç" butonuna basabiliyor olmalısınız.
-3. Uygulamaya girdikten sonra "Bağlan" tuşuna basın
+3. Uygulamaya girdiğinizde "Bağlan" düğmesine tıklayın.
 
 ![Kullanıcının cüzdan ile web sitesine bağlanmasını sağlayan buton](./connect1.png)
 
@@ -60,14 +60,17 @@ Adresiniz tüm Ethereum projelerinde aynı olacaktır. Hiçbir projeye tek tek k
 ![Bağlanmak için cüzdan listesinden seçim yapma](./connect2.png)
 
 5. Bağlantıyı kurmak için cüzdanınızdaki imza isteğini kabul edin. **Bu mesajı imzalamak ETH harcamayı gerektirmez**.
-6. Bu kadar! Uygulamayı kullanmaya başlayın. [Merkeziyetsiz uygulamalar sayfamızda](/dapps/#explore) bazı ilgi çekici projeleri bulabilirsiniz. <br />
+6. Bu kadar! Uygulamayı kullanmaya başlayın. [Merkeziyetsiz uygulamalar sayfamızda](/apps/#explore) bazı ilgi çekici projeleri bulabilirsiniz. <br />
 
-<InfoBanner shouldSpaceBetween emoji=":eyes:">
+<Alert variant="update">
+<AlertEmoji text=":eyes:"/>
+<AlertContent className="justify-between flex-row items-center">
   <div>Daha fazlasını mı öğrenmek istiyorsunuz?</div>
   <ButtonLink href="/guides/">
     Diğer rehberlerimizi inceleyin
   </ButtonLink>
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 ## Sıkça sorulan sorular
 

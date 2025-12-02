@@ -1,34 +1,38 @@
-import { Box, Flex } from "@chakra-ui/react"
+import CalloutSSR from "@/components/CalloutSSR"
 
-import { ButtonLink } from "@/components/Buttons"
-import Callout from "@/components/Callout"
+import { isDateReached } from "@/lib/utils/date"
 
-import { APPLICATION_END_DATE, APPLICATION_URL } from "./constants"
+import { Button } from "../ui/buttons/Button"
+import { Flex } from "../ui/flex"
 
+import { APPLICATION_END_DATE } from "./constants"
+import PaperformModal from "./PaperformModal"
+
+import { useTranslation } from "@/hooks/useTranslation"
 import DolphinImage from "@/public/images/translatathon/translatathon_dolphin.png"
 
 // TODO: Confirm deadline for applying
 
 export const ApplyNow = () => {
-  const dateToday = new Date()
-  const deadline = new Date(APPLICATION_END_DATE)
+  const { t } = useTranslation("page-translatathon")
 
-  if (dateToday < deadline) {
+  if (isDateReached(APPLICATION_END_DATE)) {
     return (
-      <Box pt={12}>
-        <Callout
-          flex="1 1 416px"
+      <div className="pt-12">
+        <CalloutSSR
           image={DolphinImage}
-          titleKey="page-translatathon:translatathon-apply-now"
-          descriptionKey="page-translatathon:translatathon-apply-now-desc"
-          alignItems="center"
-          textAlign="center"
+          title={t("translatathon-apply-now")}
+          description={t("translatathon-apply-now-desc")}
+          className="flex-1 basis-[416px] items-center text-center"
         >
-          <Flex m="auto">
-            <ButtonLink href={APPLICATION_URL}>Apply now</ButtonLink>
+          <Flex className="m-auto">
+            <PaperformModal
+              trigger={<Button>Apply now</Button>}
+              title="Apply to Translate"
+            />
           </Flex>
-        </Callout>
-      </Box>
+        </CalloutSSR>
+      </div>
     )
   } else {
     return <></>

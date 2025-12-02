@@ -4,9 +4,14 @@ description: Az Ethereum-bányászat algoritmusainak bemutatása.
 lang: hu
 ---
 
-<InfoBanner emoji=":wave:">
+<Alert variant="update">
+<AlertEmoji text=":wave:"/>
+<AlertContent>
+<AlertDescription>
 A proof-of-work (munkaigazolás) már nem az Ethereum konszenzusmechanizmus alapja, tehát a bányászatot kikapcsolták. Ehelyett az Ethereumot úgy biztosítják a validátorok, hogy letétbe helyeznek ETH-t. Ön is letétbe helyezheti a rendelkezésére álló ETH-t. Tudjon meg többet a <a href='/roadmap/merge/'>egyesítés (Merge)</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>proof-of-stake (letéti igazolás)</a> és <a href='/staking/'>letétbe helyezés</a> témákról. Ez az oldal csak elavult témákat tartalmaz.
-</InfoBanner>
+</AlertDescription>
+</AlertContent>
+</Alert>
 
 Az Ethereum-bányászat egy Ethash nevű algoritmust használt. k az algoritmusnak az a lényege, hogy a bányász megpróbál egy nonce értéket találni nagy számítási kapacitás révén, hogy a létrejövő hash kisebb legyen, mint a kiszámolt nehézség határértéke. Ez a nehézségi szint dinamikusan változtatható, így a blokkok létrehozása rendszeresen meg tud történni.
 
@@ -28,10 +33,10 @@ Bővebben a [Dagger-Hashimoto algoritmusról](/developers/docs/consensus-mechani
 
 ## Ethash {#ethash}
 
-Az Ethash az a bányászati algoritmus, melyet az Ethereum főhálózaton használtak a ma már kivezetett proof-of-work architektúrában. Az Ethash az új neve a Dagger-Hashimoto egy specifikus verziójának, mivel azt jelentősen megváltoztatták, de mégis megmaradtak az alapvető elvei az elődjének. Az Ethereum-főhálózat csak az Ethasht használta, mivel Dagger-Hashimoto a kutatás-fejlesztés idején működött, és még a bányászat megkezdése előtt lecserélték.
+Az Ethash az a bányászati algoritmus, melyet az Ethereum főhálózaton használtak a ma már kivezetett proof-of-work architektúrában. Az Ethash az új neve a Dagger-Hashimoto egy specifikus verziójának, mivel azt jelentősen megváltoztatták, de mégis megmaradtak az alapvető elvei az elődjének. Az Ethereum-főhálózat csak az Ethasht használta, mivel a Dagger-Hashimoto a kutatás-fejlesztés idején működött, és még a bányászat megkezdése előtt lecserélték.
 
 [Bővebben az Ethash-ről](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 
 ## További olvasnivaló {#further-reading}
 
-_Van olyan közösségi erőforrása, amely segített Önnek? Szerkessze ezt az oldalt, és adja hozzá!_
+_Ismersz olyan közösségi anyagot, mely segített neked? Módosítsd az oldalt és add hozzá!_

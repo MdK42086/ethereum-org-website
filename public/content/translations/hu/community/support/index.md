@@ -10,7 +10,7 @@ lang: hu
 
 Egy hivatalos Ethereum ügyfélszolgálatot keres? Tudnia kell, hogy az Ethereum decentralizált. Nincs központi szervezet, entitás vagy ember, aki birtokolná az Ethereumot, ezért nincs hivatalos ügyfélszolgálat vagy támogatói csapat sem.
 
-Ezt azért is fontos megérteni, mert bárki jelentkezik Önnél, mint hivatalos ügyfélszolgálatos, az csak csaló lehet! A csalók ellen a legjobb védekezés az ismeretek szerzése és a biztonság komolyan vétele.
+Ezt azért is fontos megérteni, mert **bárki jelentkezik Önnél, mint hivatalos ügyfélszolgálatos, az csak csaló lehet!** A csalókkal szemben a legjobb védekezés, ha Ön mindig jól informált és komolyan veszi a saját biztonságát.
 
 <DocLink href="/security/">
   Ethereum-biztonság és átverés elleni védelem
@@ -20,7 +20,7 @@ Ezt azért is fontos megérteni, mert bárki jelentkezik Önnél, mint hivatalos
   Ismerje meg az Ethereum alapjait
 </DocLink>
 
-Amellett, hogy nincs hivatalos ügyfélszolgálat, számtalan csoport, közösség és projekt szeretne Önnek segíteni, illetve rengeteg hasznos információ és forrás áll rendelkezésre ezeken az oldalakon. További kérdése van? Csatlakozzon az [ethereum.org Discord](/discord/) csatornához, és megpróbálunk segíteni.
+Amellett, hogy nincs hivatalos ügyfélszolgálat, számtalan csoport, közösség és projekt szeretne Önnek segíteni, illetve rengeteg hasznos információ és forrás áll rendelkezésre ezeken az oldalakon. További kérdése van? Csatlakozzon az [ethereum.org Discord](https://discord.gg/ethereum-org) csatornához, és megpróbálunk segíteni.
 
 ## Gyakran ismételt kérdések {#faq}
 
@@ -57,7 +57,6 @@ A fejlesztés tele van kihívásokkal. Alább található néhány fejlesztőket
 - [Alchemy University](https://university.alchemy.com/#starter_code)
 - [CryptoDevs discord](https://discord.com/invite/5W5tVb3)
 - [Ethereum StackExchange](https://ethereum.stackexchange.com/)
-- [StackOverflow](https://stackoverflow.com/questions/tagged/web3)
 - [Web3 University](https://www.web3.university/)
 - [LearnWeb3](https://discord.com/invite/learnweb3)
 
@@ -91,6 +90,7 @@ Az Ethereum klienseket építő csapatok is dedikált, nyilvános fórumokkal re
 - [Nethermind](https://discord.gg/YJx3pm8z5C)
 - [Besu](https://discord.gg/p8djYngzKN)
 - [Erigon](https://github.com/ledgerwatch/erigon/issues)
+- [Reth](https://github.com/paradigmxyz/reth/discussions)
 
 ### Konszenzusos kliensek {#consensus-clients}
 
@@ -99,5 +99,6 @@ Az Ethereum klienseket építő csapatok is dedikált, nyilvános fórumokkal re
 - [Lighthouse](https://discord.gg/cyAszAh)
 - [Teku](https://discord.gg/7hPv2T6)
 - [Lodestar](https://discord.gg/aMxzVcr)
+- [Grandine](https://discord.gg/H9XCdUSyZd)
 
 Tudja meg, hogy [futtathat csomópontot](/developers/docs/nodes-and-clients/run-a-node/).

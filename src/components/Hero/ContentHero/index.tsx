@@ -1,82 +1,65 @@
-import { Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react"
+import type { ReactElement } from "react"
 
 import type { CommonHeroProps } from "@/lib/types"
 
 import Breadcrumbs from "@/components/Breadcrumbs"
 import { Image } from "@/components/Image"
 
+import { breakpointAsNumber, screens } from "@/lib/utils/screen"
+
 import { CallToAction } from "../CallToAction"
 
-export type ContentHeroProps = Omit<CommonHeroProps<string>, "header">
+export type ContentHeroProps = Omit<
+  CommonHeroProps,
+  "header" | "blurDataURL"
+> & {
+  blurDataURL?: CommonHeroProps["blurDataURL"]
+}
 
 const ContentHero = (props: ContentHeroProps) => {
-  const {
-    breadcrumbs,
-    heroImg,
-    buttons,
-    title,
-    description,
-    blurDataURL,
-    maxHeight,
-  } = props
+  const { breadcrumbs, heroImg, buttons, title, description, blurDataURL } =
+    props
+  if (blurDataURL) heroImg.blurDataURL = blurDataURL
+
   return (
-    <Box bgImg="bgMainGradient">
-      <SimpleGrid
-        columns={{ base: 1, lg: 2 }}
-        maxW="1536px"
-        mx="auto"
-        alignItems="center"
-      >
-        <Box
-          order={{ lg: 1 }}
-          py={{ base: 0, lg: 12 }}
-          height={{
-            base: "300px",
-            md: "400px",
-            lg: maxHeight ? maxHeight : "full",
-          }}
-        >
-          <Image
-            src={heroImg}
-            alt=""
-            priority
-            blurDataURL={blurDataURL}
-            width={760}
-            height={451}
-            // TODO: adjust value when the old theme breakpoints are removed (src/theme.ts)
-            sizes="(max-width: 992px) 100vw, 760px"
-            boxSize="full"
-            style={{ objectFit: "contain" }}
-            flex={{ base: "1 1 100%", md: "none" }}
-            maxHeight={451}
-          />
-        </Box>
-        <Stack p={{ base: "8", lg: "16" }} spacing="9" justify="center">
-          <Breadcrumbs {...breadcrumbs} />
-          <Stack spacing="6">
-            <Heading as="h1" size="2xl">
-              {title}
-            </Heading>
-            {typeof description === "string" ? (
-              <Text fontSize="lg">{description}</Text>
-            ) : (
-              description
-            )}
-            {buttons && (
-              <Stack direction={{ base: "column", md: "row" }} spacing="4">
-                {buttons.map((button, idx) => {
-                  if (!button) return
-                  return <CallToAction key={idx} index={idx} {...button} />
-                })}
-              </Stack>
-            )}
-          </Stack>
-          {/* TODO:
-           * Add conditional Big Stat box here
-           */}
-        </Stack>
-      </SimpleGrid>
-    </Box>
+    <div className="mx-auto grid w-full max-w-screen-2xl grid-cols-1 items-center border-b pb-16 lg:grid-cols-2">
+      <div className="flex h-[300px] items-center justify-center md:h-[400px] lg:col-start-2 lg:h-full">
+        <Image
+          className="my-auto h-full max-h-[479px] w-full flex-auto object-contain md:flex-none"
+          src={heroImg}
+          alt=""
+          priority
+          sizes={`(max-width: ${screens.lg}) 100vw, ${breakpointAsNumber["2xl"] / 2}px`}
+        />
+      </div>
+      <div className="flex h-full flex-col gap-9 p-8 lg:col-start-1 lg:row-start-1 lg:px-11 lg:py-16">
+        <Breadcrumbs {...breadcrumbs} />
+        <div className="flex flex-col gap-6">
+          <h1 className="text-4xl font-black lg:text-7xl">{title}</h1>
+          {typeof description === "string" ? (
+            <p className="text-lg">{description}</p>
+          ) : (
+            description
+          )}
+          {buttons && (
+            <div className="flex flex-col gap-4 md:flex-row">
+              {buttons.map((button, idx) => {
+                if (!button) return
+                // If it's a React element, render it directly
+                if (typeof button === "object" && "type" in button) {
+                  return <div key={idx}>{button as ReactElement}</div>
+                }
+                // Otherwise, render as button props
+                return <CallToAction key={idx} index={idx} {...button} />
+              })}
+            </div>
+          )}
+        </div>
+        {/* TODO:
+         * Add conditional Big Stat box here
+         */}
+      </div>
+    </div>
   )
 }
 

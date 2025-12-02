@@ -54,12 +54,15 @@ Az NFT-ket számtalan esetben használják, ilyen például:
 
 Tegyük fel, hogy Ön egy művész, aki szeretné NFT-ként megosztani az alkotását, anélkül hogy elveszítené az ellenőrzést felette és közvetítőkre áldozná a profitját. Létrehozhat egy új szerződést, amelyben megadja az NFT-k számát, jellemzőiket, és hozzákapcsolja az adott műalkotást. Művészként **beprogramozhatja az intelligens szerződésbe a fizetendő jogdíjakat** (pl. az eladási ár 5%-át utalja át a szerződés tulajdonosának minden alkalommal, amikor NFT-t utalnak át). Azt is mindig bizonyíthatja, hogy Ön hozta létre az NFT-ket, mert Ön a [pénztárca](/glossary/#wallet) tulajdonosa, amely a szerződést telepítette. Vásárlói könnyen igazolhatják, hogy egy **hiteles NFT-vel** rendelkeznek az Ön gyűjteményéből, mert pénztárcájuk [címe](/glossary/#address) az intelligens szerződésben szereplő tokenhez van társítva. Az egész Ethereum-ökoszisztémában használhatják az NFT-t, teljes bizonyossággal az eredetiségét illetően.
 
-<InfoBanner shouldSpaceBetween emoji=":eyes:" mt="8">
+<Alert variant="update" className="mt-8">
+<AlertEmoji text=":eyes:"/>
+<AlertContent className="justify-between flex-row items-center">
   <div>Fedezzen fel, vásároljon vagy készítsen saját NFT-műalkotásokat/gyűjthető tárgyakat...</div>
-  <ButtonLink href="/dapps/?category=collectibles#explore">
+  <ButtonLink href="/apps/categories/collectibles">
     Fedezzen fel NFT-műalkotásokat
   </ButtonLink>
-</InfoBanner>
+</AlertContent>
+</Alert>
 
 Vagy vegyünk például egy sporteseményre szóló jegyet. Ahogy egy **egy esemény szervezője kiválaszthatja, hogy hány jegyet adjon el**, az NFT létrehozója eldöntheti, hogy hány replika létezik. Néha ezek pontos másolatok, mint például 5000 darab nem helyre szóló belépőjegy. Néha több olyan jegyet is kiállítanak, amelyek nagyon hasonlóak, de mindegyik kissé különbözik, mint például kijelölt ülőhelyekre szóló jegyek. Ezeket vehetik és adhatják egymás között (peer-to-peer módon) anélkül, hogy fizetni kellene a jegyárusoknak, a vevő pedig a szerződés címét ellenőrizve mindig meggyőződhet a jegyek eredetiségéről.
 
@@ -75,7 +78,7 @@ Ez a weboldal egy alternatív, NFT-k által működtetett domainnévvel is rende
 
 ## Hogyan működnek az NFT-k? {#how-nfts-work}
 
-Az NFT-k, ahogy az Ethereum blokklánc többi digitális eszköze, egy speciális, Ethereum-alapú számítógépes program révén keletkeznek, amelyet okosszerződésnek neveznek. Ezek a szerződések bizonyos szabályokat követnek, például az [ERC-721](/glossary/#erc-721) vagy az [ERC-1155](/glossary/#erc-1155) szabványt, amelyek meghatározzák, hogy a szerződés mire képes.
+Az NFT-k, ahogy az Ethereum-blokklánc többi digitális eszköze, egy speciális, Ethereum-alapú számítógépes program révén keletkeznek, amelyet okosszerződésnek neveznek. Ezek a szerződések bizonyos szabályokat követnek, például az [ERC-721](/glossary/#erc-721) vagy az [ERC-1155](/glossary/#erc-1155) szabványt, amelyek meghatározzák, hogy a szerződés mire képes.
 
 Az NFT-okosszerződésekkel számos fontos dolog végrehajtható:
 
@@ -103,6 +106,11 @@ Az NFT-kkel kapcsolatos biztonsági problémák leggyakrabban adathalász csalá
 - [EtherscanNFT trekker](https://etherscan.io/nft-top-contracts)
 - [ERC-721 tokenszabvány](/developers/docs/standards/tokens/erc-721/)
 - [ERC-1155 tokenszabvány](/developers/docs/standards/tokens/erc-1155/)
+- [Népszerű NFT-applikációk és -eszközök](https://www.ethereum-ecosystem.com/blockchains/ethereum/nfts)
+
+## Egyéb források {#other-resources}
+
+- [NFTScan](https://nftscan.com/)
 
 <Divider />
 

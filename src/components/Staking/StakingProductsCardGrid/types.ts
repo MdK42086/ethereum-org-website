@@ -1,4 +1,4 @@
-import type { MatomoEventOptions } from "@/lib/utils/matomo"
+import type { MatomoEventOptions } from "@/lib/types"
 
 import type stakingProducts from "@/data/staking-products.json"
 
@@ -24,6 +24,7 @@ export type Product = {
   battleTested: FlagType
   trustless?: FlagType
   selfCustody?: FlagType
+  socials?: Array<string>
   liquidityToken?: FlagType
   permissionless?: FlagType
   permissionlessNodes?: FlagType

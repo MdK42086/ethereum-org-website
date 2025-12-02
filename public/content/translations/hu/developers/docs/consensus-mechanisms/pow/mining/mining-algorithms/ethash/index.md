@@ -4,11 +4,16 @@ description: Az Ethash algoritmus részletes bemutatása.
 lang: hu
 ---
 
-<InfoBanner emoji=":wave:">
-   Az Ethash volt az Ethereum proof-of-work (munkaigazolás) bányászati algoritmusa. A proof-of-work jelenleg **teljesen ki van kapcsolva**, az Ethereumot pedig a <a href="/developers/docs/consensus-mechanisms/pos/">proof-of-stake</a> mechanizmus biztosítja. Tudjon meg többet az <a href="/roadmap/merge/">egyesítés (Merge)</a>, <a href="/developers/docs/consensus-mechanisms/pos/">proof-of-stake (letéti igazolás)</a> és <a href="/staking/">letétbe helyezés</a> témákról. Ez az oldal elavult témákat tartalmaz!  
-</InfoBanner>
+<Alert variant="update">
+<AlertEmoji text=":wave:"/>
+<AlertContent>
+<AlertDescription>
+   Az Ethash volt az Ethereum proof-of-work (munkaigazolás) bányászati algoritmusa. A proof-of-work jelenleg **teljesen ki van kapcsolva**, az Ethereumot pedig a [proof-of-stake](/developers/docs/consensus-mechanisms/pos/) mechanizmus biztosítja. Tudjon meg többet az [egyesítés (Merge)](/roadmap/merge/), [proof-of-stake (letéti igazolás)](/developers/docs/consensus-mechanisms/pos/) és [letétbe helyezés](/staking/) témákról. Ez az oldal elavult témákat tartalmaz!  
+</AlertDescription>
+</AlertContent>
+</Alert>
 
-Az [Ethash](https://github.com/ethereum/wiki/wiki/Ethash) a [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto) algoritmus módosított változata. Az Ethash proof-of-work egy [ memóriaigényes (memory hard)](https://wikipedia.org/wiki/Memory-hard_function) működés, ami miatt ez az algoritmus ASIC-ellenálló. Az Ethash ASIC-t végül kifejlesztették, de a GPU-bányászat még mindig működő opció volt addig, amíg a proof-of-work metódust ki nem kapcsolták. Az Ethasht még használják más érmék bányászatánál, nem Ethereumon és nem proof-of-work hálózatokon.
+Az Ethash a [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto) algoritmus módosított változata. Az Ethash proof-of-work egy [ memóriaigényes (memory hard)](https://wikipedia.org/wiki/Memory-hard_function) működés, ami miatt ez az algoritmus ASIC-ellenálló. Az Ethash ASIC-t végül kifejlesztették, de a GPU-bányászat még mindig működő opció volt addig, amíg a proof-of-work metódust ki nem kapcsolták. Az Ethasht még használják más érmék bányászatánál, nem Ethereumon és nem proof-of-work hálózatokon.
 
 ## Hogyan működik az Ethash? {#how-does-ethash-work}
 
@@ -48,7 +53,7 @@ Az Ethereum fejlesztése egybe esett az SHA3 szabvány kifejlesztésével, és a
 
 Vegye figyelembe, hogy az alábbi leírás SHA3-hashekre hivatkozik az algoritmus tekintetében.
 
-## Parameters {#parameters}
+## Paraméterek {#parameters}
 
 Az Ethash-cache és adathalmaz paraméterei a blokkszámtól függenek. A cache és az adathalmaz mérete egyenes arányosságban növekszik; ugyanakkor mindig a legnagyobb prímszámot választjuk a lineárisan növekvő határ alatt, hogy kevesebb kockázata legyen valamilyen szokatlan dolognak, ami ciklikus viselkedéshez vezet.
 
@@ -206,7 +211,7 @@ Vegye figyelembe, hogy a zavartalan bányászat és ellenőrzés érdekében ér
 
 ## További olvasnivaló {#further-reading}
 
-_Van olyan közösségi erőforrása, amely segített Önnek? Szerkessze ezt az oldalt, és adja hozzá!_
+_Ismersz olyan közösségi anyagot, amely segített neked? Módosítsd az oldalt és add hozzá!_
 
 ## Függelék {#appendix}
 

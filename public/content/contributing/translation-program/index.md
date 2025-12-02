@@ -20,7 +20,7 @@ The ethereum.org Translation Program is open and anyone can contribute!
 4. Machine translations will not be approved.
 5. All translations are reviewed before being added to the site, so there will be a short delay before your translations go live.
 
-_Join the [ethereum.org Discord](/discord/) to collaborate on translations, ask questions, share feedback and ideas, or join a translation group._
+_Join the [ethereum.org Discord](https://discord.gg/ethereum-org) to collaborate on translations, ask questions, share feedback and ideas, or join a translation group._
 
 <ButtonLink href="https://crowdin.com/project/ethereum-org/">
   Start translating
@@ -36,9 +36,9 @@ Read more about the ethereum.org Translation Program [mission and vision](/contr
 
 ### Our progress so far {#our-progress}
 
-- [**6,000 +** translators](/contributing/translation-program/contributors/)
-- **62** languages live on site
-- [**3 million** words translated in 2023](/contributing/translation-program/acknowledgements/)
+- [**6,900 +** translators](/contributing/translation-program/contributors/)
+- **68** languages live on site
+- [**2.89 million** words translated in 2024](/contributing/translation-program/acknowledgements/)
 
 <TranslationChartImage />
 
@@ -72,7 +72,6 @@ If you are contributing to the Translation Program or thinking about getting inv
 - [Translation Style Guide](/contributing/translation-program/translators-guide/) _– instructions and tips for ethereum.org translators_
 - [Translation FAQs](/contributing/translation-program/faq/) _– frequently asked questions and answers about the ethereum.org Translation Program_
 - [Crowdin online editor guide](https://support.crowdin.com/online-editor/) _– an in-depth guide to using the Crowdin online editor and some of Crowdin's advanced features_
-- [Content buckets](/contributing/translation-program/content-buckets/) _– which pages are included in each content bucket of ethereum.org_
 
 For other useful translation tools, translator communities and Translation Program blog posts, please visit the [Resources page](/contributing/translation-program/resources/).
 

@@ -55,7 +55,7 @@ Ito rin ay nangangailangan ng napaka-basic na hardware setup, at pag-unawa sa mi
 <ExpandableCard title="Secure na pamamahala ng key" eventCategory="SoloStaking" eventName="clicked secure key management">
 Tulad kung paano sine-secure ng mga pribadong key ang iyong Ethereum address, kakailanganin mong gumawa ng mga key na para mismo sa iyong validator. Dapat mong maunawaan kung paano panatilihing ligtas at secure ang anumang seed phrase o pribadong key.{' '}
 
-<a href="/security/">Seguridad at pag-iwas sa scam ng Ethereum</a>
+[Seguridad at pag-iwas sa scam ng Ethereum](/security/)
 </ExpandableCard>
 
 <ExpandableCard title="Maintenance" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -127,7 +127,7 @@ May mungkahi para sa staking tool na hindi namin nabanggit? Tingnan ang aming [p
 
 Ilan ito sa mga pinakakaraniwang tanong tungkol sa staking na mahalagang malaman.
 
-<ExpandableCard title="Ano ang validator?">
+<ExpandableCard title="Ano ang Validator?">
 
 Ang <em>validator</em> ay isang virtual entity sa Ethereum at nakikilahok sa consensus ng Ethereum protocol. Ang mga validator ay kinakatawan ng isang balanse, pampublikong key, at iba pang property. Ang <em>validator client</em> ang software na kumikilos para sa validator sa pamamagitan ng pangangasiwa at paggamit sa pribadong key nito. Maaaring mangasiwa ang isang validator client ng maraming pares ng key, na nagkokontrol ng maraming validator.
 
@@ -136,9 +136,9 @@ Ang <em>validator</em> ay isang virtual entity sa Ethereum at nakikilahok sa con
 <ExpandableCard title="Puwede ba akong magdeposito ng mahigit 32 ETH?">
 Ang bawat key-pair na nauugnay sa isang validator ay nangangailangan ng eksaktong 32 ETH para ma-activate. Ang pagdedeposito ng mas maraming ETH sa isang set ng mga key ay hindi nagpapalaki sa posibildad na makakuha ng mga reward, dahil limitado ang bawat validator sa <a href="https://www.attestant.io/posts/understanding-validator-effective-balance/">epektibong balanse</a> na 32 ETH. Ibig sabihin nito, isinasagawa ang staking nang kada 32 ETH, kung saan may sariling set ng mga key at balanse ang bawat isa.
 
-Huwag magdeposito ng mahigit 32 ETH para sa isang validator. Hindi nito mapaparami ang iyong mga reward. Kung mayroon nang itinakdang withdrawal address para sa validator, ang sobrang pondo na higit sa 32 ETH ay awtomatikong iwi-withdraw sa address na ito sa susunod na <a href="/staking/withdrawals/#validator-sweeping">validator sweep</a>.
+Huwag magdeposito ng mahigit 32 ETH para sa isang validator. Hindi nito mapaparami ang iyong mga reward. Kung mayroon nang itinakdang withdrawal address para sa validator, ang sobrang pondo na higit sa 32 ETH ay awtomatikong iwi-withdraw sa address na ito sa susunod na [validator sweep](/staking/withdrawals/#validator-sweeping).
 
-Kung masyadong matrabaho para sa iyo ang solo staking, pag-isipang gumamit ng <a href="/staking/saas/">staking-as-a-service</a> provider, o kung wala ka pang 32 ETH, tingnan ang <a href="/staking/pools/">mga staking pool</a>.
+Kung masyadong matrabaho para sa iyo ang solo staking, pag-isipang gumamit ng [staking-as-a-service](/staking/saas/) provider, o kung wala ka pang 32 ETH, tingnan ang [mga staking pool](/staking/pools/).
 </ExpandableCard>
 
 <ExpandableCard title="Masa-slash ba ako kung mag-o-offline ako? (tldr: Hindi.)">
@@ -195,9 +195,11 @@ Upang ma-unlock at maibalik ang iyong buong balanse, dapat mo ring tapusin ang p
 
 ## Karagdagang pagbabasa {#further-reading}
 
+- [The Ethereum Staking Directory](https://www.staking.directory/) - _Eridian at Spacesider_
 - [Ang Problema ng Ethereum sa Client Diversity](https://hackernoon.com/ethereums-client-diversity-problem) - _@emmanuelawosika 2022_
 - [Pagtulong sa Client Diversity](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Client diversity sa consensus layer ng Ethereum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
 - [Paano Dapat Gawin: Bumili ng Hardware para sa Ethereum Validator](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [Step by Step: Paano sumali sa Ethereum 2.0 Testnet](https://kb.beaconcha.in/guides/tutorial-eth2-multiclient) - _Butta_
 - [Mga Tip para sa Pag-iwas sa Slashing sa Eth2](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50) - _Raul Jordan 2020_
+
+<QuizWidget quizKey="staking-solo" />

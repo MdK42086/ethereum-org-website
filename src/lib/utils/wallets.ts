@@ -3,6 +3,7 @@ import { shuffle, union } from "lodash"
 import { getLanguageCodeName } from "@/lib/utils/intl"
 import { capitalize } from "@/lib/utils/string"
 
+import { newToCrypto } from "@/data/wallets/new-to-crypto"
 import walletsData from "@/data/wallets/wallet-data"
 
 import {
@@ -12,17 +13,31 @@ import {
   NEW_TO_CRYPTO_FEATURES,
   NFTS_FEATURES,
 } from "../constants"
-import type { WalletData, WalletFilter } from "../types"
+import type {
+  ChainName,
+  FilterOption,
+  Lang,
+  WalletData,
+  WalletRow,
+} from "../types"
 
 export const getSupportedLocaleWallets = (locale: string) =>
   shuffle(
-    walletsData.filter((wallet) => wallet.languages_supported.includes(locale))
+    walletsData.filter((wallet) =>
+      wallet.languages_supported.includes(locale as Lang)
+    )
   )
 
 export const getNonSupportedLocaleWallets = (locale: string) =>
   shuffle(
-    walletsData.filter((wallet) => !wallet.languages_supported.includes(locale))
+    walletsData.filter(
+      (wallet) => !wallet.languages_supported.includes(locale as Lang)
+    )
   )
+
+export const getNewToCryptoWallets = () => {
+  return walletsData.filter((wallet) => newToCrypto.includes(wallet.name))
+}
 
 // Get a list of a wallet supported Personas (new to crypto, nfts, long term, finance, developer)
 export const getWalletPersonas = (wallet: WalletData) => {
@@ -94,19 +109,11 @@ export const formatStringList = (strings: string[], sliceSize?: number) => {
   return sliceSize ? strings.slice(0, sliceSize).join(", ") : strings.join(", ")
 }
 
-// Get border custom color for Persona filter
-export const getPersonaBorderColor = (
-  selectedPersona: number[],
-  idx: number
-) => {
-  return selectedPersona.includes(idx) ? "primary.base" : "transparent"
-}
-
 // Get total count of wallets that support a language
 const getLanguageTotalCount = (languageCode: string) => {
   return walletsData.reduce(
     (total, currentWallet) =>
-      currentWallet.languages_supported.includes(languageCode)
+      currentWallet.languages_supported.includes(languageCode as Lang)
         ? (total = total + 1)
         : total,
     0
@@ -152,38 +159,64 @@ export const getAllWalletsLanguages = (locale: string) => {
   )
 }
 
-// Get a list of top n wallets languages
-export const getWalletsTopLanguages = (n: number, locale: string) => {
-  const compareFn = (a: string, b: string) => {
-    return getLanguageTotalCount(b) - getLanguageTotalCount(a)
-  }
-
-  return walletsData
-    .reduce(
-      (allLanguagesList, current) =>
-        // `union` lodash method merges all arrays removing duplicates
-        union(allLanguagesList, current.languages_supported),
-      [] as string[]
-    )
-    .sort(compareFn)
-    .map((languageCode) => {
-      // Get supported language name
-      const supportedLanguageName = getLanguageCodeName(languageCode, locale)
-      // Return {code, capitalized language name}
-      return {
-        code: languageCode,
-        langName: `${capitalize(
-          supportedLanguageName!
-        )} (${getLanguageTotalCount(languageCode)})`,
-      }
+export const getLanguageCountWalletsData = (locale: string) => {
+  const languageCountWalletsData = getAllWalletsLanguages(locale).map(
+    (language) => ({
+      langCode: language.langCode,
+      count: getLanguageTotalCount(language.langCode),
+      name: getLanguageCodeName(language.langCode, locale),
     })
-    .slice(0, n)
+  )
+  languageCountWalletsData.sort((a, b) => a.name.localeCompare(b.name))
+  return languageCountWalletsData
 }
 
-// Get wallets listing count after applying filters
-export const walletsListingCount = (filters: WalletFilter) => {
-  return Object.values(filters).reduce(
-    (acc, filter) => (filter ? acc + 1 : acc),
-    0
-  )
+function getActiveFilterKeys(filters: FilterOption[]): string[] {
+  const keys: string[] = []
+  filters.forEach((filter) => {
+    filter.items.forEach((item) => {
+      if (item.inputState === true && item.options.length === 0) {
+        keys.push(item.filterKey)
+      }
+      if (item.options?.length > 0) {
+        item.options.forEach((option) => {
+          if (option.inputState === true) {
+            keys.push(option.filterKey)
+          }
+        })
+      }
+    })
+  })
+  return keys
+}
+
+export const filterFn = (data: WalletRow[], filters: FilterOption[]) => {
+  let selectedLanguage: string = ""
+  let selectedLayer2: ChainName[] = []
+
+  const activeFilterKeys = getActiveFilterKeys(filters)
+
+  filters.forEach((filter) => {
+    filter.items.forEach((item) => {
+      if (item.filterKey === "languages") {
+        selectedLanguage = item.inputState as string
+      } else if (item.filterKey === "layer_2_support") {
+        selectedLayer2 = (item.inputState as ChainName[]) || []
+      }
+    })
+  })
+
+  return data
+    .filter((item) => {
+      return item.languages_supported.includes(selectedLanguage as Lang)
+    })
+    .filter((item) => {
+      return (
+        selectedLayer2.length === 0 ||
+        selectedLayer2.every((chain) => item.supported_chains.includes(chain))
+      )
+    })
+    .filter((item) => {
+      return activeFilterKeys.every((key) => item[key])
+    })
 }

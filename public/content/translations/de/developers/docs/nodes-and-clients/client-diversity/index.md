@@ -31,7 +31,7 @@ Die Client-Vielfalt bietet auch eine gewisse Widerstandsfähigkeit gegen Angriff
 
 Ein Fehler in einem Konsensclient mit mehr als 33 % der Ethereum-Knoten könnte verhindern, dass die Konsensebene finalisieren kann. Das bedeutet, dass die Nutzer nicht darauf vertrauen können, dass Transaktionen nicht irgendwann rückgängig gemacht oder geändert werden. Dies wäre für viele der auf Ethereum aufbauenden Anwendungen, insbesondere DeFi, sehr problematisch.
 
-<Emoji text="🚨" className="mr-4" /> Schlimmer noch, ein kritischer Fehler in einem Client mit einer Zweidrittelmehrheit könnte dazu führen, dass die Chain <a href="https://www.symphonious.net/2021/09/23/what-happens-if-beacon-chain-consensus-fails/" target="_blank">nicht korrekt geteilt und finalisiert wird</a>. Dies wiederum würde dazu führen, dass eine große Anzahl von Validatoren auf einer ungültigen Chain stecken bleibt. Wenn sie sich der korrekten Chain wieder anschließen möchten, müssen diese Validatoren mit Slashing oder einem langsamen und teuren freiwilligen Rückzug und Reaktivierung rechnen. Das Ausmaß eines Slashings skaliert mit der Anzahl der schuldigen Knoten, wobei maximal eine Zweidrittelmehrheit geslashed werden kann (32 ETH).
+<Emoji text="🚨" className="me-4" /> Schlimmer noch, ein kritischer Fehler in einem Client mit einer Zweidrittelmehrheit könnte dazu führen, dass die Chain <a href="https://www.symphonious.net/2021/09/23/what-happens-if-beacon-chain-consensus-fails/" target="_blank">nicht korrekt geteilt und finalisiert wird</a>. Dies wiederum würde dazu führen, dass eine große Anzahl von Validatoren auf einer ungültigen Chain stecken bleibt. Wenn sie sich der korrekten Chain wieder anschließen möchten, müssen diese Validatoren mit Slashing oder einem langsamen und teuren freiwilligen Rückzug und Reaktivierung rechnen. Das Ausmaß eines Slashings skaliert mit der Anzahl der schuldigen Knoten, wobei maximal eine Zweidrittelmehrheit geslashed werden kann (32 ETH).
 
 Obwohl dies unwahrscheinliche Szenarien sind, kann das Ethereum-Ökosystem das Risiko mindern, indem es die Verteilung der Clients auf die aktiven Knoten ausgleicht. Im Idealfall würde kein Konsensclient jemals einen Anteil von 33 % an der Gesamtzahl der Nodes erreichen.
 
@@ -77,7 +77,7 @@ Um die Client-Vielfalt zu verbessern, müssen nicht nur einzelne Nutzer Minderhe
 
 [Lodestar](https://github.com/ChainSafe/lodestar)
 
-[Prysm](https://docs.prylabs.network/docs/getting-started)
+[Prysm](https://prysm.offchainlabs.com/docs/)
 
 Technisch versierte Nutzer können dazu beitragen, diesen Prozess zu beschleunigen, indem sie mehr Anleitungen und Dokumentationen für Minderheitenclients schreiben und ihre Kollegen, die Knoten betreiben, ermutigen, von den dominanten Clients wegzugehen. Anleitungen für den Wechsel zu einem Minderheitskonsensclient finden Sie auf [clientdiversity.org](https://clientdiversity.org/).
 

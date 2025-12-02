@@ -1,5 +1,6 @@
 ---
 title: 燃料和费用
+metaTitle: "以太坊燃料和费用：技术概览"
 description:
 lang: zh
 ---
@@ -87,7 +88,7 @@ Gas 对以太坊网络至关重要。 正是这种燃料使它能够运行，正
 
 ### 区块大小 {#block-size}
 
-每个区块的目标大小为 1500 万单位燃料，但区块的大小将根据网络需求增减，最大不得超过 3000 万单位燃料的区块大小上限（目标区块大小的 2 倍）。 协议通过 _tâtonnement_ 过程使均衡区块大小平均达到 1,500 万单位燃料。 这意味着如果区块大小超出目标区块大小，协议将增加下一个区块的基础费。 同样，如果区块大小小于目标区块大小，协议将减少基础费。 基础费的调整金额与当前区块大小和目标区块大小的差距成比例。 [关于区块的更多信息](/developers/docs/blocks/)。
+每个区块的目标大小为 3000 万单位燃料，但区块的大小将根据网络需求增减，最大不得超过 6000 万单位燃料的区块大小上限（目标区块大小的 2 倍）。 协议通过 _tâtonnement_ 过程使均衡区块大小平均达到 1,500 万单位燃料。 这意味着如果区块大小超出目标区块大小，协议将增加下一个区块的基础费。 同样，如果区块大小小于目标区块大小，协议将减少基础费。 基础费的调整金额与当前区块大小和目标区块大小的差距成比例。 [关于区块的更多信息](/developers/docs/blocks/)。
 
 ### 实践中的燃料费计算 {#calculating-fees-in-practice}
 
@@ -117,11 +118,12 @@ Gas 对以太坊网络至关重要。 正是这种燃料使它能够运行，正
 
 二层网络扩容是一项主要举措，可大大优化燃料成本、用户体验和可扩展性。 [关于二层网络扩容的更多信息](/developers/docs/scaling/#layer-2-scaling)。
 
-## 监控燃料费 {#moitoring-gas-fees}
+## 监控燃料费 {#monitoring-gas-fees}
 
 如果想要监控燃料价格，用较少的费用发送以太币，你可以使用多种不同的工具，例如：
 
 - [Etherscan 区块浏览器](https://etherscan.io/gastracker)_交易燃料价格估算器。_
+- [ETH Gas Tracker](https://www.ethgastracker.com/) _监控与追踪以太坊和二层网络燃料价格，降低交易费用并节省开支_
 - [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _支持类型 0 传统交易和类型 2 EIP-1559 交易的燃料估算 Chrome 插件。_
 - [Cryptoneur Gas Fees Calculator](https://www.cryptoneur.xyz/gas-fees-calculator) _按照你的当地货币计算主网、Arbitrum 和 Polygon 上进行的各类交易的燃料费。_
 
@@ -133,7 +135,6 @@ Gas 对以太坊网络至关重要。 正是这种燃料使它能够运行，正
 
 - [以太坊 Gas 详解](https://defiprime.com/gas)
 - [减少智能合约的燃料消耗](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
-- [权益证明与工作量证明](https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/)
 - [面向开发者的燃料优化策略](https://www.alchemy.com/overviews/solidity-gas-optimization)
 - [EIP-1559 文档](https://eips.ethereum.org/EIPS/eip-1559)
 - [Tim Beiko 的 EIP-1559 资源](https://hackmd.io/@timbeiko/1559-resources)。

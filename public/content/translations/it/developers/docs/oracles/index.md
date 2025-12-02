@@ -274,7 +274,7 @@ Alcune reti di oracoli decentralizzati richiedono ai partecipanti di votare o me
 
 I nodi le cui risposte si discostano dalla risposta maggioritaria vengono penalizzati con la distribuzione dei loro token ad altri che forniscono valori più corretti. Obbligare i nodi a fornire una garanzia prima di fornire i dati incentiva le risposte oneste, poiché si presume che siano attori economici razionali intenti a massimizzare i rendimenti.
 
-Lo staking/votazione, inoltre, protegge gli oracoli decentralizzati dagli "attacchi Sybil", in cui attori malintenzionati creano identità multiple per ingannare il sistema di consenso. Tuttavia, lo staking non può impedire il "freeloading" (nodi oracolo che copiano informazioni da altri) e la "convalida pigra" (nodi oracolo che seguono la maggioranza senza verificare le informazioni stesse).
+Inoltre, lo staking e il voto proteggono gli oracoli decentralizzati dagli [attacchi Sybil](/glossary/#sybil-attack), in cui gli utenti malevoli creano svariate identità per prendersi gioco del sistema del consenso. Tuttavia, lo staking non può impedire il "freeloading" (nodi oracolo che copiano informazioni da altri) e la "convalida pigra" (nodi oracolo che seguono la maggioranza senza verificare le informazioni stesse).
 
 ##### Meccanismi del punto di Schelling
 
@@ -358,11 +358,11 @@ contract PriceConsumerV3 {
 
 Alcune applicazioni della blockchain, come i giochi o le lotterie basate su blockchain, richiedono un alto livello di imprevedibilità e casualità per funzionare efficacemente. Tuttavia, l'esecuzione deterministica delle blockchain elimina la casualità.
 
-L'approccio abituale è quello di utilizzare funzioni crittografiche pseudocasuali, come `blockhash`, ma queste sono suscettibili di [manipolazione da miner](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) che risolvono l'algoritmo proof-of-work. Inoltre, il [passaggio al proof-of-stake](/roadmap/merge/) di Ethereum fa sì che gli sviluppatori non possano più fare affidamento su `blockhash` per la casualità sulla catena (il [meccanismo RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) della Beacon Chain fornisce comunque una fonte alternativa di casualità).
+L'approcio originale consisteva nell'utilizzare una funzione crittografica pseudocasuale, come ad esempio `blockhash`, ma questa era suscettibile di [manipolazioni da parte dei minatori](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) che risolvevano l'algoritmo di proof-of-work. Inoltre il [passaggio al proof-of-stake](/roadmap/merge/) di Ethereum fa sì che gli sviluppatori non possano più affidarsi al `blockhash` per la casualità on-chain. Il [meccanismo RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) della Beacon Chain fornisce invece una fonte alternativa di casualità.
 
 È possibile generare il valore casuale off-chain e inviarlo sulla catena, ma ciò impone agli utenti requisiti di fiducia elevati. Devono credere che il valore sia stato realmente generato attraverso meccanismi imprevedibili e non sia stato alterato in transito.
 
-Gli oracoli progettati per il calcolo off-chain risolvono questo problema generando in modo sicuro risultati casuali fuori catena che trasmettono sulla catena insieme a prove crittografiche che attestano l'imprevedibilità del processo. Un esempio è [Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf/) (Verifiable Random Function), che è un generatore di numeri casuali (RNG) dimostrabilmente equo e a prova di manomissione, utile per costruire contratti intelligenti affidabili per applicazioni che si basano su risultati imprevedibili. Un altro esempio è [API3 QRNG](https://docs.api3.org/explore/qrng/) che serve alla generazione quantistica di numeri casuali (QRNG); si tratta di un metodo pubblico per la generazione di numeri casuali del Web3 basato su fenomeni quantistici e fornito gentilmente dall'Università Nazionale Australiana (ANU).
+Gli oracoli progettati per il calcolo off-chain risolvono questo problema generando in modo sicuro risultati casuali fuori catena che trasmettono sulla catena insieme a prove crittografiche che attestano l'imprevedibilità del processo. Un esempio è [Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf/) (Verifiable Random Function), che è un generatore di numeri casuali (RNG) dimostrabilmente equo e a prova di manomissione, utile per costruire contratti intelligenti affidabili per applicazioni che si basano su risultati imprevedibili.
 
 ### Ottenere risultati per gli eventi {#getting-outcomes-for-events}
 
@@ -388,6 +388,8 @@ Ci sono più applicazioni di oracoli che puoi integrare nella tua dapp su Ethere
 
 **[Chainlink](https://chain.link/)** - _ Le reti di oracoli decentralizzati di Chainlink forniscono input a prova di manomissione, output e calcoli per supportare contratti intelligenti avanzati su qualsiasi blockchain._
 
+**[Chronicle](https://chroniclelabs.org/)** - _Chronicle supera le attuali limitazioni del trasferimento dei dati sulla catena sviluppando oracoli veramente scalabili, economici, decentralizzati e verificabili._
+
 **[Witnet](https://witnet.io/)** - _Witnet è un oracolo senza permessi, decentralizzato e resistente alla censura che aiuta i contratti intelligenti a reagire agli eventi del mondo reale con forti garanzie cripto-economiche._
 
 **[UMA Oracle](https://uma.xyz)** - _L'oracolo ottimistico di UMA consente ai contratti intelligenti di ricevere rapidamente qualsiasi tipo di dati per diverse applicazioni, tra cui assicurazioni, derivati finanziari e mercati predittivi._
@@ -395,8 +397,6 @@ Ci sono più applicazioni di oracoli che puoi integrare nella tua dapp su Ethere
 **[Tellor](https://tellor.io/)** - _Tellor è un protocollo di oracolo trasparente e senza permessi per i tuoi contratti intelligenti al fine di ottenere facilmente tutti i dati ogni volta che ne hanno bisogno._
 
 **[Band Protocol](https://bandprotocol.com/)** - _Band Protocol è una piattaforma di oracolo di dati tra catene che aggrega e collega dati reali e API ai contratti intelligenti._
-
-**[Paralink](https://paralink.network/)** - _Paralink fornisce una piattaforma open source e decentralizzata per i contratti intelligenti in esecuzione su Ethereum e su altre blockchain popolari._
 
 **[Pyth Network](https://pyth.network/)** - _La rete Pyth è una rete di oracoli finanziari di prima parte progettata per pubblicare dati continui del mondo reale sulla catena in un ambiente resistente alle manomissioni, decentralizzato e autosostenibile._
 
@@ -413,7 +413,6 @@ Ci sono più applicazioni di oracoli che puoi integrare nella tua dapp su Ethere
 - [Decentralised Oracles: a comprehensive overview](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
 - [Implementing a Blockchain Oracle on Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
 - [Why can't smart contracts make API calls?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
-- [Why we need decentralized oracles](https://newsletter.banklesshq.com/p/why-we-need-decentralized-oracles) — _Bankless_
 - [So you want to use a price oracle](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Video**
@@ -424,6 +423,7 @@ Ci sono più applicazioni di oracoli che puoi integrare nella tua dapp su Ethere
 **Tutorial**
 
 - [Come recuperare il prezzo corrente di Ethereum in Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) - _Chainlink_
+- [Consuming Oracle Data](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
 
 **Progetti di esempio**
 
